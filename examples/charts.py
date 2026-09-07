@@ -279,3 +279,70 @@ b.append(txt(L4, H4 - 30, "Source: this repository's first capture, 2026-09-07. 
                           "uncertainty bounds and load stamps excluded.", 10.5, MUTE))
 open(os.path.join(HERE, "charts", "history-is-shallow.svg"), "w").write(doc(W4, H4, b))
 print("  wrote history-is-shallow.svg")
+
+
+# ---------------------------------------------------------------- chart 5
+# Who is in the record at all. This one is about the world rather than about
+# WHO's housekeeping: coverage is drawn along sovereignty lines, and the drop
+# is a cliff rather than a gradient.
+meta = {c["Code"]: c for c in json.loads(urllib.request.urlopen(urllib.request.Request(
+    "https://ghoapi.azureedge.net/api/DIMENSION/COUNTRY/DimensionValues",
+    headers={"User-Agent": UA}), timeout=60).read())["value"]}
+ctry_ind = collections.defaultdict(set)
+for f in glob.glob(os.path.join(REPO, "derived", "observations", "*.csv")):
+    for r in csv.DictReader(open(f, encoding="utf-8")):
+        if r["metric"] != "value":
+            continue
+        p = r["entity_id"].split(":")
+        if p[1] in meta:
+            ctry_ind[p[1]].add(p[0])
+cnt = {c: len(v) for c, v in ctry_ind.items()}
+BANDS = [(36, 48, "36–48"), (24, 35, "24–35"), (10, 23, "10–23"), (2, 9, "2–9"), (1, 1, "exactly 1")]
+band_n = [(lab, sum(1 for v in cnt.values() if lo <= v <= hi)) for lo, hi, lab in BANDS]
+ones = sorted((meta[c]["Title"] for c, v in cnt.items() if v == 1))
+
+W5, L5, R5 = 1240, 150, 322
+PW5 = W5 - L5 - R5
+T5, ROW5 = 168, 40
+H5 = T5 + ROW5 * len(band_n) + 150
+b = []
+b.append(txt(L5 - 66, 46, "The global health record is drawn along sovereignty lines",
+             21, INK, weight="600"))
+b.append(txt(L5 - 66, 73, f"How many of the 48 captured indicators cover each of "
+                          f"{len(cnt)} places. The median is {sorted(cnt.values())[len(cnt)//2]}.",
+             13.5, MUTE))
+mx5 = max(v for _, v in band_n)
+for i, (lab, v) in enumerate(band_n):
+    y = T5 + ROW5 * i
+    w = PW5 * v / mx5
+    thin = lab in ("exactly 1", "2–9")
+    b.append(rect(L5, y, w, ROW5 - 14, ORANGE if thin else BLUE, op=0.9 if thin else 0.55))
+    b.append(txt(L5 - 10, y + ROW5 - 24, lab, 12.5, INK if thin else MUTE, anchor="end",
+                 weight="600" if thin else "normal"))
+    b.append(txt(L5 + w + 8, y + ROW5 - 24, f"{v} places", 11.5, INK))
+b.append(txt(L5 - 10, T5 - 14, "indicators", 10.5, MUTE, anchor="end"))
+gapy = T5 + ROW5 * 2 + ROW5 - 14
+b.append(line(L5, gapy + 6, L5 + PW5, gapy + 6, INK, 1, dash="4,3"))
+b.append(txt(L5 + 6, gapy + 20, "only 3 places sit between — the drop is a cliff, not a gradient",
+             11, INK, style="italic"))
+nx = L5 + PW5 + 24; y0 = T5 - 4
+for ln in wrap("The 18 places covered by exactly one indicator are every one of them a "
+               "territory or dependency, not a sovereign state:", 258):
+    b.append(txt(nx, y0, ln, 12, INK)); y0 += 16
+y0 += 6
+for ln in wrap(", ".join(ones), 258):
+    b.append(txt(nx, y0, ln, 11, ORANGE, weight="600")); y0 += 15
+y0 += 10
+for ln in wrap("The single indicator reaching them is basic drinking water — produced by the "
+               "WHO/UNICEF Joint Monitoring Programme, which counts places by geography rather "
+               "than by statehood.", 258):
+    b.append(txt(nx, y0, ln, 11.5, MUTE)); y0 += 16
+y0 += 10
+for ln in wrap("Réunion has about 870,000 residents and appears in one indicator of "
+               "forty-eight.", 258):
+    b.append(txt(nx, y0, ln, 11.5, INK, weight="600")); y0 += 16
+b.append(txt(L5 - 66, H5 - 30, "Source: this repository's first capture, 2026-09-07. Places as "
+                               "listed in the GHO COUNTRY dimension; regional aggregates excluded.",
+             10.5, MUTE))
+open(os.path.join(HERE, "charts", "who-is-missing.svg"), "w").write(doc(W5, H5, b))
+print("  wrote who-is-missing.svg")
