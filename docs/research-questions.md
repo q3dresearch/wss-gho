@@ -33,6 +33,7 @@ archive to exist.
 | 11 | Which indicators are stable enough to cite, and which are not? | a year | accruing |
 | 12 | When a paper cites "WHO's estimate for year Y", is it still checkable? | a year | accruing |
 | 13 | Are indicators ever **deleted** from the catalogue? | a year | accruing — a dormant indicator still shows; a removed one vanishes without trace |
+| 15 | **Which indicators are reliable enough to cite at all?** | one capture | **answered** — median band runs from ±17% (infant deaths) to **±111%** (air pollution attributable death rate), ordered almost exactly counted-first, modelled-last |
 | 14 | *Why* a revision happened | WHO methodology notes, not in the API | **blocked** |
 
 **Nine of fourteen need the series observed over time**, and the first of them

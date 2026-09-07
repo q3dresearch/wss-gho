@@ -375,3 +375,70 @@ b.append(txt(L5 - 66, H5 - 30, "Source: this repository's first capture, 2026-09
              10.5, MUTE))
 open(os.path.join(HERE, "charts", "who-is-missing.svg"), "w").write(doc(W5, H5, b))
 print("  wrote who-is-missing.svg")
+
+
+# ---------------------------------------------------------------- chart 6
+# Which of these numbers can be relied on. Same uncertainty measure as chart 2,
+# turned around: not which countries are uncertain, but which indicators.
+ind_unc = collections.defaultdict(list)
+cell6 = collections.defaultdict(dict)
+for f in sorted(glob.glob(os.path.join(REPO, "derived", "observations", "*.csv"))):
+    for r in csv.DictReader(open(f, encoding="utf-8")):
+        if r["metric"] in ("value", "low", "high"):
+            cell6[(r["entity_id"], r["observed_at"])][r["metric"]] = r["value"]
+for (ent, _yr), m in cell6.items():
+    if not {"value", "low", "high"} <= set(m):
+        continue
+    try:
+        v, lo, hi = float(m["value"]), float(m["low"]), float(m["high"])
+    except ValueError:
+        continue
+    if v:
+        ind_unc[ent.split(":")[0]].append((hi - lo) / v)
+label = {}
+with open(os.path.join(REPO, "reference", "indicator-sizes-2026-09-07.csv"), encoding="utf-8") as f:
+    for r in csv.DictReader(f):
+        label[r["indicator_code"]] = r["indicator_name"]
+rank = sorted(((st.median(v), k, len(v)) for k, v in ind_unc.items() if len(v) >= 200))
+
+W6, L6, R6 = 1300, 400, 250
+PW6 = W6 - L6 - R6
+T6, ROW6 = 158, 27
+H6 = T6 + ROW6 * len(rank) + 116
+b = []
+b.append(txt(60, 46, "Some WHO figures carry uncertainty wider than the figure itself",
+             21, INK, weight="600"))
+b.append(txt(60, 73, "Median published uncertainty band as a share of the estimate, by indicator. "
+                     "Only indicators with at least 200 bounded values.", 13.5, MUTE))
+mx6 = max(m for m, _, _ in rank)
+for i, (m, code, n) in enumerate(rank):
+    y = T6 + ROW6 * i
+    w = PW6 * m / mx6
+    over = m >= 1.0
+    nm = (label.get(code, code) or code)
+    nm = nm[:52] + ("…" if len(nm) > 52 else "")
+    b.append(txt(L6 - 10, y + 13, nm, 11.5, INK if over else MUTE, anchor="end",
+                 weight="600" if over else "normal"))
+    b.append(rect(L6, y + 3, w, ROW6 - 11, ORANGE if over else BLUE, op=0.9 if over else 0.55))
+    b.append(txt(L6 + w + 7, y + 13, f"±{m*100:.0f}%", 11, INK if over else MUTE,
+                 weight="600" if over else "normal"))
+x100 = L6 + PW6 * 1.0 / mx6
+b.append(line(x100, T6 - 6, x100, T6 + ROW6 * len(rank) + 2, INK, 1.5, dash="4,3"))
+b.append(txt(x100 + 6, T6 - 12, "band = the estimate", 11, INK, weight="600"))
+nx = L6 + PW6 + 26; y0 = T6 + 2
+for ln in wrap("Counted things sit at the top: infant deaths ±17%, deaths among 5–9 year-olds "
+               "±18%, under-five mortality ±22%. These come from civil registration.", 214):
+    b.append(txt(nx, y0, ln, 11.5, INK)); y0 += 16
+y0 += 12
+for ln in wrap("Attributable-burden estimates sit at the bottom. Ambient air pollution death "
+               "rates carry a median band of ±111% — the range is wider than the number, "
+               "because attribution is a model rather than a count.", 214):
+    b.append(txt(nx, y0, ln, 11.5, ORANGE, weight="600")); y0 += 16
+y0 += 12
+for ln in wrap("Both kinds are cited the same way in policy documents, with the band dropped.", 214):
+    b.append(txt(nx, y0, ln, 11.5, MUTE)); y0 += 16
+b.append(txt(60, H6 - 30, "Source: this repository's first capture, 2026-09-07. Band is "
+                          "(high minus low) divided by the estimate, median across every bounded observation.",
+             10.5, MUTE))
+open(os.path.join(HERE, "charts", "which-numbers-hold.svg"), "w").write(doc(W6, H6, b))
+print("  wrote which-numbers-hold.svg")

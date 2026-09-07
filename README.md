@@ -70,6 +70,29 @@ rather than registered, and models are what change when they are updated.
 If that fails, the assumption behind this repo's scope is wrong. It is written
 down so it can fail visibly.
 
+### Some of these figures carry uncertainty wider than the figure
+
+![Which numbers hold](examples/charts/which-numbers-hold.svg)
+
+Ranked by published uncertainty band as a share of the estimate, the order is
+almost exactly **counted things first, modelled things last**:
+
+| indicator | median band |
+| --- | --- |
+| Number of infant deaths | **±17%** |
+| Under-five mortality rate | ±22% |
+| Tuberculosis treatment coverage | ±40% |
+| Prevalence of chronic hepatitis C | ±90% |
+| **Ambient air pollution attributable death rate** | **±111%** |
+
+At ±111% the range is wider than the number. Attribution is a model, not a
+count — and both kinds are cited the same way in policy documents, with the band
+dropped.
+
+This is also what the revision prediction is built on: **if the modelled figures
+are the ones that move, these are the rows where a second capture will show it
+first.**
+
 ### The record follows sovereignty, not population
 
 ![Who is missing from the record](examples/charts/who-is-missing.svg)
