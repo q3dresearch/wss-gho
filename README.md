@@ -58,8 +58,9 @@ indicators deserve to exist.
 
 ![Uncertainty and prediction](examples/charts/uncertainty-and-prediction.svg)
 
-Outside the G20 the published uncertainty band is **2.3× wider** — a median of
-±23% of the estimate against ±10%. A wide band means the figure is modelled
+Outside the G20 the published uncertainty band is **4.8× wider** — a median of
+±19% of the estimate against ±4%, across all 15,500 country-years in the
+archive. A wide band means the figure is modelled
 rather than registered, and models are what change when they are updated.
 
 > **Prediction, recorded before the archive can test it:** revision magnitude
@@ -68,6 +69,22 @@ rather than registered, and models are what change when they are updated.
 
 If that fails, the assumption behind this repo's scope is wrong. It is written
 down so it can fail visibly.
+
+### The record follows sovereignty, not population
+
+![Who is missing from the record](examples/charts/who-is-missing.svg)
+
+133 places appear in 36–48 of the captured indicators and 60 in 24–35. Then a
+cliff: **only 3 places sit in the 10–23 band**, 16 in the 2–9 band, and **18 in
+exactly one**.
+
+All 18 are territories or dependencies — Réunion, Guadeloupe, Martinique, Guam,
+Curaçao, New Caledonia. The single indicator reaching them is **basic drinking
+water**, produced by the WHO/UNICEF Joint Monitoring Programme, which counts
+places by geography rather than by statehood.
+
+**Réunion has about 870,000 residents and appears in one indicator of
+forty-eight.**
 
 ### The history is shallower than "back to 1931" suggests
 

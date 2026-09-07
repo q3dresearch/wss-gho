@@ -24,7 +24,7 @@ archive to exist.
 | 2 | How uncertain are the estimates, and for whom? | one capture | **answered** — non-G20 intervals 2.3× wider on the rows we capture |
 | 3 | **Does WHO restate continuously, or in releases?** | one capture | **answered** — in batches. 25 distinct dates across 48 indicators; **71% share a date with another**. Roughly two release events a month |
 | 4 | How far back does WHO model? | one capture | **answered** — the flagship reaches 1931, but 71% of all values are post-2000 and only 8 of 48 indicators span 30+ years. Six are a single year |
-| 5 | How much of GHO is aggregate rather than observation? | one capture | **answerable now** — ~2/3 are roll-ups (both-sexes, total quintile, regions) |
+| 5 | How much of GHO is aggregate rather than observation? | one capture | **answered** — **9.1%** of rows are regional or income-group aggregates; 90.9% are country rows across 230 places |
 | 6 | **How far does a restated number move?** | **two captures** | **the point of the archive** — first answer possible next month |
 | 7 | How far back does a revision reach — recent years, or the whole series? | two captures | next month |
 | 8 | Which countries' history is rewritten most? | a year | accruing — **prediction recorded below** |

@@ -19,3 +19,8 @@ registry's scope rests on it.
 
 Both are re-derivable with `../examples/map_activity.py` and
 `../examples/size_active.py`.
+
+- `country-names-2026-09-07.csv` — the GHO COUNTRY dimension: code, name and WHO
+  region for 234 places. Cached because the derived tables carry spatial codes
+  but no names, and a chart script that has to reach the network cannot
+  regenerate the same output later or run in CI.

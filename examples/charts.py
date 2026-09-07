@@ -3,7 +3,7 @@
 Neither shows a revision -- that needs a second capture. They show why the
 capture is scoped the way it is, and state a prediction the archive will test.
 """
-import csv, json, os, sys, collections, datetime as dt, statistics as st, urllib.request
+import collections, csv, datetime as dt, glob, json, os, statistics as st, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)          # wss-gho/
@@ -66,27 +66,47 @@ open(os.path.join(OUT, "catalogue-activity.svg"), "w").write(doc(W, H, b))
 # because registration is weak. That is a different mechanism and it would make
 # the chart argue something it cannot support. So this shows the two
 # DISTRIBUTIONS instead, which is the actual claim, and names examples.
-import urllib.parse
-FILT = ("SpatialDimType eq 'COUNTRY' and Dim1 eq 'SEX_BTSX'"
-        " and Dim3 eq 'WEALTHQUINTILE_TOTL'")
-u = ("https://ghoapi.azureedge.net/api/MDG_0000000007?$top=1000&$filter="
-     + urllib.parse.quote(FILT))
-d = json.loads(urllib.request.urlopen(
-    urllib.request.Request(u, headers={"User-Agent": UA}), timeout=90).read())["value"]
-names = {c["Code"]: c["Title"] for c in json.loads(urllib.request.urlopen(
-    urllib.request.Request("https://ghoapi.azureedge.net/api/DIMENSION/COUNTRY/DimensionValues",
-                           headers={"User-Agent": UA}), timeout=60).read())["value"]}
+# Read from the archive, not the API. A chart that needs the network cannot
+# regenerate the same output later and cannot run in CI at all.
+d = []
+for f in sorted(glob.glob(os.path.join(REPO, "derived", "observations", "*.csv"))):
+    for r in csv.DictReader(open(f, encoding="utf-8")):
+        # Both-sexes, all-quintiles only. The archive keeps every breakdown,
+        # but a country's headline uncertainty is the aggregate one -- mixing
+        # in the sex and quintile splits, each with its own wider band, would
+        # measure something else. Dropping this filter moves the reported
+        # ratio from 2.3x to 1.7x.
+        if (r["entity_id"].startswith("MDG_0000000007:")
+                and "SEX_BTSX" in r["entity_id"]
+                and "WEALTHQUINTILE_TOTL" in r["entity_id"]):
+            d.append(r)
+names = {}
+with open(os.path.join(REPO, "reference", "country-names-2026-09-07.csv"), encoding="utf-8") as f:
+    for r in csv.DictReader(f):
+        names[r["code"]] = r["title"]
 G20 = {"ARG","AUS","BRA","CAN","CHN","FRA","DEU","IND","IDN","ITA","JPN","MEX",
        "RUS","SAU","ZAF","KOR","TUR","GBR","USA"}
-per = collections.defaultdict(list)
+# derived stores one row per metric, so value/low/high must be regrouped by
+# (entity, reference year) before a band can be computed. That long format is
+# what lets a revision surface as a changed row rather than a new one.
+cell = collections.defaultdict(dict)
 for r in d:
+    if r["metric"] in ("value", "low", "high"):
+        cell[(r["entity_id"], r["observed_at"])][r["metric"]] = r["value"]
+per = collections.defaultdict(list)
+for (ent, _yr), m in cell.items():
+    if not {"value", "low", "high"} <= set(m):
+        continue
     try:
-        v, lo, hi = float(r["NumericValue"]), float(r["Low"]), float(r["High"])
-    except (TypeError, ValueError, KeyError):
+        v, lo, hi = float(m["value"]), float(m["low"]), float(m["high"])
+    except ValueError:
         continue
     if v:
-        per[r["SpatialDim"]].append((hi - lo) / v)
-country = {k: st.median(v) for k, v in per.items() if len(v) >= 3}
+        per[ent.split(":")[1]].append((hi - lo) / v)
+# Countries only. Regional and income-group aggregates carry tighter bands
+# because more data sits behind them, and counting them as "everyone else"
+# understates the gap (4.3x instead of 4.8x).
+country = {k: st.median(v) for k, v in per.items() if len(v) >= 3 and k in names}
 g = sorted((v, k) for k, v in country.items() if k in G20)
 ng = sorted((v, k) for k, v in country.items() if k not in G20)
 
@@ -207,7 +227,6 @@ print("  wrote restatement-rhythm.svg")
 # "Historical database" is doing a lot of work in how GHO is described. Two
 # panels, because the shallowness shows up in two independent ways: almost all
 # values describe recent years, and most indicators are not time series at all.
-import glob
 peryear = collections.Counter(); span = collections.defaultdict(set)
 for f in sorted(glob.glob(os.path.join(REPO, "derived", "observations", "*.csv"))):
     y = int(os.path.basename(f)[:4])
@@ -285,9 +304,10 @@ print("  wrote history-is-shallow.svg")
 # Who is in the record at all. This one is about the world rather than about
 # WHO's housekeeping: coverage is drawn along sovereignty lines, and the drop
 # is a cliff rather than a gradient.
-meta = {c["Code"]: c for c in json.loads(urllib.request.urlopen(urllib.request.Request(
-    "https://ghoapi.azureedge.net/api/DIMENSION/COUNTRY/DimensionValues",
-    headers={"User-Agent": UA}), timeout=60).read())["value"]}
+meta = {}
+with open(os.path.join(REPO, "reference", "country-names-2026-09-07.csv"), encoding="utf-8") as f:
+    for r in csv.DictReader(f):
+        meta[r["code"]] = {"Title": r["title"], "ParentTitle": r["region"]}
 ctry_ind = collections.defaultdict(set)
 for f in glob.glob(os.path.join(REPO, "derived", "observations", "*.csv")):
     for r in csv.DictReader(open(f, encoding="utf-8")):
@@ -301,7 +321,7 @@ BANDS = [(36, 48, "36–48"), (24, 35, "24–35"), (10, 23, "10–23"), (2, 9, "
 band_n = [(lab, sum(1 for v in cnt.values() if lo <= v <= hi)) for lo, hi, lab in BANDS]
 ones = sorted((meta[c]["Title"] for c, v in cnt.items() if v == 1))
 
-W5, L5, R5 = 1240, 150, 322
+W5, L5, R5 = 1300, 150, 372
 PW5 = W5 - L5 - R5
 T5, ROW5 = 168, 40
 H5 = T5 + ROW5 * len(band_n) + 150
@@ -319,11 +339,20 @@ for i, (lab, v) in enumerate(band_n):
     b.append(rect(L5, y, w, ROW5 - 14, ORANGE if thin else BLUE, op=0.9 if thin else 0.55))
     b.append(txt(L5 - 10, y + ROW5 - 24, lab, 12.5, INK if thin else MUTE, anchor="end",
                  weight="600" if thin else "normal"))
-    b.append(txt(L5 + w + 8, y + ROW5 - 24, f"{v} places", 11.5, INK))
+    # The longest bar fills the panel, so its count would land in the note
+    # column. Put the label inside the bar once it passes three-quarters.
+    if w > PW5 * 0.75:
+        b.append(txt(L5 + w - 10, y + ROW5 - 24, f"{v} places", 11.5, "#ffffff",
+                     anchor="end", weight="600"))
+    else:
+        b.append(txt(L5 + w + 8, y + ROW5 - 24, f"{v} places", 11.5, INK))
 b.append(txt(L5 - 10, T5 - 14, "indicators", 10.5, MUTE, anchor="end"))
-gapy = T5 + ROW5 * 2 + ROW5 - 14
-b.append(line(L5, gapy + 6, L5 + PW5, gapy + 6, INK, 1, dash="4,3"))
-b.append(txt(L5 + 6, gapy + 20, "only 3 places sit between — the drop is a cliff, not a gradient",
+# The gap sits between the 10-23 band and 2-9. Put the note above the line and
+# far enough right to clear the "16 places" count that follows the short bar.
+gapy = T5 + ROW5 * 3 - 7
+b.append(line(L5, gapy, L5 + PW5, gapy, INK, 1, dash="4,3"))
+b.append(txt(L5 + PW5 * 0.42, gapy - 7,
+             "only 3 places sit between — the drop is a cliff, not a gradient",
              11, INK, style="italic"))
 nx = L5 + PW5 + 24; y0 = T5 - 4
 for ln in wrap("The 18 places covered by exactly one indicator are every one of them a "
