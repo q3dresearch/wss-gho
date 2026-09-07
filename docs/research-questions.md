@@ -1,8 +1,11 @@
 # What a WHO GHO vintage archive would be for
 
 Written before the repo, because the rule is probe, write the questions down,
-try to answer them, and only then decide what to build. Screening evidence is in
-[`../screening-log.md`](../screening-log.md).
+try to answer them, and only then decide what to build.
+The screening that chose this source, and the twelve candidates rejected alongside
+it, is recorded outside this repository. What it produced is in [`../reference/`](../reference/):
+the random indicator sample the scope rests on, and the row counts behind the
+capture budget.
 
 ## The spine
 
