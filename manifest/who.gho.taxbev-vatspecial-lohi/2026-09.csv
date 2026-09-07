@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.taxbev-vatspecial-lohi,https://ghoapi.azureedge.net/api/TAXBEV_VATSPECIAL_LOHI?$top=1000,2026-09-07T16:35:11Z,200,application/json,98272,ec5dab724738c44913bc4474e04862cdcce53a4615012e19559f06b2c85630e0,,,first_capture,raw/who.gho.taxbev-vatspecial-lohi/2026/09/20260907T163511Z-ec5dab724738.json.gz,,

@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.vaccinecoverage-mena-c,https://ghoapi.azureedge.net/api/VACCINECOVERAGE_MENA_C?$top=1000,2026-09-07T16:41:28Z,200,application/json,174485,59cf89fc21dc5901d50e3e9dba7ef1903ab2347e4500e3d54278a9b1e9fb3d2a,,,first_capture,raw/who.gho.vaccinecoverage-mena-c/2026/09/20260907T164128Z-59cf89fc21dc.json.gz,,

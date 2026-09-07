@@ -1,0 +1,203 @@
+"""Two charts that frame the GHO archive before it exists.
+
+Neither shows a revision -- that needs a second capture. They show why the
+capture is scoped the way it is, and state a prediction the archive will test.
+"""
+import csv, json, os, sys, collections, datetime as dt, statistics as st, urllib.request
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+REPO = os.path.dirname(HERE)          # wss-gho/
+ROOT = os.path.dirname(os.path.dirname(REPO))
+sys.path.insert(0, os.path.join(ROOT, "larder", "tools", "cfr"))  # shared svgkit
+from svgkit import *                                          # noqa: E402
+OUT = os.path.join(HERE, "charts")
+UA = "wss-probe (+https://github.com/neldivad)"
+
+# ---------------------------------------------------------------- chart 1
+src = os.path.join(REPO, "reference", "indicator-activity-2026-09-07.csv")
+rows = [r for r in csv.DictReader(open(src, encoding="utf-8")) if r.get("status") == "ac" or r.get("status") == "ok"]
+ages = sorted(int(r["days_since"]) for r in rows if r.get("days_since"))
+BUCKETS = [("<1y", 0, 365), ("1–2y", 365, 730), ("2–4y", 730, 1460), (">4y", 1460, 10**9)]
+counts = [(lab, sum(1 for a in ages if lo <= a < hi)) for lab, lo, hi in BUCKETS]
+n = len(ages)
+
+W, L, R = 1180, 80, 300
+PW = W - L - R
+T, PH = 150, 250
+H = T + PH + 110
+b = []
+b.append(txt(L, 46, "Most of WHO's indicator catalogue stopped being updated", 21, INK, weight="600"))
+b.append(txt(L, 73, f"When each of {n} randomly sampled indicators was last republished. "
+                    "Scoping by this alone picks the citable core.", 13.5, MUTE))
+bw = PW / len(counts)
+mx = max(c for _, c in counts)
+for i, (lab, c) in enumerate(counts):
+    h = PH * c / mx
+    x = L + bw * i + bw * 0.16
+    live = lab == "<1y"
+    b.append(rect(x, T + PH - h, bw * 0.68, h, ORANGE if live else BLUE, op=0.9 if live else 0.5))
+    b.append(txt(x + bw * 0.34, T + PH - h - 10, f"{c}", 15, INK, anchor="middle", weight="600"))
+    b.append(txt(x + bw * 0.34, T + PH - h - 28, f"{c/n:.0%}", 11.5,
+                 ORANGE if live else MUTE, anchor="middle", weight="600"))
+    b.append(txt(x + bw * 0.34, T + PH + 20, lab, 13, INK if live else MUTE,
+                 anchor="middle", weight="600" if live else "normal"))
+b.append(line(L, T + PH, L + PW, T + PH, MUTE))
+nx = L + PW + 26; y0 = T + 4
+for ln in wrap("The 14% republished within a year are the indicators anyone cites: "
+               "under-five mortality, infant deaths, HIV in pregnancy, immunisation "
+               "coverage, air pollution mortality.", 250):
+    b.append(txt(nx, y0, ln, 12, ORANGE, weight="600")); y0 += 17
+y0 += 14
+for ln in wrap("The dormant 59% are policy inventories last touched over four years ago — "
+               "\"social costs of alcohol use\", \"supervision requirements for buprenorphine\" "
+               "— several stamped 13 years old.", 250):
+    b.append(txt(nx, y0, ln, 12, MUTE)); y0 += 17
+y0 += 14
+for ln in wrap("Capturing only the active set is therefore a mechanical rule, not a "
+               "judgement about which indicators deserve to exist.", 250):
+    b.append(txt(nx, y0, ln, 12, INK)); y0 += 17
+b.append(txt(L, H - 32, f"Source: ghoapi.azureedge.net, {n} of 3,098 indicators drawn at random, "
+                        "2026-09-07. Median last republication 4.7 years.", 10.5, MUTE))
+open(os.path.join(OUT, "catalogue-activity.svg"), "w").write(doc(W, H, b))
+
+# ---------------------------------------------------------------- chart 2
+# Ranking countries by interval width puts microstates on top -- Andorra, San
+# Marino, Niue -- where the band is wide because there are very few births, not
+# because registration is weak. That is a different mechanism and it would make
+# the chart argue something it cannot support. So this shows the two
+# DISTRIBUTIONS instead, which is the actual claim, and names examples.
+import urllib.parse
+FILT = ("SpatialDimType eq 'COUNTRY' and Dim1 eq 'SEX_BTSX'"
+        " and Dim3 eq 'WEALTHQUINTILE_TOTL'")
+u = ("https://ghoapi.azureedge.net/api/MDG_0000000007?$top=1000&$filter="
+     + urllib.parse.quote(FILT))
+d = json.loads(urllib.request.urlopen(
+    urllib.request.Request(u, headers={"User-Agent": UA}), timeout=90).read())["value"]
+names = {c["Code"]: c["Title"] for c in json.loads(urllib.request.urlopen(
+    urllib.request.Request("https://ghoapi.azureedge.net/api/DIMENSION/COUNTRY/DimensionValues",
+                           headers={"User-Agent": UA}), timeout=60).read())["value"]}
+G20 = {"ARG","AUS","BRA","CAN","CHN","FRA","DEU","IND","IDN","ITA","JPN","MEX",
+       "RUS","SAU","ZAF","KOR","TUR","GBR","USA"}
+per = collections.defaultdict(list)
+for r in d:
+    try:
+        v, lo, hi = float(r["NumericValue"]), float(r["Low"]), float(r["High"])
+    except (TypeError, ValueError, KeyError):
+        continue
+    if v:
+        per[r["SpatialDim"]].append((hi - lo) / v)
+country = {k: st.median(v) for k, v in per.items() if len(v) >= 3}
+g = sorted((v, k) for k, v in country.items() if k in G20)
+ng = sorted((v, k) for k, v in country.items() if k not in G20)
+
+W2, L2, R2 = 1180, 118, 300
+PW2 = W2 - L2 - R2
+T2, ROW = 168, 118
+H2 = T2 + ROW * 2 + 128
+CAP = 1.5                                   # x-axis cap; wider values are pinned
+b = []
+b.append(txt(L2 - 38, 46, "Half the world's child-mortality figures are estimates with very wide bands",
+             21, INK, weight="600"))
+b.append(txt(L2 - 38, 73, "Uncertainty on under-five mortality as a share of the estimate, one dot "
+                          "per country. A wide band means modelled, not registered.", 13.5, MUTE))
+def strip(y, vals, colour, label, sub):
+    b.append(txt(L2 - 12, y + 6, label, 13, colour, anchor="end", weight="600"))
+    b.append(txt(L2 - 12, y + 23, sub, 10.5, MUTE, anchor="end"))
+    b.append(line(L2, y + 40, L2 + PW2, y + 40, GRID))
+    for v, code in vals:
+        x = L2 + PW2 * min(v, CAP) / CAP
+        b.append(circ(x, y + 40, 4, colour, stroke="#ffffff", sw=0.8))
+    m = st.median([v for v, _ in vals])
+    mx_ = L2 + PW2 * min(m, CAP) / CAP
+    b.append(line(mx_, y + 16, mx_, y + 64, INK, 2))
+    b.append(txt(mx_, y + 12, f"median ±{m*100:.0f}%", 11.5, INK, anchor="middle", weight="600"))
+strip(T2, g, BLUE, "G20", f"{len(g)} countries")
+strip(T2 + ROW, ng, ORANGE, "everyone else", f"{len(ng)} countries")
+for i in range(0, int(CAP * 100) + 1, 25):
+    x = L2 + PW2 * (i / 100) / CAP
+    b.append(txt(x, T2 + ROW + 84, f"±{i}%", 11, MUTE, anchor="middle"))
+b.append(txt(L2 + PW2, T2 + ROW + 100, f"(dots beyond ±{int(CAP*100)}% are pinned to the edge)",
+             10, MUTE, anchor="end"))
+ex = [c for _, c in sorted(ng, reverse=True) if c in ("SSD", "MMR", "COG", "PNG", "TCD")][:4]
+nx = L2 + PW2 + 26; y0 = T2 + 2
+gm, ngm = st.median([v for v, _ in g]), st.median([v for v, _ in ng])
+for ln in wrap(f"The two distributions barely overlap. Outside the G20 the median interval is "
+               f"{ngm/gm:.1f}x wider -- {ngm*100:.0f}% of the estimate against {gm*100:.0f}%. "
+               f"Measured on the rows this repo would capture (country, both sexes, all "
+               f"wealth quintiles).", 250):
+    b.append(txt(nx, y0, ln, 12, INK)); y0 += 17
+y0 += 12
+for ln in wrap("The very widest are microstates where few births make any estimate uncertain. "
+               "The ones that matter are large and poorly registered: "
+               + ", ".join(names.get(c, c) for c in ex) + ".", 250):
+    b.append(txt(nx, y0, ln, 11.5, MUTE)); y0 += 16
+y0 += 12
+for ln in wrap("PREDICTION, before the archive exists: revision magnitude will track interval "
+               "width. If so, the countries most written about in development research are the "
+               "ones whose history moves most.", 250):
+    b.append(txt(nx, y0, ln, 12, ORANGE, weight="600")); y0 += 17
+b.append(txt(L2 - 38, H2 - 32, "Source: ghoapi.azureedge.net MDG_0000000007, country rows with "
+                               "published uncertainty intervals, 2026-09-07.", 10.5, MUTE))
+open(os.path.join(OUT, "uncertainty-and-prediction.svg"), "w").write(doc(W2, H2, b))
+print("  wrote catalogue-activity.svg and uncertainty-and-prediction.svg")
+
+
+# ---------------------------------------------------------------- chart 3
+# WHO does not restate continuously. 71% of active indicators share a release
+# date with at least one other, so revisions arrive as batches -- which is what
+# makes a monthly cadence match the source rather than merely seem reasonable.
+sizes = os.path.join(REPO, "reference", "indicator-sizes-2026-09-07.csv")
+srows = [r for r in csv.DictReader(open(sizes, encoding="utf-8")) if r.get("last_published")]
+by_date = collections.Counter(r["last_published"] for r in srows)
+dates = sorted(by_date)
+shared = sum(v for v in by_date.values() if v >= 2) / sum(by_date.values())
+
+W3, L3, R3 = 1240, 80, 330
+PW3 = W3 - L3 - R3
+T3, PH3 = 158, 226
+H3 = T3 + PH3 + 110
+b = []
+b.append(txt(L3, 46, "WHO restates in releases, not continuously", 21, INK, weight="600"))
+b.append(txt(L3, 73, f"When each of the {len(srows)} captured indicators was last republished. "
+                     f"{shared:.0%} share a date with another indicator.", 13.5, MUTE))
+d0 = dt.date.fromisoformat(dates[0]); d1 = dt.date.fromisoformat(dates[-1])
+span = max(1, (d1 - d0).days)
+mx3 = max(by_date.values())
+placed = []                       # (x, y) of labels already drawn
+for dte, c in sorted(by_date.items()):
+    x = L3 + PW3 * (dt.date.fromisoformat(dte) - d0).days / span
+    h = PH3 * c / mx3
+    batch = c >= 3
+    b.append(rect(x - 5, T3 + PH3 - h, 10, h, ORANGE if batch else BLUE, op=0.9 if batch else 0.55))
+    if not batch:
+        continue
+    # Adjacent release dates sit within a few pixels of each other, so two
+    # counts render as one nonsense number ("33"). Lift the label until it
+    # clears anything already drawn nearby.
+    y = T3 + PH3 - h - 8
+    while any(abs(x - px) < 16 and abs(y - py) < 14 for px, py in placed):
+        y -= 15
+    placed.append((x, y))
+    b.append(txt(x, y, str(c), 11.5, ORANGE, anchor="middle", weight="600"))
+b.append(line(L3, T3 + PH3, L3 + PW3, T3 + PH3, MUTE))
+for m in range(0, span + 1, 61):
+    d = d0 + dt.timedelta(days=m)
+    x = L3 + PW3 * m / span
+    b.append(txt(x, T3 + PH3 + 19, d.strftime("%b %Y"), 11, MUTE, anchor="middle"))
+nx = L3 + PW3 + 26; y0 = T3 + 4
+for ln in wrap(f"{len(by_date)} distinct release dates across {len(srows)} indicators — "
+               f"about two events a month. Orange marks a date carrying three or more.", 246):
+    b.append(txt(nx, y0, ln, 12, INK)); y0 += 17
+y0 += 13
+for ln in wrap("Revisions therefore arrive in batches. A monthly capture sits inside that "
+               "rhythm; a daily one would re-fetch the same unchanged series about thirty "
+               "times per release.", 246):
+    b.append(txt(nx, y0, ln, 12, ORANGE, weight="600")); y0 += 17
+y0 += 13
+for ln in wrap("Answered from the first capture. It is also the only question here that "
+               "needed no second one.", 246):
+    b.append(txt(nx, y0, ln, 11.5, MUTE)); y0 += 16
+b.append(txt(L3, H3 - 30, "Source: ghoapi.azureedge.net, the Date field of the 48 indicators this "
+                          "repo captures, read 2026-09-07.", 10.5, MUTE))
+open(os.path.join(HERE, "charts", "restatement-rhythm.svg"), "w").write(doc(W3, H3, b))
+print("  wrote restatement-rhythm.svg")

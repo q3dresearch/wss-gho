@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.hepatitis-hcv-prevalence-per100,https://ghoapi.azureedge.net/api/HEPATITIS_HCV_PREVALENCE_PER100?$top=1000,2026-09-07T16:03:10Z,200,application/json,164920,478b9e0e60aea9461ca562d8025ad7de1e16821ffa9e6bfd6bf0b4fbd7f69b71,,,first_capture,raw/who.gho.hepatitis-hcv-prevalence-per100/2026/09/20260907T160310Z-478b9e0e60ae.json.gz,,

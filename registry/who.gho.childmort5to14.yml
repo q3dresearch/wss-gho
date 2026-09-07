@@ -1,0 +1,114 @@
+source_id: who.gho.childmort5to14
+status: active
+cadence: monthly
+schema_id: gho.v1
+
+publisher: World Health Organization
+publisher_tier: first_party
+destroys_own_history: true   # a revision overwrites the previous value in place
+licence: "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright"
+personal_data: none
+storage: git
+
+notes: >-
+  Mortality rate for 5-14 year-olds (probability of dying per 1000 children aged 5-14 years)
+
+  Every row carries a `Date` stamped when WHO last loaded the series, not when
+  the observation refers to. Republishing restates the whole history and the
+  previous values are gone — that is the perishable fact this captures.
+  Last republished 2026-08-05 (32 days before first capture);
+  26,145 rows at that point.
+
+endpoints:
+  - url: "https://ghoapi.azureedge.net/api/CHILDMORT5TO14?$top=1000"
+    delay_seconds: 2
+    timeout_seconds: 120
+  - url: "https://ghoapi.azureedge.net/api/CHILDMORT5TO14?$top=1000&$skip=1000"
+    delay_seconds: 2
+    timeout_seconds: 120
+  - url: "https://ghoapi.azureedge.net/api/CHILDMORT5TO14?$top=1000&$skip=2000"
+    delay_seconds: 2
+    timeout_seconds: 120
+  - url: "https://ghoapi.azureedge.net/api/CHILDMORT5TO14?$top=1000&$skip=3000"
+    delay_seconds: 2
+    timeout_seconds: 120
+  - url: "https://ghoapi.azureedge.net/api/CHILDMORT5TO14?$top=1000&$skip=4000"
+    delay_seconds: 2
+    timeout_seconds: 120
+  - url: "https://ghoapi.azureedge.net/api/CHILDMORT5TO14?$top=1000&$skip=5000"
+    delay_seconds: 2
+    timeout_seconds: 120
+  - url: "https://ghoapi.azureedge.net/api/CHILDMORT5TO14?$top=1000&$skip=6000"
+    delay_seconds: 2
+    timeout_seconds: 120
+  - url: "https://ghoapi.azureedge.net/api/CHILDMORT5TO14?$top=1000&$skip=7000"
+    delay_seconds: 2
+    timeout_seconds: 120
+  - url: "https://ghoapi.azureedge.net/api/CHILDMORT5TO14?$top=1000&$skip=8000"
+    delay_seconds: 2
+    timeout_seconds: 120
+  - url: "https://ghoapi.azureedge.net/api/CHILDMORT5TO14?$top=1000&$skip=9000"
+    delay_seconds: 2
+    timeout_seconds: 120
+  - url: "https://ghoapi.azureedge.net/api/CHILDMORT5TO14?$top=1000&$skip=10000"
+    delay_seconds: 2
+    timeout_seconds: 120
+  - url: "https://ghoapi.azureedge.net/api/CHILDMORT5TO14?$top=1000&$skip=11000"
+    delay_seconds: 2
+    timeout_seconds: 120
+  - url: "https://ghoapi.azureedge.net/api/CHILDMORT5TO14?$top=1000&$skip=12000"
+    delay_seconds: 2
+    timeout_seconds: 120
+  - url: "https://ghoapi.azureedge.net/api/CHILDMORT5TO14?$top=1000&$skip=13000"
+    delay_seconds: 2
+    timeout_seconds: 120
+  - url: "https://ghoapi.azureedge.net/api/CHILDMORT5TO14?$top=1000&$skip=14000"
+    delay_seconds: 2
+    timeout_seconds: 120
+  - url: "https://ghoapi.azureedge.net/api/CHILDMORT5TO14?$top=1000&$skip=15000"
+    delay_seconds: 2
+    timeout_seconds: 120
+  - url: "https://ghoapi.azureedge.net/api/CHILDMORT5TO14?$top=1000&$skip=16000"
+    delay_seconds: 2
+    timeout_seconds: 120
+  - url: "https://ghoapi.azureedge.net/api/CHILDMORT5TO14?$top=1000&$skip=17000"
+    delay_seconds: 2
+    timeout_seconds: 120
+  - url: "https://ghoapi.azureedge.net/api/CHILDMORT5TO14?$top=1000&$skip=18000"
+    delay_seconds: 2
+    timeout_seconds: 120
+  - url: "https://ghoapi.azureedge.net/api/CHILDMORT5TO14?$top=1000&$skip=19000"
+    delay_seconds: 2
+    timeout_seconds: 120
+  - url: "https://ghoapi.azureedge.net/api/CHILDMORT5TO14?$top=1000&$skip=20000"
+    delay_seconds: 2
+    timeout_seconds: 120
+  - url: "https://ghoapi.azureedge.net/api/CHILDMORT5TO14?$top=1000&$skip=21000"
+    delay_seconds: 2
+    timeout_seconds: 120
+  - url: "https://ghoapi.azureedge.net/api/CHILDMORT5TO14?$top=1000&$skip=22000"
+    delay_seconds: 2
+    timeout_seconds: 120
+  - url: "https://ghoapi.azureedge.net/api/CHILDMORT5TO14?$top=1000&$skip=23000"
+    delay_seconds: 2
+    timeout_seconds: 120
+  - url: "https://ghoapi.azureedge.net/api/CHILDMORT5TO14?$top=1000&$skip=24000"
+    delay_seconds: 2
+    timeout_seconds: 120
+  - url: "https://ghoapi.azureedge.net/api/CHILDMORT5TO14?$top=1000&$skip=25000"
+    delay_seconds: 2
+    timeout_seconds: 120
+  - url: "https://ghoapi.azureedge.net/api/CHILDMORT5TO14?$top=1000&$skip=26000"
+    delay_seconds: 2
+    timeout_seconds: 120
+
+gates:
+  expect_status: 200
+  min_bytes: 400
+  content_type_any: [json]
+  must_contain: ["IndicatorCode"]
+  must_not_contain: ["\"error\""]
+  # GHO restates whole series, so legitimate month-to-month movement is large.
+  # 50% matches the fleet convention: high enough not to fire on a real change,
+  # low enough to catch a truncated or empty response.
+  max_shrink_pct: 50

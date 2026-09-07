@@ -1,0 +1,3 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.malaria-total-cases,https://ghoapi.azureedge.net/api/MALARIA_TOTAL_CASES?$top=1000,2026-09-07T16:04:09Z,200,application/json,570888,ae470c7253447a0eca889adb5b7ea2de08bf71d7450c03327b8ab68db068e709,,,first_capture,raw/who.gho.malaria-total-cases/2026/09/20260907T160409Z-ae470c725344.json.gz,,
+who.gho.malaria-total-cases,https://ghoapi.azureedge.net/api/MALARIA_TOTAL_CASES?$top=1000&$skip=1000,2026-09-07T16:04:13Z,200,application/json,26876,b12dc5153d9f565b70dba6600de3184e58fe35041acc05d5877d08bd8864cb67,,,first_capture,raw/who.gho.malaria-total-cases/2026/09/20260907T160413Z-b12dc5153d9f.json.gz,,

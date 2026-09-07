@@ -1,0 +1,49 @@
+indicator_code,indicator_name,last_published,days_since,rows
+WSH_HYGIENE_BASIC,Population with basic handwashing facilities at home (%),2026-01-23,226,5391
+SA_0000001728,Detection of marketing infringements,2026-07-06,62,320
+MDG_0000000017,Deaths due to tuberculosis among HIV-negative people (per 100 000 population),2025-11-11,299,4677
+TB_1,Tuberculosis treatment coverage,2025-11-11,299,5009
+MALARIA_EST_CASES,Estimated number of malaria cases,2025-12-19,261,2898
+HIV_0000000023,Estimated number of children needing antiretroviral therapy based on WHO methods,2026-07-31,37,2599
+AIR_35,Joint effects of air pollution attributable deaths,2026-06-15,83,3384
+MDG_0000000003,Adolescent birth rate (per 1000 women),2026-04-02,157,7703
+HWF_0014,"Pharmacists  (per 10,000)",2026-03-11,179,3085
+GHED_EXTCHE_SHA2011,External health expenditure (EXT) as percentage of current health expenditure (CHE) (%),2026-04-10,149,4851
+HEPATITIS_HCV_PREVALENCE_PER100,Prevalence of chronic hepatitis C (HCV) ) in the general population (%),2026-08-03,34,248
+MDG_0000000007,Under-five mortality rate (probability of dying by age 5 per 1000 live births),2026-08-05,32,64510
+HEPATITIS_HBV_TREATMENT_ANC_PERCENT,Eligible women attending antenatal care who were treated for HBV,2026-08-03,34,107
+HIV_0000000020,Estimated number of pregnant women living with HIV,2026-07-31,37,1498
+NCD_BMI_18A,"Underweight among adults, BMI < 18.5 kg/m2 (age-standardized estimate) (%)",2026-05-27,102,28350
+SA_0000001531,On-premise sales restrictions on days,2026-07-06,62,1422
+AIR_90,"Ambient air pollution attributable DALYs  (per 100 000 population, age-standardized)",2026-06-15,83,3456
+WSH_WATER_BASIC,Population using at least basic drinking-water services (%),2026-01-23,226,14875
+NCD_HYP_DIAGNOSIS_A,"Hypertension: diagnosis coverage among adults aged 30-79 with hypertension, age-standardized (%)",2025-10-30,311,19230
+TB_rr_mdr,Confirmed cases of RR-/MDR-TB,2025-11-11,299,3676
+GASP_ISOLATESTESTED_NUMBER,Antimicrobial resistance or decreased susceptibiity (DS/R) to antimicrobials testing  in Neisseria gonorrhoea isolates (WHO-GASP) (number),2026-01-05,244,2713
+SA_0000001730,Price measures,2026-07-06,62,2004
+MALARIA_TOTAL_CASES,Total number of  malaria cases (presumed + confirmed cases),2025-12-19,261,1047
+NTD_LEPR8,Leprosy - Number of new leprosy cases among children (less than 15 years of age),2025-09-08,363,2522
+NTD_LEPR3,Leprosy - Number of cases registered for treatment,2025-09-08,363,2522
+TB_c_xdr_tsr,Treatment success rate: XDR-TB cases,2025-11-11,299,1015
+TAXBEV_PRICE,Beverage price,2025-12-16,264,2496
+TAXBEV_VATSPECIAL_LOHI,Special VAT is lower or higher than standard VAT,2025-12-16,264,150
+TOBACCO_MPOWER_P2_SMOKEFREEPLACEDETAILS,"Tobacco MPOWER Protect people: P2 smoke-free places, additional characteristics",2026-02-25,193,13650
+HWF_0017,Environmental and Occupational Health and Hygiene Professionals  (number),2026-01-23,226,517
+RHR_NPSV,Proportion of women and girls aged 15 years and older who have been subjected to sexual violence by someone other than a partner in their lifetime since age 15 (%),2026-05-01,128,294
+NTD_BU_CONF,Number of confirmed cases of Buruli ulcer reported,2025-10-30,311,198
+VACCINECOVERAGE_MENA_C,Meningococcal A conjugate (MENGA) vaccine immunization coverage (%) (WUENIC),2026-07-14,54,310
+CM_04,Number of deaths among children ages 5 to 9 years,2026-08-05,32,26145
+CHILDMORT5TO14,Mortality rate for 5-14 year-olds (probability of dying per 1000 children aged 5-14 years),2026-08-05,32,26145
+SA_0000001544,Licence required for production,2026-07-06,62,1422
+CM_02,Number of infant deaths,2026-08-04,33,43622
+NTD_7,"Population in areas that warrant treatment with antibiotics, facial cleanliness and environmental improvement for elimination of trachoma as a public health problem",2026-07-15,53,1001
+AIR_42,"Ambient air pollution attributable death rate (per 100 000 population, age-standardized)",2026-06-15,83,3456
+MDG_0000000025,Births attended by skilled health personnel (%),2026-04-21,138,2749
+MALARIA_IMPORTED,Number of imported malaria cases,2025-12-19,261,591
+NCD_HYP_TREATMENT_A,"Hypertension treatment coverage among adults aged 30-79 with hypertension, age-standardized (%)",2025-10-30,311,19230
+TAXBEV_IMPORTDUTIES,Import duties on beverages (%),2025-12-16,264,838
+HEPATITIS_HBV_TREATMENT_PERINFECTED_PER100,Chronic hepatitis B (HBV) treatment rate as percentage of total infected (%),2026-08-03,34,227
+TOBACCO_MPOWER_M4_PREVALENCE,"Tobacco Monitor: school-based national surveys, smokeless tobacco or e-cigarettes, prevalence",2026-02-04,214,2340
+SA_0000001518,Age limits on-premise service,2026-07-06,62,1422
+WHS4_154,Antenatal care coverage - at least four visits (%),2025-09-26,345,1166
+BP_03,Raised blood pressure (SBP>=140 OR DBP>=90) (crude estimate),2025-10-29,312,18540

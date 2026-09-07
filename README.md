@@ -1,102 +1,132 @@
-# wss-gho — WHO Global Health Observatory Vintages
+<h1 align="center">wss-gho</h1>
 
-<!-- TODO: one paragraph. What does this capture, and why would the history
-     otherwise be lost? The "why" is the reason anyone will care: name the
-     window the publisher exposes (rolling counts, current status, today's
-     listing) and the fact that uncaptured days are gone for good. -->
+<p align="center">
+  <strong>WHO rewrites its own history. This keeps what it said before.</strong>
+</p>
 
-A GitHub Actions pipeline that captures WHO Global Health Observatory Vintages **every day** and publishes
-it here as clean, append-only CSVs.
+<div align="center">
 
-## The data you get
+  <a href="https://github.com/neldivad/wss-gho/actions/workflows/capture-monthly.yml"><img alt="capture status" src="https://img.shields.io/github/actions/workflow/status/neldivad/wss-gho/capture-monthly.yml?label=capture&style=flat-square"></a>
+  <a href="https://github.com/neldivad/wss-gho/commits"><img alt="last capture" src="https://img.shields.io/github/last-commit/neldivad/wss-gho?label=last%20capture&style=flat-square"></a>
+  <a href="https://github.com/neldivad/wss-gho/blob/main/LICENSE"><img alt="licence" src="https://img.shields.io/github/license/neldivad/wss-gho?style=flat-square"></a>
 
-The files to query are `derived/observations/<YYYY-MM>.csv` — one row per
-entity, per metric, per day:
+</div>
 
-```
-series_id, entity_id, observed_at, captured_at, metric, value, unit, source_id, raw_ref, parser_version
-```
+<p align="center">
+  <sub>fleet: <a href="https://github.com/neldivad/wss-engine">engine</a> · <a href="https://github.com/neldivad/wss-hugging-face">hugging face</a> · <a href="https://github.com/neldivad/wss-openrouter">openrouter</a> · <a href="https://github.com/neldivad/wss-cloud-footprint">cloud footprint</a> · <a href="https://github.com/neldivad/wss-mining-pipeline">mining</a> · <a href="https://github.com/neldivad/wss-forest-harvest">forest</a> · <a href="https://github.com/neldivad/wss-food-trace">food</a> · <strong>gho</strong></sub>
+</p>
 
-- `entity_id` — the thing being measured
-- `observed_at` / `captured_at` — when the fact was true / when we saw it
-- `raw_ref` — the archived response the row was parsed from, so every number
-  is checkable back to bytes
+**Under-five mortality in Brazil in 1931 was 223.0 per 1,000. That figure was
+written on 5 August 2026** — a 95-year-old number restated last month, along
+with all 64,510 rows of that indicator.
+
+Whatever it said before is gone. WHO's Global Health Observatory serves one
+value per country-year, and a revision overwrites the previous one in place.
+Every paper citing a WHO estimate cites a number that cannot now be checked.
+
+This repository takes 48 indicators once a month and keeps what each one said.
+
+## What one capture already shows
+
+### WHO restates in releases, not continuously
+
+![Restatement rhythm](examples/charts/restatement-rhythm.svg)
+
+25 distinct release dates across the 48 captured indicators, and **71% share a
+date with another**. Revisions arrive in batches of three to five, roughly twice
+a month — which is why the cadence is monthly. A daily capture would re-fetch
+the same unchanged series about thirty times per release.
+
+### Most of the catalogue is abandoned
+
+![Catalogue activity](examples/charts/catalogue-activity.svg)
+
+Of 400 indicators drawn at random from the 3,098 in the catalogue, **14.2% were
+republished within the last year** (95% CI 10.9–18.4%). The median indicator has
+not been touched in **4.7 years**; 59% not in over four.
+
+The active ones are what anyone cites — under-five mortality, infant deaths, HIV
+in pregnancy, immunisation coverage. The dormant ones are policy inventories
+like *"Existence of operational policy/strategy/action plan for hearing health"*,
+which require asking 194 governments about their own laws and freeze the moment
+that survey stops being funded.
+
+**Scoping on that alone selects the citable core**, with no judgement about which
+indicators deserve to exist.
+
+### The figures most likely to be rewritten are the ones we can least check
+
+![Uncertainty and prediction](examples/charts/uncertainty-and-prediction.svg)
+
+Outside the G20 the published uncertainty band is **2.3× wider** — a median of
+±23% of the estimate against ±10%. A wide band means the figure is modelled
+rather than registered, and models are what change when they are updated.
+
+> **Prediction, recorded before the archive can test it:** revision magnitude
+> will track interval width, so the countries most written about in development
+> research are the ones whose history moves most.
+
+If that fails, the assumption behind this repo's scope is wrong. It is written
+down so it can fail visibly.
+
+## What the archive will answer that nothing can today
+
+| question | needs |
+| --- | --- |
+| **How far does a restated number move?** | **two captures — first answer next month** |
+| How far back does a revision reach: recent years, or the whole series? | two captures |
+| Which countries' history is rewritten most? | a year |
+| **Do SDG baselines move?** Progress is measured against 2015; if 2015 is revised, progress changes although nothing happened | two years |
+| Are indicators ever *deleted* from the catalogue? A dormant one still shows; a removed one vanishes without trace | a year |
+
+Full list with honest status in
+[`docs/research-questions.md`](docs/research-questions.md).
+
+**Nothing here has yet observed a revision.** The first capture is a baseline.
+If next month's numbers come back identical, that is a finding too — and the
+exit condition in the questions doc says to stop.
+
+## Sources
+
+48 indicators, one registry entry each, selected mechanically: every indicator
+in a random 400-sample that had been republished within a year. Scope evidence
+is in [`reference/`](reference/).
+
+Captured whole — no dimension filtering. Filtering on a dimension an indicator
+lacks returns **zero rows with no error**, and dimensions are not uniform:
+under-five mortality carries SEX, AGEGROUP and WEALTHQUINTILE, measles
+immunisation carries none and is not even country-keyed.
+
+## Running it
 
 ```bash
-head derived/observations/*.csv            # no tooling required
-python examples/load_observations.py       # sqlite + example queries
-duckdb -c "SELECT * FROM read_csv_auto('derived/observations/*.csv') LIMIT 5"
+pip install "wss @ git+https://github.com/neldivad/wss-engine.git@v0.6.0"
+export WSS_CONTACT="https://github.com/neldivad/wss-gho"
+
+wss validate                    # registry schema check; CI gate
+wss capture --cadence monthly   # fetch → gate → hash → dedupe → write → manifest
+wss derive                      # raw → derived/observations
+python examples/charts.py       # the three charts above
 ```
 
-## Coverage
+Every observation carries `source_id` and `raw_ref`. The matching manifest row
+holds that `raw_ref` with the URL, fetch time and a SHA-256 of exactly what came
+back, so any number here traces to the bytes it came from.
 
-Date ranges are machine-readable in [health/health.csv](health/health.csv)
-(`first_success_at` → `last_success_at`, updated daily).
+## Notes for the next person
 
-| series | what it lists | covered since | status |
-| --- | --- | --- | --- |
-| _add a row per source_ | | | ongoing |
-
-Rules for this table: a **new series** gets a row with the date coverage
-starts; a **discontinued series** keeps its row with a *covered until* date
-and status *discontinued* — its data stays in the repo forever. Nothing
-already published is removed.
-
-## What you can build from it
-
-<!-- TODO: the end products. Trend curves, leaderboards, survival analysis,
-     divergence between attention and usage — whatever this domain supports. -->
-
-## How it runs
-
-Three scheduled workflows a day — capture (22:10 UTC), health (23:40),
-derive (00:20) — powered by the
-[wss](https://github.com/neldivad/wss) engine, pinned to one
-version. No workflow ever names a source: capture shards whatever
-`registry/` marks active, so infrastructure never changes when sources do.
-The bot commits **data only** — it never changes code; the one config it may
-touch is flipping a repeatedly-failing source to `auto_disabled`, with an
-issue explaining why.
-
-## Adding a source
-
-1. Add `registry/<source_id>.yml` (copy the example entry), `status: paused`.
-2. Add a parser in `parsers/` if the payload shape is new.
-3. `wss doctor <source_id>` — **read the raw response**.
-4. Flip to `status: active`, add a Coverage row, commit.
-
-Nothing else. No workflow edits, ever.
-
-## Run it locally
-
-```bash
-python -m venv .venv && . .venv/bin/activate
-pip install -r requirements.txt
-export WSS_CONTACT="you@example.com"   # identifies you to publishers
-
-wss validate
-wss doctor <source_id>
-wss capture --cadence daily
-wss derive --parsers parsers.<module>
-wss health --dry-run
-```
-
-## Going live
-
-1. Push this repo **and the engine repo** under the same GitHub owner
-   (`neldivad`) — the workflows install the engine from
-   `github.com/neldivad/wss` at the pinned tag.
-2. Set the repo secret **`WSS_CONTACT`** — capture refuses to run
-   without it.
-3. Run `capture-daily` once by hand (Actions → capture-daily → Run
-   workflow), confirm the bot's data commit lands, then let the cron take
-   over.
-
-## Licences
-
-Two separate files, on purpose: code is MIT ([LICENSE](LICENSE)); data
-(`raw/`, `manifest/`, `derived/`) is CC-BY-4.0
-([LICENSE-DATA](LICENSE-DATA)), citation in [CITATION.cff](CITATION.cff).
-Captured content remains subject to the publisher's own terms.
-
-Topics: `git-scraping` · `open-data` · `point-in-time-data` · `dataset`
+- **`observed_at` is the reference year, not the fetch time.** A row describes
+  child mortality in 2005; that is when the observation is *about*. Using fetch
+  time would stamp an unchanged series with a fresh timestamp every month and
+  invent movement that never happened.
+- **`Date` is carried as its own metric, `restated_at`.** It is WHO's load
+  stamp — the evidence that a revision happened and when — and it moves
+  independently of the value.
+- **`Date` is stamped per load batch, not per row.** A series can hold rows with
+  different dates, so `$top=1` returns an arbitrary one. `DEVICES20` answers
+  2013-06-11 unsorted and 2022-12-12 with `$orderby=Date desc`. A poller using
+  the naive form reports "unchanged" for ever.
+- **`$top` caps at 1,000**, so every indicator pages.
+- **Cold indicators take ~42 s.** Eight in parallel still return as a ~62 s
+  batch — a server-side queue, not latency — so throughput is ~8/minute
+  regardless of concurrency.

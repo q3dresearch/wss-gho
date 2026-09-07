@@ -1,0 +1,39 @@
+source_id: who.gho.sa-0000001518
+status: active
+cadence: monthly
+schema_id: gho.v1
+
+publisher: World Health Organization
+publisher_tier: first_party
+destroys_own_history: true   # a revision overwrites the previous value in place
+licence: "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright"
+personal_data: none
+storage: git
+
+notes: >-
+  Age limits on-premise service
+
+  Every row carries a `Date` stamped when WHO last loaded the series, not when
+  the observation refers to. Republishing restates the whole history and the
+  previous values are gone — that is the perishable fact this captures.
+  Last republished 2026-07-06 (62 days before first capture);
+  1,422 rows at that point.
+
+endpoints:
+  - url: "https://ghoapi.azureedge.net/api/SA_0000001518?$top=1000"
+    delay_seconds: 2
+    timeout_seconds: 120
+  - url: "https://ghoapi.azureedge.net/api/SA_0000001518?$top=1000&$skip=1000"
+    delay_seconds: 2
+    timeout_seconds: 120
+
+gates:
+  expect_status: 200
+  min_bytes: 400
+  content_type_any: [json]
+  must_contain: ["IndicatorCode"]
+  must_not_contain: ["\"error\""]
+  # GHO restates whole series, so legitimate month-to-month movement is large.
+  # 50% matches the fleet convention: high enough not to fire on a real change,
+  # low enough to catch a truncated or empty response.
+  max_shrink_pct: 50

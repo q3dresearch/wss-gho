@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.hepatitis-hbv-treatment-anc-percent,https://ghoapi.azureedge.net/api/HEPATITIS_HBV_TREATMENT_ANC_PERCENT?$top=1000,2026-09-07T16:03:04Z,200,application/json,67130,d00fd1ea51f117ea9e7a885a2217628a366b7bbf8ba86e35862e21201358ea21,,,first_capture,raw/who.gho.hepatitis-hbv-treatment-anc-percent/2026/09/20260907T160304Z-d00fd1ea51f1.json.gz,,

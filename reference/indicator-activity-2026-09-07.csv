@@ -1,0 +1,401 @@
+indicator_code,indicator_name,last_published,days_since,status
+WSH_HYGIENE_BASIC,Population with basic handwashing facilities at home (%),2026-01-23,226,ok
+SA_0000001439,"Age-standardized death rates, colon and rectum cancers, per 100,000",2013-06-11,4835,ok
+OCC_22,Occupational injuries attributable DALYs per 100'000 capita,2013-06-11,4835,ok
+SA_0000001477,Social costs of alcohol use in millions US$,2013-06-11,4835,ok
+NCD_CCS_HearingPlan,Existence of operational policy/strategy/action plan for hearing health,2022-04-25,1595,ok
+TOTENV_5,Deaths attributable to the environment (%),2016-09-29,3629,ok
+SA_0000001403,"Alcohol, total (recorded 3 year average + unrecorded) per capita (15+) consumption (in litres of pure alcohol)",2022-08-03,1495,ok
+FOODBORNE_ILL_100K_TOTAL,,,,empty
+GOE_Q060,Effectiveness,2018-03-28,3084,ok
+SA_0000001706,National treatment policy for alcohol use disorders,2013-06-11,4835,ok
+SA_0000001728,Detection of marketing infringements,2026-07-06,62,ok
+RSUD_690,Special housing services for drug use disorders,2017-09-06,3287,ok
+MDG_0000000017,Deaths due to tuberculosis among HIV-negative people (per 100 000 population),2025-11-11,299,ok
+GOE_Q176,Which allows individuals to demand that their own data be corrected  when held in an EHR if it is known to be inaccurate,2018-03-28,3084,ok
+TB_1,Tuberculosis treatment coverage,2025-11-11,299,ok
+R_afford_price_dispersion,Tobacco tax structure: Price dispersion: Share of cheapest brand price in premium brand price (%) (the higher the % the smaller the gap),2024-01-12,968,ok
+AIR_73,,,,empty
+GDO_q12x2x1x1_3PRV,Majority provider of respite care for dementia carers (Private sector),2021-06-25,1899,ok
+R_Ad_val_estimate,Most sold brand of cigarettes - taxes as a % of price - ad valorem excise,2021-12-15,1726,ok
+TB_ret_taf,Retreatment cases: treatment after failure (pulmonary smear and/or culture positive),2013-10-07,4717,ok
+SA_0000001555_ARCHIVED,Health warning labels on alcohol containers,2018-09-27,2901,ok
+MALARIA_EST_CASES,Estimated number of malaria cases,2025-12-19,261,ok
+FOODBORNE_DTH_100K_GE5,,,,empty
+ITU_ICT_1,Percentage of individuals using the Internet,2013-11-21,4672,ok
+EMFPOWERFREQUENCY,Power frequency (Hz),2018-06-11,3009,ok
+MDG_0000000018,,,,empty
+HIV_0000000023,Estimated number of children needing antiretroviral therapy based on WHO methods,2026-07-31,37,ok
+IHRSPAR2_C14,Chemical events,2024-05-14,845,ok
+AIR_35,Joint effects of air pollution attributable deaths,2026-06-15,83,ok
+TOTENV_4,Age-standardized DALYs attributable to the environment (per 100 000 population),2016-03-09,3833,ok
+MDG_0000000024,,,,empty
+CC_8,Climate change  attributable DALYs per 100'000 children under 5 years,2013-06-11,4835,ok
+MALARIA001,,,,empty
+RSUD_26,Governement benefits for persons with substance use disorders,2013-06-11,4835,ok
+HRH_41,Number of licensed qualified surgeons actively working,2017-02-17,3488,ok
+P4_govt,National smoking ban in GOVERNMENT FACILITIES,2023-10-17,1055,ok
+NTD_BU_END,Status of endemicity of Buruli ulcer,2025-07-01,432,ok
+NCD_CCS_dialysis,General availability of dialysis in the public health system,2022-04-25,1595,ok
+SCSUD_REHAB,"Substance use disorders service coverage, rehabilitation programmes",2024-09-03,733,ok
+WCO_KEYFUNCTIONS,,,,empty
+SA_0000001697,"Adopted written national policy on alcohol, year adopted",2024-06-19,809,ok
+SDGIHR,Average of 13 International Health Regulations core capacity scores,2024-05-14,845,ok
+DEVICES19,"National guidelines, policies or recommendations on the procurement of medical devices",2022-12-12,1364,ok
+NCD_CHOL_MEANNONHDL_C,"Mean Non-HDL cholesterol, crude",2021-06-21,1903,ok
+MDG_0000000003,Adolescent birth rate (per 1000 women),2026-04-02,157,ok
+HWF_0014,"Pharmacists  (per 10,000)",2026-03-11,179,ok
+P3_universities,National smoking ban in UNIVERSITIES,2023-10-17,1055,ok
+SA_0000001547,Excise duty (average) per hectolitre in Euros,2018-10-26,2872,ok
+SA_0000001516,Restrictions on product placement on national television,2018-09-03,2925,ok
+DEVICES01,Total density per 100 000 population: Health posts,2014-03-03,4570,ok
+GDO_q6x1_2,"Number of neurologists (per 100,000)",2017-12-08,3194,ok
+RADON_Q501_1,Reference level for dwellings (Bq/m3),2021-06-04,1920,ok
+SA_0000001546,Excise tax as a per cent of the retail price of alcoholic beverages,2014-01-10,4622,ok
+WHS9_93,,,,empty
+FOODBORNE_DALY_100k_TOTAL,,,,empty
+MDG_0000000026,Maternal mortality ratio (per 100 000 live births),2025-04-10,514,ok
+P4_compliance,Compliance of ban on smoking in GOVERNMENT FACILITIES,2015-08-20,4035,ok
+PRISON_B11_VACPREV_DTP,In-prison vaccination for DTP,2023-01-23,1322,ok
+RSUD_820,Epidemiological data collection for substance use,2017-08-28,3296,ok
+GB_XPD_RSDV,,,,empty
+RS_238,Existence of a universal access telephone number for pre-hospital care,2020-06-05,2284,ok
+WCO_CORESTAFFCPCP_NUM,,,,empty
+GOE_Q155,Lack of funding,2018-03-28,3084,ok
+SA_0000001532_ARCHIVED,On-premise sales restrictions on hours,2018-09-27,2901,ok
+NCD_CCS_LIS_HYDRO_COMBO,General availability of Fixed dose combination avail (lisinopril + hydrochlorothiazide) in the public health sector,2022-04-25,1595,ok
+SHS_10,Second-hand smoke attributable DALYs ('000) in children under 5 years,2013-06-11,4835,ok
+GOE_Q136,Lack of evidence over cost-effectiveness,2018-03-28,3084,ok
+M_survey_title_adult,,,,empty
+RSUD_280,Financing methods for treatment for drug use disorders,2017-08-29,3295,ok
+RSUD_100,Government unit/official responsible for prevention for substance use,2017-08-28,3296,ok
+ANC_ATLEAST1VISIT_PERCENT,Antenatal care coverage - at least one visit (percent),2025-03-20,535,ok
+NCD_CCS_Nicotine,General availability of nicotine replacement therapy in the public health sector,2022-04-25,1595,ok
+EMFLIMITPOWERDENSITY1800,,,,empty
+NCD_CCS_dietpaaware,Implementation of diet and/or physical activity public awareness program,2016-11-21,3576,ok
+W2_pc_front_back_C,Percentage of principal display area mandated to be covered by health warnings - front and back of smokeless tobacco packaging,2023-12-13,998,ok
+CaseCS,"Congenital syphilis number of cases, reported",2025-07-10,423,ok
+GHED_EXTCHE_SHA2011,External health expenditure (EXT) as percentage of current health expenditure (CHE) (%),2026-04-10,149,ok
+Rev_excise,Annual tax revenues - total excise (specific and ad valorem),2024-01-11,969,ok
+HEPATITIS_HCV_PREVALENCE_PER100,Prevalence of chronic hepatitis C (HCV) ) in the general population (%),2026-08-03,34,ok
+SA_0000001828_AA,,,,empty
+RSUD_62,Supervision requirements for buprenorphine administration,2013-06-11,4835,ok
+HEMOGLOBINLEVEL_REPRODUCTIVEAGE_MEAN,Mean hemoglobin level of women of reproductive age (aged 15-49 years),2022-04-04,1616,ok
+M_svy_national_adult,,,,empty
+MDG_0000000007,Under-five mortality rate (probability of dying by age 5 per 1000 live births),2026-08-05,32,ok
+RADON_Q503_1,Reference level for workplaces (Bq/m3),2021-06-04,1920,ok
+GOE_Q070,Strategy includes objectives as to how telehealth contributes to UHC,2018-03-28,3084,ok
+RADON_Q801,Existence of national radon risk communication strategy,2021-06-04,1920,ok
+HEPATITIS_HBV_TREATMENT_ANC_PERCENT,Eligible women attending antenatal care who were treated for HBV,2026-08-03,34,ok
+HIV_0000000020,Estimated number of pregnant women living with HIV,2026-07-31,37,ok
+AIR_4,,,,empty
+IHRSPAR2_C12,Zoonotic diseases,2024-05-14,845,ok
+TOBACCO_MPOWER_NTCP,Tobacco MPOWER: National tobacco control programmes (NTCP),2025-07-04,429,ok
+NCD_BMI_18A,"Underweight among adults, BMI < 18.5 kg/m2 (age-standardized estimate) (%)",2026-05-27,102,ok
+W4_pc_back_B,Percentage of principal display area mandated to be covered by health warnings - back of other smoked tobacco packaging,2023-12-14,997,ok
+NCD_CCS_stroke,Provision for care of acute stroke and rehabilitation in more than 50% of public sector health facilities,2022-04-25,1595,ok
+PRISON_D3_DEATHS_SUICIDE_MRATE,In-prison suicide mortality rate (per 100 000 incarcerated persons per year),2023-01-23,1322,ok
+OCC_17,Occupational ergonomic stressors attributable deaths per 100'000 capita,2013-06-11,4835,ok
+FOODBORNE_DTH_GE5,,,,empty
+RS_196,Estimated number of road traffic deaths,2024-04-15,874,ok
+GOE_Q198,Effective standards and best practices for data capture not fully established,2018-03-28,3084,ok
+SA_0000001822_ARCHIVED,"Alcohol, total per capita (15+) consumption (in litres of pure alcohol) with 95%CI",2020-05-27,2293,ok
+NHAOOPSTHE,,,,empty
+NCD_CCS_coronary,General availability of coronary bypass or stenting in the public health system,2022-04-25,1595,ok
+W9_no_obscure_B,Health warnings on other smoked tobacco packaging must not be obscured in any way including by required markings such as tax stamps,2023-12-14,997,ok
+NLIS_NU_CA_115,,,,empty
+SA_0000001743,"Alcohol-attributable fractions, all-cause deaths (%)",2024-08-13,754,ok
+GDO_q9x5_1,"Density of outpatient health centres (per 100,000 population)",2021-03-23,1993,ok
+SHS_5,Second-hand smoke attributable DALYs ('000),2013-06-11,4835,ok
+SA_0000001531,On-premise sales restrictions on days,2026-07-06,62,ok
+AIR_90,"Ambient air pollution attributable DALYs  (per 100 000 population, age-standardized)",2026-06-15,83,ok
+SUNBEDEXISTSUBNATIONAL,Existence of subnational regulation,2017-06-16,3369,ok
+AMRGLASS_SURVL04,,,,empty
+GDO_q12x2x1x1_2,"Accessibility of psycho-social supports for dementia carers [Capital/capital and main cities/capital, main cities, rural areas]",2021-06-25,1899,ok
+SA_0000001754,"Alcohol, harmful use (15+), 12 month prevalence (%) with 95%CI",2018-08-30,2929,ok
+W-MM_Group,Anti-tobacco mass media campaigns,2023-10-17,1055,ok
+SCSUD_MEDREG,"Substance use disorders service coverage, medicine registered in the country",2024-09-03,733,ok
+GDO_q5x1x2,Implementation level [national/subnational] of dementia care coordination,2021-06-25,1899,ok
+SA_0000001686,Exports of wine (grape) in 1000s hectolitres,2013-06-11,4835,ok
+WCO_DISTRIBUTION_INTANDLOC_PER100,,,,empty
+IR_CARBAMATE_PRESENCE,Carbamate resistance reported for at least one site,2017-06-12,3373,ok
+NCD_DTH_TOT,Total NCD Deaths,2025-03-19,536,ok
+SHS_11,Second-hand smoke  attributable DALYs per 100'000 children under 5 years,2013-06-11,4835,ok
+SA_0000001511_ARCHIVED,Advertising restrictions in print media,2018-09-27,2901,ok
+RS_576,Gross national income per capita (Atlas method),2013-06-11,4835,ok
+FINPROTECTION_CATA_CTPFHU_40_HH,"Households with out-of-pocket payments greater than 40% of capacity to pay for health care (food, housing and utilities approach - developed by WHO/Europe) (%, national)",2023-05-31,1194,ok
+NCD_CCS_palliative_prim,General availability of palliative care in primary health care in the public health system,2022-04-25,1595,ok
+R_Price_premium_estimate,Premium brand of cigarettes - price in currency reported,2022-01-12,1698,ok
+Yth_nonsmoked_national,Representation of latest youth prevalence survey (nonsmoked),2023-12-07,1004,ok
+WSH_WATER_BASIC,Population using at least basic drinking-water services (%),2026-01-23,226,ok
+MH_27,Publication year of the policy or plan (latest revision),2019-04-25,2691,ok
+GDO_q11x2x3,Dementia nongovernmental organization staff primarily salaried/volunteer,2021-06-25,1899,ok
+E23_vending_machines,Ban on tobacco vending machines,2023-10-31,1041,ok
+GHED_CHE_pc_PPP_SHA2011,,,,empty
+NCD_CCS_PA_MGMT_GUIDE,Existence of evidence-based national guidelines/protocols/standards for the management of physical inactivity,2022-04-25,1595,ok
+SA_0000001403_ARCHIVED,"Alcohol, total (recorded 3 year average + unrecorded) per capita (15+) consumption (in litres of pure alcohol)",2023-08-11,1122,ok
+RADON_Q501,Existence of national reference level for dwellings and buildings with high public occupancy,2021-06-04,1920,ok
+GDO_q11x2x2_2,Dementia nongovernmental organization office branches (Local),2021-06-25,1899,ok
+NCD_HYP_DIAGNOSIS_A,"Hypertension: diagnosis coverage among adults aged 30-79 with hypertension, age-standardized (%)",2025-10-30,311,ok
+FINPROTECTION_CATA_TOT_10_POP,"Population with household spending on health greater than 10% of total household budget (SDG 3.8.2, reported data) (%)",2024-06-04,824,ok
+TB_rr_mdr,Confirmed cases of RR-/MDR-TB,2025-11-11,299,ok
+LEPTO_YLL,,,,empty
+E8_direct_ad_fines,,,,empty
+RSUD_210,Voluntary treatment for people with alcohol use disorders in the criminal justice system,2017-08-28,3296,ok
+NCD_CCS_riskstrat,Availability of cardiovascular risk stratification in 50% or more primary health care facilities,2022-04-25,1595,ok
+R_Price_mp_estimate_usd,Most sold brand of cigarettes - price in US$ at official exchange rates,2022-01-12,1698,ok
+RADON_Q803,Inclusion of radon in national cancer control strategy,2021-06-04,1920,ok
+FOODBORNE_DALY_TOTAL,,,,empty
+GASP_ISOLATESTESTED_NUMBER,Antimicrobial resistance or decreased susceptibiity (DS/R) to antimicrobials testing  in Neisseria gonorrhoea isolates (WHO-GASP) (number),2026-01-05,244,ok
+NCD_CCS_PA_POL_WORK,Existence of policy promoting physical activity: workplace initiatives,2022-05-31,1559,ok
+STI_GONORRHEA_CASES_NUM,Reported cases of gonorrhea (number),2025-03-20,535,ok
+HRH_46,Number of biomedical technicians,2018-08-29,2930,ok
+NCD_CCS_PA_GUIDELINES_OLDADULTS,Existence of national guidelines for physical activity for older adults,2022-05-31,1559,ok
+GOE_Q139,Insitutional educational policy does not include eLearning as an approach to teaching health sciences,2018-03-28,3084,ok
+SA_0000001835,,,,empty
+NCD_CCS_breastcancerscreening,Existence of national screening program for breast cancer,2022-04-25,1595,ok
+FOODBORNE_YLL_LT5,,,,empty
+PHE_HHAIR_POP_CATEGORY_FUELS,"Population with primary reliance on fuels and technologies for cooking, by fuel type (in millions)",2025-07-29,404,ok
+SA_0000001832,"Alcohol-attributable all-cause deaths per 100,000, age standardized",2024-08-14,753,ok
+GDO_q12x2x1x1_5,"Accessibility of financial benefits/social protection for dementia carers [Capital/capital and main cities/capital, main cities, rural areas]",2021-06-25,1899,ok
+GDO_q12x2x1x1_4PUB,Majority provider of information  on legal rights for dementia carers (Public sector),2021-06-25,1899,ok
+FINPROTECTION_IMP_PG_190,,,,empty
+SA_0000001828,"Regional prevalence, AAFs ,all-cause deaths (%)",2024-08-13,754,ok
+NCD_CCS_OVWT_SVY,"Has conducted a recent, national adult risk factor survey covering overweight and obesity",2022-04-25,1595,ok
+GOE_Q007,Public funding for eHealth,2018-03-28,3084,ok
+pnchome3,,,,empty
+SW_PSE_NUM,Sex workers: Population size estimate (number),2025-03-20,535,ok
+SA_0000001766_ARCHIVED,Legal obligation for schools to interact with parents regarding education and well-being,2018-09-27,2901,ok
+RADON_Q402,Existence of national radon regulations,2021-06-04,1920,ok
+SA_0000001730,Price measures,2026-07-06,62,ok
+FOODBORNE_DALY_LT5,,,,empty
+GDO_q8x1,Existence of community-based health or social care services for dementia,2021-06-25,1899,ok
+NCD_CCS_PBCR,Existence of population-based cancer registry,2022-04-25,1595,ok
+FOODBORNE_YLL_100K_GE5,,,,empty
+WHS6_519,,,,empty
+MALARIA_TOTAL_CASES,Total number of  malaria cases (presumed + confirmed cases),2025-12-19,261,ok
+GASPRSESC,Proportion of isolates with decreased susceptibility or resistance (DS/R) to extended-spectrum cephalosporins reported to WHO-GASP,2024-02-09,940,ok
+GDO_q9x1_4,"Geriatric-specific hospital beds (per 10,000 population)",2021-03-23,1993,ok
+WSH_4,"Water, sanitation and hygiene  attributable deaths per 100'000 children under 5 years",2013-06-11,4835,ok
+RSUD_410,Reported treatment coverage for substance dependence,2018-03-08,3104,ok
+SA_0000001553,Restrictions on alcohol use in public places,2018-09-04,2924,ok
+NTD_LEPR8,Leprosy - Number of new leprosy cases among children (less than 15 years of age),2025-09-08,363,ok
+NCD_CCS_TEL_HYDRO_COMBO,General availability of Fixed dose combination avail (telmisartan + hydrochlorothiazide) in the public health sector,2022-04-25,1595,ok
+NTD_LEPR3,Leprosy - Number of cases registered for treatment,2025-09-08,363,ok
+IHRSPAR2_C09,Infection prevention and control (IPC),2024-05-14,845,ok
+WHS6_100,,,,empty
+GDO_q8x4_6,"Majority provider of social and financial protection for dementia [public, private]",2021-06-25,1899,ok
+RADON_Q703,Financial support provided for mitigation (existing dwellings),2021-06-04,1920,ok
+TB_c_xdr_tsr,Treatment success rate: XDR-TB cases,2025-11-11,299,ok
+GOE_Q119_1,Reducing cost of delivering content,2018-03-28,3084,ok
+RSUD_670,Treatment programmes for women with drug use disorders,2017-09-06,3287,ok
+RSUD_550,Recommendations for screening and brief interventions for substance use in primary health care,2017-09-06,3287,ok
+W11_outside_pack_A,Do health warnings appear on each cigarette package and any outside packaging and labelling used in the retail sale?,2023-12-14,997,ok
+RSUD_730,Open access interventions for drugs,2017-09-06,3287,ok
+TAXBEV_PRICE,Beverage price,2025-12-16,264,ok
+HEP_TEST_TREAT_PCT_VOLTRON,,,,empty
+M_svy_national_youth,,,,empty
+TAXBEV_VATSPECIAL_LOHI,Special VAT is lower or higher than standard VAT,2025-12-16,264,ok
+GDO_q18x2x1_1,"Total expenditure on dementia research (local currency, self-report)",2021-06-25,1899,ok
+NCD_CCS_BreastCancer,General availability of breast cancer screening (by palpation or mammogram) at the primary health care level,2015-06-01,4115,ok
+NCD_CCS_Aspirin,General availability of aspirin (100 mg) in the public health sector,2022-04-25,1595,ok
+NCD_CCS_DIET_AWARE,Implementation of a nutrition public awareness program,2022-04-25,1595,ok
+PRISON_B17_INVOLVEMENT,In-prison patient involvement in healthcare planning and reform,2023-01-23,1322,ok
+SA_0000001840,"Alcohol, heavy continuous drinkers, drinkers only, past year (%)",2025-05-23,471,ok
+SE_PRM_RDNG,Proportion of children at the end of primary achieving at least a minimum proficiency level in reading (%),2019-04-09,2707,ok
+FOODBORNE_YLL_CASE_GE5,,,,empty
+TOTENV_2,Age-standardized deaths attributable to the environment (per 100 000 population),2016-03-09,3833,ok
+TOBACCO_MPOWER_P2_SMOKEFREEPLACEDETAILS,"Tobacco MPOWER Protect people: P2 smoke-free places, additional characteristics",2026-02-25,193,ok
+GDO_q5x1x3,Presence of formal agreement/joint plan for dementia care coordination,2021-06-25,1899,ok
+WSH_8,"Water, sanitation and hygiene  attributable DALYs per 100'000 children under 5 years",2013-06-11,4835,ok
+FINPROTECTION_IMP_NPRELPL_POP,"Population pushed below a relative poverty line by household health expenditures - 60% of median daily per capita consumption or income (%, national, rural, urban)",2023-05-25,1200,ok
+HWF_0017,Environmental and Occupational Health and Hygiene Professionals  (number),2026-01-23,226,ok
+RHR_NPSV,Proportion of women and girls aged 15 years and older who have been subjected to sexual violence by someone other than a partner in their lifetime since age 15 (%),2026-05-01,128,ok
+GDO_q9x4_2,"Adult day centre places (per 10,000 population)",2021-03-23,1993,ok
+GDO_q2x1,Existence of dementia national plan,2021-06-25,1899,ok
+SA_0000001767_ARCHIVED,Legislation on alcohol testing at workplaces,2018-09-27,2901,ok
+W16_number_hw_B,How many health warnings are approved by the law for other smoked tobacco packaging?,2023-12-14,997,ok
+W23_emissions_front_back_C,Smokeless tobacco packaging and labelling must display qualitative information on constituents and emissions on one or more of the principal display areas,2023-12-13,998,ok
+SA_0000001810,National system of data collection based on health service delivery,2018-09-05,2923,ok
+GDO_q5x1x1_4,Identification of different sectors in dementia care coordination (Employment),2021-06-25,1899,ok
+NTD_BU_CONF,Number of confirmed cases of Buruli ulcer reported,2025-10-30,311,ok
+NCD_CCS_TEL_AML_COMBO,General availability of Fixed dose combination avail (telmisartan + amlodipine) in the public health sector,2022-04-25,1595,ok
+HAZARD_YLL_LT5,,,,empty
+RSUD_900,Treatment programmes for children and adolescents with drug use disorders,2017-08-28,3296,ok
+E22_subnational_exists,"Subnational bans on tobacco advertising, promotion and sponsorship",2015-08-19,4036,ok
+SA_0000001679,Exports of beer (barley) in 1000s hectolitres,2013-06-11,4835,ok
+SA_0000001789,Alcohol-related crimes (% of all crimes),2018-08-30,2929,ok
+GOE_Q013,Proportion of private funding,2018-03-28,3084,ok
+NCD_SENSORYFUNCTION_VISION_EREC,Vision and eyecare: Effective refractive error coverage (eREC) (%),2025-01-10,604,ok
+VIOLENCE_BULLIED,,,,empty
+SHS_4,Second-hand smoke attributable deaths,2013-06-11,4835,ok
+RADON_Q702,Mandatory mitigation measures if legal value is exceeded (existing buildings),2021-06-04,1920,ok
+IHR13,,,,empty
+O_Cytisine_ins,Cytisine - cost covered,2023-10-31,1041,ok
+GOE_Q103,eLearning is used in pre-service education to teach health sciences students,2018-03-28,3084,ok
+O_NRT_sold,Nicotine replacement therapy - legally sold,2023-10-31,1041,ok
+SA_0000001721_ARCHIVED,Importance of measures for enhancing compliance with age limits,2018-09-27,2901,ok
+ASSISTIVETECH_PAYERSAT,Funding for assistive products (%),2022-05-10,1580,ok
+CC_5,Climate change attributable deaths ('000) in children under 5 years,2013-06-11,4835,ok
+UV_4,UV radiation attributable deaths per 100'000 capita,2013-06-11,4835,ok
+PRISON_B9_STAFF_RATIO,Healthcare staff in prisons (FTEs per 1000 prisoners),2023-01-23,1322,ok
+CARE_SOURCE,Care-seeking by type of patient and source of care (%),2023-08-10,1123,ok
+SA_0000001517_ARCHIVED,Restrictions on product placement on cable television,2018-09-27,2901,ok
+WHS2_165,,,,empty
+P_comprehensive_subnat,Subnational smoking bans - at least one jurisdiction has a comprehensive ban in place,2020-05-28,2292,ok
+SA_0000001409,"Alcohol, abstainers lifetime (%), age-standardized",2024-06-20,808,ok
+W24_exp_date_C,Smokeless tobacco packaging and labelling must not display expiry dates,2023-12-13,998,ok
+TB_ret_oth,Retreatment cases: other,2013-10-07,4717,ok
+ODA_3,"Donor disbursements (Million, constant 2009 US$)",2013-06-11,4835,ok
+TB_drs_rr_prct,Prevalence of rifampicin resistance among pulmonary TB cases.,2024-05-06,853,ok
+SA_0000001720,Restrictions on product placement in films/movies,2018-09-03,2925,ok
+SA_0000001770_ARCHIVED,Regular reports from national monitoring systems,2018-09-27,2901,ok
+SA_0000001690,"Age-standardized death rates, cerebrovascular disease, per 100,000",2013-06-11,4835,ok
+GDO_q13x3x1,Implementation level [national/subnational] of dementia risk reduction campaign,2021-06-25,1899,ok
+WHS2_126,Distribution of years of life lost by major cause group,2014-08-08,4412,ok
+NCD_CCS_BowelCancer,General availability of colon cancer screening at the primary health care level,2015-06-01,4115,ok
+W26_plain_packaging_B,Plain packaging of other smoked tobacco products is mandatory (ie. the use of logos colours brand images or promotional information on packaging other than brand names and product ,2023-12-14,997,ok
+VACCINECOVERAGE_MENA_C,Meningococcal A conjugate (MENGA) vaccine immunization coverage (%) (WUENIC),2026-07-14,54,ok
+GDO_q18x2x3_3,"Total expenditure on dementia implementation research (local currency, self-report)",2021-06-25,1899,ok
+HIV_0000000029,,,,empty
+ORALHEALTH_AVAILABILITY_URGENTCARE,Oral health: Urgent treatment for providing emergency oral care and pain relief,2023-04-17,1238,ok
+TOBACCO_MPOWER_R_INFLATIONADJUSTEDPRICES,Tobacco Raise taxes: Inflation-adjusted prices for most sold brand of cigarettes,2025-08-18,384,ok
+M_def_1_prev_adult,,,,empty
+CM_04,Number of deaths among children ages 5 to 9 years,2026-08-05,32,ok
+CHILDMORT5TO14,Mortality rate for 5-14 year-olds (probability of dying per 1000 children aged 5-14 years),2026-08-05,32,ok
+Yth_nonsmoked_age_grp,Age range of latest youth prevalence survey (nonsmoked),2023-12-07,1004,ok
+SA_0000001541,Restrictions on sales promotion from owners of pubs and bars (alcohol for free),2018-09-04,2924,ok
+CHILDMORT_MORTALITY_10TO14,Mortality rate among children ages 10 to 14 years (per 1000 children aged 10),2022-01-26,1684,ok
+WHS10_1,,,,empty
+RS_208,Attribution of road traffic deaths to alcohol (%),2020-06-05,2284,ok
+SA_0000001745,"Alcohol, regional prevalence of alcohol use disorders (%)",2018-09-28,2900,ok
+O_Avail_community,Treatment for tobacco dependence available in the community,2023-10-17,1055,ok
+LEAD_1,Percentage of the children under 15 years with blood lead levels above 5ug/dl,2013-06-11,4835,ok
+GDO_q6x1_3,"Number of geriatricians or psychogeriatricians (per 100,000)",2017-12-08,3194,ok
+GDO_q9x3_3,"Dementia-specific hospice care beds (per 10,000 population)",2021-03-23,1993,ok
+SA_0000001544,Licence required for production,2026-07-06,62,ok
+PWID_PSE_NUM,People who inject drugs: Population size estimates (number),2025-07-22,411,ok
+SCSUD_STS,"Substance use disorders service coverage, specialized treatment services",2024-09-03,733,ok
+CM_02,Number of infant deaths,2026-08-04,33,ok
+ORALHEALTH_HWF_DENTALPROSTHETICTECH_10K,Dental prosthetic technicians (per 10 000 population),2023-04-20,1235,ok
+OCC_8,Occupational airborne particulates attributable DALYs per 100'000 capita,2013-06-11,4835,ok
+RSUD_140,Ministry/office that takes primary responsibility for treatment of substance use disorders,2017-08-28,3296,ok
+NCD_CCS_PA_SVY,"Has conducted a recent, national adult risk factor survey covering physical inactivity",2022-04-25,1595,ok
+TB_conf_mdr_tx_pct,Confirmed cases of MDR-TB started treatment for MDR-TB (%),2013-10-10,4714,ok
+SA_0000001825,"Regional prevalence, AAFs (15+), liver cirrhosis deaths (%)",2024-08-13,754,ok
+SA_0000001811,Report with epidemiological data on lcohol use and AUDs,2018-09-05,2923,ok
+TOBACCO_MPOWER_P1_SMOKEFREEPLACES,Tobacco MPOWER Protect people: P1 smoke-free places (national legislation),2025-07-25,408,ok
+TRAD_MED_HWF_DIST,,,,empty
+NTD_7,"Population in areas that warrant treatment with antibiotics, facial cleanliness and environmental improvement for elimination of trachoma as a public health problem",2026-07-15,53,ok
+WHS2_167,,,,empty
+R_imp_duty_estimate,Most sold brand of cigarettes - taxes as a % of price - import duties,2021-12-15,1726,ok
+SA_0000001740,Alcohol-attributable Years of Life Lost (YLL) score,2018-09-06,2922,ok
+NCD_CCS_NCDGuide,Existence of evidence-based national guidelines/protocols/standards for the management of major NCDs through a primary care approach,2022-04-25,1595,ok
+vbcg,,,,empty
+SA_0000001445,"Age-standardized death rates, liver cancer, per 100,000",2013-06-11,4835,ok
+W11_outside_pack_C,Do health warnings appear on each smokeless tobacco package and any outside packaging and labelling used in the retail sale?,2023-12-13,998,ok
+HRH_09,,,,empty
+RADON_Q301,Existence of national radon survey(s),2021-06-04,1920,ok
+SA_0000001551_ARCHIVED,Value-added tax (VAT) on alcohol (%),2018-09-27,2901,ok
+AIR_42,"Ambient air pollution attributable death rate (per 100 000 population, age-standardized)",2026-06-15,83,ok
+DEVICES20,Availability of technical specifications of medical devices to support procurement or donations,2022-12-12,1364,ok
+IMMUNIZATION_VACCINATIONCARDSSEEN,Proportion of vaccination cards seen (%),2024-02-21,928,ok
+TB_notif_num_newrel_ep,Number of people diagnosed with new episode of pulmonary TB who have extrapulmonary TB.,2024-05-06,853,ok
+SA_0000001518_ARCHIVED,Age limits on-premise service,2018-09-27,2901,ok
+GASPTICIP,Number of isolates tested for ciprofloxacin,2024-02-09,940,ok
+RSUD_75,Funding method for substance use disorder prevention,2013-06-11,4835,ok
+SA_0000001787,"13-15-years old first drink before age 14, (%)",2018-10-25,2873,ok
+E_compl_all_dir,Overall compliance with bans on direct advertising (score),2023-10-31,1041,ok
+WCO_TOTALSTAFFCO_PER100,,,,empty
+TB_c_lab_sm_100k,Laboratories providing tuberculosis diagnostic services using sputum smear microscopy (per 100 000 population),2015-10-21,3973,ok
+GOE_Q153,Lack of capacity,2018-03-28,3084,ok
+SA_0000001722,Government support for community action,2018-09-04,2924,ok
+E5_billboards,Ban on advertising: Billboards and outdoor advertising,2023-10-31,1041,ok
+RS_237,Existence of a formal pre-hospital care system,2013-06-11,4835,ok
+TOBACCO_MPOWER_O2_MEDICATIONAVAILABILITY,Tobacco Offer help: O2 Availability of tobacco cessation medications,2025-07-05,428,ok
+HRH_03,,,,empty
+NCD_PAC_ADO,Insufficiently active (crude estimate),2019-11-14,2488,ok
+MDG_0000000025,Births attended by skilled health personnel (%),2026-04-21,138,ok
+GDO_q13x1x1,Implementation level [national/subnational] of dementia awareness campaign,2021-06-25,1899,ok
+OBGYN_ADMISSIONS_ABORTION,,,,empty
+MALARIA_IMPORTED,Number of imported malaria cases,2025-12-19,261,ok
+GDO_q12x2x1x1_3,"Accessibility of respite care for dementia carers [Capital/capital and main cities/capital, main cities, rural areas]",2021-06-25,1899,ok
+NCD_HYP_TREATMENT_A,"Hypertension treatment coverage among adults aged 30-79 with hypertension, age-standardized (%)",2025-10-30,311,ok
+SA_0000001815,Ethanol tax deducted from excise tax,2018-09-04,2924,ok
+SA_0000001798,"Licenses issued for retail sale, change since 2010",2018-09-04,2924,ok
+M_smkless_prev_youth,,,,empty
+TAXBEV_IMPORTDUTIES,Import duties on beverages (%),2025-12-16,264,ok
+PRISON_D4_HEPC_DIAG_TOT,In-prison Hepatitis C diagnosis (number of diagnoses),2023-01-23,1322,ok
+R_VAT_average,Average - taxes as a % of cigarette price - value added tax,2015-09-04,4020,ok
+SA_0000001742,"Alcohol-attributable fractions (15+), road traffic crash deaths (%)",2024-08-13,754,ok
+LIFE_0000000033,nLx - person-years lived between ages x and x+n,2024-09-09,727,ok
+PRISON_D4_HEPB_DIAG_TOT,In-prison Hepatitis B diagnosis (number of diagnoses),2023-01-23,1322,ok
+OHS_POLICYSTATUS,Existence of national policy instruments for occupational health and safety for health workers,2024-06-12,816,ok
+W8_princ_langs_B,Are the health warnings on other smoked tobacco packaging written in the principal language(s) of the country?,2023-12-14,997,ok
+GOE_Q138,Lack of suitable courses available,2018-03-28,3084,ok
+FINPROTECTION_IMP_NP_190_LEVEL_MILLION,Total population  pushed below the $1.90 a day  poverty line by household  health expenditures (millions),2023-05-18,1207,ok
+GOE_Q137,Lack of demand for eLearning programmes,2018-03-28,3084,ok
+HEPATITIS_HBV_TREATMENT_PERINFECTED_PER100,Chronic hepatitis B (HBV) treatment rate as percentage of total infected (%),2026-08-03,34,ok
+WHS7_105,,,,empty
+R_Total_tax,Taxes as a % of price: total tax,2024-02-22,927,ok
+GDO_q4x2_5,Existence of standards/ guidelines/ protocols for treatment and support of carers and families of people with dementia,2021-06-25,1899,ok
+RSUD_50,Timeframe of opioid agonist treatment,2013-06-11,4835,ok
+E_compl_e5,Compliance with ban on billboard and outdoor advertising (score),2023-10-31,1041,ok
+HAZARD_DALY_TOTAL,,,,empty
+PRISON_D4_MDRTB_DIAG_TOT,In-prison MDR-TB diagnosis (number of diagnoses),2023-01-23,1322,ok
+GDO_q17x1,Existence of a current dementia research plan/programme,2021-06-25,1899,ok
+TOBACCO_MPOWER_M4_PREVALENCE,"Tobacco Monitor: school-based national surveys, smokeless tobacco or e-cigarettes, prevalence",2026-02-04,214,ok
+GDO_q9x4_3,"Dementia-specific adult day centre places (per 10,000 population)",2021-03-23,1993,ok
+TOTENV_9,Total environment attributable DALYs ('000) in children under 5 years,2013-06-11,4835,ok
+SA_0000001695,"Cautions and arrests for public drunkenness, per 100,000 population",2018-08-30,2929,ok
+GHE_YLLNUM,Years of life lost from mortality (YLLs),2014-07-04,4447,ok
+IR_ORGANOPHOSPHATE_PRESENCE,Organophosphate resistance reported for at least one site,2017-06-12,3373,ok
+P15_complaints,National smoking ban: CITIZEN COMPLAINTS AND INVESTIGATIONS,2023-11-01,1040,ok
+GDO_q35,Estimated population-based prevalence of depression,2018-02-27,3113,ok
+NCD_CCS_bone_marrow,General availability of bone marrow transplantation in the public health system,2022-04-25,1595,ok
+RSUD_43,Open access services for substance use disorders,2013-06-11,4835,ok
+GDO_q8x3_1,"Accessibility of diagnostic services in community for dementia [Capital/capital and main cities/capital, main cities, rural areas]",2021-06-25,1899,ok
+Camp_airtime,,,,empty
+RADON_Q704,Authorization/accreditation required for prevention/mitigation service providers,2021-06-04,1920,ok
+W13_ind_liability_A,Health warnings on cigarette packaging do not remove or diminish the liability of the tobacco industry,2023-12-14,997,ok
+SA_0000001735_ARCHIVED,Alcohol content displayed on containers,2018-09-27,2901,ok
+GDO_q8x3_3,"Accessibility of psychosocial and rehabilitation services in community for dementia [Capital/capital and main cities/capital, main cities, rural areas]",2021-06-25,1899,ok
+SA_0000001700,Consumer information on alcohol and health at points of sale,2013-06-11,4835,ok
+GDO_q8x5_5,Estimated number of people receiving palliative and end-of-life care services in community for dementia,2021-06-25,1899,ok
+TB_tot_newrel,Tuberculosis - new and relapse cases,2013-06-11,4835,ok
+M4_youth_recent,Most recent school-based survey among adolescents was recent (in the past 5 years),2023-11-14,1027,ok
+R_Other_estimate,Most sold brand of cigarettes - taxes as a % of price - other taxes,2021-12-15,1726,ok
+SA_0000001788_ARCHIVED,"Alcohol-related road traffic crashes with fatalities, per 100,000  population",2018-09-27,2901,ok
+GOE_Q011,Strategy implementation funding available for eHealth,2018-03-28,3084,ok
+SA_0000001518,Age limits on-premise service,2026-07-06,62,ok
+RSUD_34,Sector for inpatient detoxification of drug use disorders,2013-06-11,4835,ok
+DEVICES14,Use of nomenclature system,2023-06-20,1174,ok
+ORALHEALTH_UHC_PREVENTIVE,Oral health interventions as part of health benefit packages: Routine and preventive oral health care,2023-04-17,1238,ok
+SA_0000001749,"Alcohol, total (recorded 3 year average + unrecorded) per capita (15+) consumption (in litres of pure alcohol) with 95%CI",2015-12-14,3919,ok
+SA_0000001417_ARCHIVED,"Alcohol, patterns of drinking score",2018-09-27,2901,ok
+PRISON_F1_DRUGUSERS_TOT,"In-prison people who use/have used drugs (number of prisoners, in the last 12 months)",2023-01-23,1322,ok
+WSH_20,"Attributable fraction of diarrhoea to inadequate water, sanitation and hygiene",2022-11-03,1403,ok
+IHR04,,,,empty
+NCD_CCS_BP_TARGET,Existence of a national target on blood pressure / hypertension,2022-04-25,1595,ok
+SA_0000001405_ARCHIVED,"Alcohol, tourist consumption (in litres of pure alcohol)",2018-09-27,2901,ok
+SA_0000001716,Counselling to pregnant women with alcohol problems,2013-06-11,4835,ok
+DEVICES07,Types of lists recommending health technology for high burden diseases,2016-03-01,3841,ok
+W14_harm_effects_B,Do health warnings on other smoked tobacco packaging describe the harmful effects of tobacco use on health?,2023-12-14,997,ok
+TOB_R_PRICE,Retail price for tobacco and nicotine products,2024-03-06,914,ok
+ASSISTIVETECH_Q09,Existence of regulations/standards/guidelines/protocols on assistive technology,2021-12-10,1731,ok
+SRH_ABORTION_RATE,Abortion rate (model-estimated),2023-04-26,1229,ok
+HRH_02,,,,empty
+TOBACCO_0000000361,,,,empty
+GOE_Q158,Lack of demand by health professionals and patients,2018-03-28,3084,ok
+WCO_TEAMCOMPOSITION_NUM,,,,empty
+bmi30wm,,,,empty
+SA_0000001516_ARCHIVED,Restrictions on product placement on national television,2018-09-27,2901,ok
+WCO_CSSPRIORITIES_GROUP_PER100,,,,empty
+WCO_CSSPRIORITIES,,,,empty
+WHS7_143,,,,empty
+WHS6_517,,,,empty
+SA_0000001695_ARCHIVED,"Cautions and arrests for public drunkenness, per 100,000 population",2018-09-27,2901,ok
+RSUD_69,Pharmacotherapy used for the management of benzodiazepine withdrawal,2013-06-11,4835,ok
+W1_HW_law_C,Law mandates that health warnings appear on smokeless tobacco packages,2023-12-13,998,ok
+WHS4_154,Antenatal care coverage - at least four visits (%),2025-09-26,345,ok
+BP_03,Raised blood pressure (SBP>=140 OR DBP>=90) (crude estimate),2025-10-29,312,ok
