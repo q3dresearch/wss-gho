@@ -69,6 +69,22 @@ rather than registered, and models are what change when they are updated.
 If that fails, the assumption behind this repo's scope is wrong. It is written
 down so it can fail visibly.
 
+### The history is shallower than "back to 1931" suggests
+
+![How deep the history really is](examples/charts/history-is-shallow.svg)
+
+**71% of every value describes the year 2000 or later, and everything before
+1960 is 1.6% of the archive.** Under-five mortality reaches 1931 and infant
+deaths 1951; they are two series out of forty-eight.
+
+Only **8 indicators span more than thirty years**, and **six are a single year**
+— air pollution 2021, sexual violence 2023 — so they are not time series at all.
+The deep past is a thin decorative tail, not the bulk of the record.
+
+That does not weaken the case for capturing: what matters is that the values are
+**restated**, not that they are old. But "WHO holds a century of history" would
+be the wrong reading of the opening example.
+
 ## What the archive will answer that nothing can today
 
 | question | needs |

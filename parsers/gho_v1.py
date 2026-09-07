@@ -34,7 +34,7 @@ import json
 
 from wss import derive
 
-PARSER_VERSION = "1"
+PARSER_VERSION = "2"
 SCHEMA_ID = "gho.v1"
 
 # Dimension slots that vary per indicator. Included in the entity id only when
@@ -72,25 +72,38 @@ def parse(body: bytes, ctx: derive.ParseContext):
             continue
         entity = _entity(row)
 
+        # Not every indicator is numeric. The policy inventories -- alcohol
+        # licensing, beverage tax bands -- answer "Yes", "No", "Not Applicable"
+        # and carry NumericValue: null. Version 1 emitted nothing for those, so
+        # six of forty-eight indicators lost their data silently while their
+        # restated_at rows kept arriving and made the series look present.
         value = row.get("NumericValue")
         if value is not None:
             yield derive.Observation(
                 entity_id=entity, metric="value", value=float(value),
                 unit="", observed_at=observed_at,
             )
-            # Published uncertainty. A wide band means the figure is modelled
-            # rather than registered, and modelled figures are the ones that
-            # move — so the band is what the revision prediction is tested on.
-            for metric, key in (("low", "Low"), ("high", "High")):
-                bound = row.get(key)
-                if bound is not None:
-                    try:
-                        yield derive.Observation(
-                            entity_id=entity, metric=metric, value=float(bound),
-                            unit="", observed_at=observed_at,
-                        )
-                    except (TypeError, ValueError):
-                        pass
+        elif row.get("Value") not in (None, ""):
+            yield derive.Observation(
+                entity_id=entity, metric="value", value=str(row["Value"])[:120],
+                unit="", observed_at=observed_at,
+            )
+
+        # Published uncertainty, independent of whether the value was numeric.
+        # A wide band means the figure is modelled rather than registered, and
+        # modelled figures are the ones that move -- so the band is what the
+        # revision prediction is tested against.
+        for metric, key in (("low", "Low"), ("high", "High")):
+            bound = row.get(key)
+            if bound is None:
+                continue
+            try:
+                yield derive.Observation(
+                    entity_id=entity, metric=metric, value=float(bound),
+                    unit="", observed_at=observed_at,
+                )
+            except (TypeError, ValueError):
+                pass
 
         # WHO's own load stamp: when this series was last written. Carried as a
         # metric because a restatement is the event being recorded.

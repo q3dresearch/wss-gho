@@ -201,3 +201,81 @@ b.append(txt(L3, H3 - 30, "Source: ghoapi.azureedge.net, the Date field of the 4
                           "repo captures, read 2026-09-07.", 10.5, MUTE))
 open(os.path.join(HERE, "charts", "restatement-rhythm.svg"), "w").write(doc(W3, H3, b))
 print("  wrote restatement-rhythm.svg")
+
+
+# ---------------------------------------------------------------- chart 4
+# "Historical database" is doing a lot of work in how GHO is described. Two
+# panels, because the shallowness shows up in two independent ways: almost all
+# values describe recent years, and most indicators are not time series at all.
+import glob
+peryear = collections.Counter(); span = collections.defaultdict(set)
+for f in sorted(glob.glob(os.path.join(REPO, "derived", "observations", "*.csv"))):
+    y = int(os.path.basename(f)[:4])
+    for r in csv.DictReader(open(f, encoding="utf-8")):
+        if r["metric"] != "value":
+            continue
+        peryear[y] += 1
+        span[r["entity_id"].split(":")[0]].add(y)
+dec = collections.Counter()
+for y, c in peryear.items():
+    dec[y // 10 * 10] += c
+tot = sum(dec.values())
+buckets = collections.Counter()
+for ys in span.values():
+    n = max(ys) - min(ys)
+    buckets["one year" if n == 0 else "under 10" if n < 10 else "10–30" if n < 30 else "over 30"] += 1
+
+W4, L4, R4 = 1240, 84, 300
+PW4 = W4 - L4 - R4
+TA, PHA = 156, 190
+TB, PHB = TA + PHA + 104, 150
+H4 = TB + PHB + 100
+b = []
+b.append(txt(L4, 46, "GHO reaches back to 1931, and almost none of it is old", 21, INK, weight="600"))
+b.append(txt(L4, 73, f"{sum(peryear.values()):,} values across 48 indicators, by the year each one "
+                     "describes.", 13.5, MUTE))
+b.append(txt(L4, TA - 16, "Values by reference decade", 12.5, INK, weight="600"))
+decs = sorted(dec)
+bw = PW4 / len(decs)
+mx = max(dec.values())
+for i, d in enumerate(decs):
+    c = dec[d]
+    h = PHA * c / mx
+    x = L4 + bw * i + bw * 0.16
+    thin = c / tot < 0.03
+    b.append(rect(x, TA + PHA - h, bw * 0.68, h, ORANGE if thin else BLUE, op=0.9 if thin else 0.6))
+    b.append(txt(x + bw * 0.34, TA + PHA - h - 8, f"{c/tot:.0%}" if c/tot >= 0.01 else "<1%",
+                 11, ORANGE if thin else INK, anchor="middle", weight="600"))
+    b.append(txt(x + bw * 0.34, TA + PHA + 18, f"{d}s", 11, MUTE, anchor="middle"))
+b.append(line(L4, TA + PHA, L4 + PW4, TA + PHA, MUTE))
+b.append(txt(L4, TB - 16, "How many years each indicator actually spans", 12.5, INK, weight="600"))
+order = ["one year", "under 10", "10–30", "over 30"]
+bw2 = PW4 / len(order)
+mx2 = max(buckets.values())
+for i, k in enumerate(order):
+    c = buckets[k]
+    h = PHB * c / mx2
+    x = L4 + bw2 * i + bw2 * 0.16
+    lone = k in ("one year", "under 10")
+    b.append(rect(x, TB + PHB - h, bw2 * 0.68, h, ORANGE if lone else BLUE, op=0.9 if lone else 0.6))
+    b.append(txt(x + bw2 * 0.34, TB + PHB - h - 8, str(c), 14, INK, anchor="middle", weight="600"))
+    b.append(txt(x + bw2 * 0.34, TB + PHB + 18, k, 12, INK if lone else MUTE, anchor="middle",
+                 weight="600" if lone else "normal"))
+b.append(line(L4, TB + PHB, L4 + PW4, TB + PHB, MUTE))
+nx = L4 + PW4 + 26; y0 = TA + 2
+for ln in wrap("71% of every value describes the year 2000 or later. Everything before 1960 is "
+               "1.6% of the archive.", 250):
+    b.append(txt(nx, y0, ln, 12, INK)); y0 += 17
+y0 += 12
+for ln in wrap("Under-five mortality reaches 1931 and infant deaths 1951. They are two series "
+               "out of forty-eight, and the deep past is a thin decorative tail rather than the "
+               "bulk of the record.", 250):
+    b.append(txt(nx, y0, ln, 12, MUTE)); y0 += 17
+y0 = TB + 2
+for ln in wrap("Only 8 indicators span more than thirty years. Six are a single year and are not "
+               "time series at all — air pollution 2021, sexual violence 2023.", 250):
+    b.append(txt(nx, y0, ln, 12, ORANGE, weight="600")); y0 += 17
+b.append(txt(L4, H4 - 30, "Source: this repository's first capture, 2026-09-07. Values only; "
+                          "uncertainty bounds and load stamps excluded.", 10.5, MUTE))
+open(os.path.join(HERE, "charts", "history-is-shallow.svg"), "w").write(doc(W4, H4, b))
+print("  wrote history-is-shallow.svg")
