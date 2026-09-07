@@ -14,7 +14,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: fleet-commits-daily
+  group: fleet-commits
   cancel-in-progress: false
 
 env:
@@ -23,9 +23,9 @@ env:
   # in every shard. No setup required: GitHub supplies owner and repo, and
   # a fork sends its own. Set a WSS_CONTACT secret only to override.
   WSS_CONTACT: ${{ secrets.WSS_CONTACT || format('{0} +https://github.com/{1}', github.repository_owner, github.repository) }}
-  CADENCE: daily
+  CADENCE: monthly
   SHARDS: "20" # matrix cap is 256 jobs/run — aim for ~20 jobs of ~50 sources
-  ENGINE_SPEC: "wss @ git+https://github.com/${{ github.repository_owner }}/wss-engine.git@v0.6.3"
+  ENGINE_SPEC: "wss @ git+https://github.com/${{ github.repository_owner }}/wss-engine.git@v0.6.4"
 
 jobs:
   plan:
