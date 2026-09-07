@@ -156,7 +156,7 @@ immunisation carries none and is not even country-keyed.
 ## Running it
 
 ```bash
-pip install "wss @ git+https://github.com/q3dresearch/wss-engine.git@v0.6.6"
+pip install "wss @ git+https://github.com/q3dresearch/wss-engine.git@v0.6.8"
 export WSS_CONTACT="https://github.com/q3dresearch/wss-gho"
 
 wss validate                    # registry schema check; CI gate
