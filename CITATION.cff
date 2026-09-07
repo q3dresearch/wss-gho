@@ -3,14 +3,32 @@ message: "If you use this dataset, please cite it."
 type: dataset
 title: "WHO Global Health Observatory Vintages (wss-gho)"
 abstract: >-
-  TODO: one paragraph on what this dataset captures, and why the history
-  would otherwise be lost.
+  Monthly point-in-time captures of 48 actively maintained indicators from the
+  World Health Organization's Global Health Observatory. GHO serves one value
+  per country and reference year, and a revision overwrites the previous value
+  in place: under-five mortality for Brazil in 1931 carries a load stamp of 5
+  August 2026, and whatever it said before is gone. Every published estimate is
+  therefore uncheckable against what it used to say, including the 2015
+  baselines against which Sustainable Development Goal progress is measured.
+  This dataset preserves each month's state of the series as the bytes were
+  served, with a manifest row recording the URL, fetch time and SHA-256 of
+  every capture. Observations are stamped with the reference year the figure
+  describes rather than the fetch time, and WHO's own load stamp is carried as
+  a separate metric so a restatement can be dated. Indicators were selected
+  mechanically -- every one in a random 400-indicator sample of the 3,098 in
+  the catalogue that had been republished within a year -- rather than chosen.
 authors:
   - name: "neldivad"
     website: "https://github.com/neldivad"
+  - name: "q3dresearch"
+    website: "https://github.com/q3dresearch"
 license: CC-BY-4.0
 keywords:
-  - git-scraping
-  - open-data
+  - World Health Organization
+  - Global Health Observatory
+  - child mortality
+  - Sustainable Development Goals
+  - data revision
+  - estimate vintages
+  - reproducibility
   - point-in-time-data
-  - dataset

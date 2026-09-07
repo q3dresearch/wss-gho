@@ -6,14 +6,14 @@
 
 <div align="center">
 
-  <a href="https://github.com/neldivad/wss-gho/actions/workflows/capture-monthly.yml"><img alt="capture status" src="https://img.shields.io/github/actions/workflow/status/neldivad/wss-gho/capture-monthly.yml?label=capture&style=flat-square"></a>
-  <a href="https://github.com/neldivad/wss-gho/commits"><img alt="last capture" src="https://img.shields.io/github/last-commit/neldivad/wss-gho?label=last%20capture&style=flat-square"></a>
-  <a href="https://github.com/neldivad/wss-gho/blob/main/LICENSE"><img alt="licence" src="https://img.shields.io/github/license/neldivad/wss-gho?style=flat-square"></a>
+  <a href="https://github.com/q3dresearch/wss-gho/actions/workflows/capture-monthly.yml"><img alt="capture status" src="https://img.shields.io/github/actions/workflow/status/q3dresearch/wss-gho/capture-monthly.yml?label=capture&style=flat-square"></a>
+  <a href="https://github.com/q3dresearch/wss-gho/commits"><img alt="last capture" src="https://img.shields.io/github/last-commit/q3dresearch/wss-gho?label=last%20capture&style=flat-square"></a>
+  <a href="https://github.com/q3dresearch/wss-gho/blob/main/LICENSE"><img alt="licence" src="https://img.shields.io/github/license/q3dresearch/wss-gho?style=flat-square"></a>
 
 </div>
 
 <p align="center">
-  <sub>fleet: <a href="https://github.com/neldivad/wss-engine">engine</a> · <a href="https://github.com/neldivad/wss-hugging-face">hugging face</a> · <a href="https://github.com/neldivad/wss-openrouter">openrouter</a> · <a href="https://github.com/neldivad/wss-cloud-footprint">cloud footprint</a> · <a href="https://github.com/neldivad/wss-mining-pipeline">mining</a> · <a href="https://github.com/neldivad/wss-forest-harvest">forest</a> · <a href="https://github.com/neldivad/wss-food-trace">food</a> · <strong>gho</strong></sub>
+  <sub>fleet: <a href="https://github.com/q3dresearch/wss-engine">engine</a> · <a href="https://github.com/q3dresearch/wss-hugging-face">hugging face</a> · <a href="https://github.com/q3dresearch/wss-openrouter">openrouter</a> · <a href="https://github.com/q3dresearch/wss-cloud-footprint">cloud footprint</a> · <a href="https://github.com/q3dresearch/wss-mining-pipeline">mining</a> · <a href="https://github.com/q3dresearch/wss-forest-harvest">forest</a> · <a href="https://github.com/q3dresearch/wss-food-trace">food</a> · <strong>gho</strong></sub>
 </p>
 
 **Under-five mortality in Brazil in 1931 was 223.0 per 1,000. That figure was
@@ -100,8 +100,8 @@ immunisation carries none and is not even country-keyed.
 ## Running it
 
 ```bash
-pip install "wss @ git+https://github.com/neldivad/wss-engine.git@v0.6.0"
-export WSS_CONTACT="https://github.com/neldivad/wss-gho"
+pip install "wss @ git+https://github.com/q3dresearch/wss-engine.git@v0.6.0"
+export WSS_CONTACT="https://github.com/q3dresearch/wss-gho"
 
 wss validate                    # registry schema check; CI gate
 wss capture --cadence monthly   # fetch → gate → hash → dedupe → write → manifest

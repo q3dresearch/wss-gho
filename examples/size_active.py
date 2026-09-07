@@ -6,7 +6,7 @@ active set, so which 50 you pick matters more than how many.
 import csv, json, os, sys, urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
-UA="wss-probe (+https://github.com/neldivad)"
+UA="wss-probe (+https://github.com/q3dresearch)"
 SRC=Path(__file__).resolve().parents[1]/"data"/"gho-activity-sample-2026-09-07.csv"
 OUT=SRC.parent/"gho-active-sizes-2026-09-07.csv"
 

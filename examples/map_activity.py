@@ -25,7 +25,7 @@ import csv, json, os, sys, threading, urllib.request, datetime as dt
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
-UA = "wss-probe (+https://github.com/neldivad)"
+UA = "wss-probe (+https://github.com/q3dresearch)"
 API = "https://ghoapi.azureedge.net/api"
 OUT = Path(__file__).resolve().parents[1] / "data"
 NOW = dt.datetime(2026, 9, 7, tzinfo=dt.timezone.utc)

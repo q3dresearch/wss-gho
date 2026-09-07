@@ -11,7 +11,7 @@ ROOT = os.path.dirname(os.path.dirname(REPO))
 sys.path.insert(0, os.path.join(ROOT, "larder", "tools", "cfr"))  # shared svgkit
 from svgkit import *                                          # noqa: E402
 OUT = os.path.join(HERE, "charts")
-UA = "wss-probe (+https://github.com/neldivad)"
+UA = "wss-probe (+https://github.com/q3dresearch)"
 
 # ---------------------------------------------------------------- chart 1
 src = os.path.join(REPO, "reference", "indicator-activity-2026-09-07.csv")
