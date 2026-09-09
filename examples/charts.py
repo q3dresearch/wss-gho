@@ -7,15 +7,33 @@ import collections, csv, datetime as dt, glob, json, os, statistics as st, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)          # wss-gho/
-ROOT = os.path.dirname(os.path.dirname(REPO))
-sys.path.insert(0, os.path.join(ROOT, "larder", "tools", "cfr"))  # shared svgkit
+# svgkit is vendored here, not borrowed. This line used to reach three levels
+# up into `larder/tools/cfr`, a path that no longer exists after the umbrella
+# reorganisation -- and which nobody who cloned THIS repo ever had. A public
+# repo whose charts only render inside one person's checkout is not published.
+sys.path.insert(0, HERE)
 from svgkit import *                                          # noqa: E402
+
+
+def _open_partition(path):
+    """Open a derived partition, gzipped or not.
+
+    Engine v0.6.34 made `derived/observations/*.csv.gz` the written form. Every
+    reader in this repo went on globbing `*.csv`, found nothing, and said "no
+    observations yet -- run capture + derive first" over a full archive. Stdlib
+    only, so `head`/`zcat` remain the only tools a reader needs.
+    """
+    import gzip
+    import io
+    if str(path).endswith(".gz"):
+        return io.TextIOWrapper(gzip.open(path, "rb"), encoding="utf-8", newline="")
+    return open(path, encoding="utf-8", newline="")
 OUT = os.path.join(HERE, "charts")
 UA = "wss-probe (+https://github.com/q3dresearch)"
 
 # ---------------------------------------------------------------- chart 1
 src = os.path.join(REPO, "reference", "indicator-activity-2026-09-07.csv")
-rows = [r for r in csv.DictReader(open(src, encoding="utf-8")) if r.get("status") == "ac" or r.get("status") == "ok"]
+rows = [r for r in csv.DictReader(_open_partition(src)) if r.get("status") == "ac" or r.get("status") == "ok"]
 ages = sorted(int(r["days_since"]) for r in rows if r.get("days_since"))
 BUCKETS = [("<1y", 0, 365), ("1–2y", 365, 730), ("2–4y", 730, 1460), (">4y", 1460, 10**9)]
 counts = [(lab, sum(1 for a in ages if lo <= a < hi)) for lab, lo, hi in BUCKETS]
@@ -69,8 +87,8 @@ open(os.path.join(OUT, "catalogue-activity.svg"), "w").write(doc(W, H, b))
 # Read from the archive, not the API. A chart that needs the network cannot
 # regenerate the same output later and cannot run in CI at all.
 d = []
-for f in sorted(glob.glob(os.path.join(REPO, "derived", "observations", "*.csv"))):
-    for r in csv.DictReader(open(f, encoding="utf-8")):
+for f in sorted(glob.glob(os.path.join(REPO, "derived", "observations", "*.csv*"))):
+    for r in csv.DictReader(_open_partition(f)):
         # Both-sexes, all-quintiles only. The archive keeps every breakdown,
         # but a country's headline uncertainty is the aggregate one -- mixing
         # in the sex and quintile splits, each with its own wider band, would
@@ -167,7 +185,7 @@ print("  wrote catalogue-activity.svg and uncertainty-and-prediction.svg")
 # date with at least one other, so revisions arrive as batches -- which is what
 # makes a monthly cadence match the source rather than merely seem reasonable.
 sizes = os.path.join(REPO, "reference", "indicator-sizes-2026-09-07.csv")
-srows = [r for r in csv.DictReader(open(sizes, encoding="utf-8")) if r.get("last_published")]
+srows = [r for r in csv.DictReader(_open_partition(sizes)) if r.get("last_published")]
 by_date = collections.Counter(r["last_published"] for r in srows)
 dates = sorted(by_date)
 shared = sum(v for v in by_date.values() if v >= 2) / sum(by_date.values())
@@ -228,9 +246,9 @@ print("  wrote restatement-rhythm.svg")
 # panels, because the shallowness shows up in two independent ways: almost all
 # values describe recent years, and most indicators are not time series at all.
 peryear = collections.Counter(); span = collections.defaultdict(set)
-for f in sorted(glob.glob(os.path.join(REPO, "derived", "observations", "*.csv"))):
+for f in sorted(glob.glob(os.path.join(REPO, "derived", "observations", "*.csv*"))):
     y = int(os.path.basename(f)[:4])
-    for r in csv.DictReader(open(f, encoding="utf-8")):
+    for r in csv.DictReader(_open_partition(f)):
         if r["metric"] != "value":
             continue
         peryear[y] += 1
@@ -309,8 +327,8 @@ with open(os.path.join(REPO, "reference", "country-names-2026-09-07.csv"), encod
     for r in csv.DictReader(f):
         meta[r["code"]] = {"Title": r["title"], "ParentTitle": r["region"]}
 ctry_ind = collections.defaultdict(set)
-for f in glob.glob(os.path.join(REPO, "derived", "observations", "*.csv")):
-    for r in csv.DictReader(open(f, encoding="utf-8")):
+for f in glob.glob(os.path.join(REPO, "derived", "observations", "*.csv*")):
+    for r in csv.DictReader(_open_partition(f)):
         if r["metric"] != "value":
             continue
         p = r["entity_id"].split(":")
@@ -382,8 +400,8 @@ print("  wrote who-is-missing.svg")
 # turned around: not which countries are uncertain, but which indicators.
 ind_unc = collections.defaultdict(list)
 cell6 = collections.defaultdict(dict)
-for f in sorted(glob.glob(os.path.join(REPO, "derived", "observations", "*.csv"))):
-    for r in csv.DictReader(open(f, encoding="utf-8")):
+for f in sorted(glob.glob(os.path.join(REPO, "derived", "observations", "*.csv*"))):
+    for r in csv.DictReader(_open_partition(f)):
         if r["metric"] in ("value", "low", "high"):
             cell6[(r["entity_id"], r["observed_at"])][r["metric"]] = r["value"]
 for (ent, _yr), m in cell6.items():
