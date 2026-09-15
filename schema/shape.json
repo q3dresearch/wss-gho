@@ -1,0 +1,1522 @@
+{
+  "generated_at": "2026-09-15T13:14:50Z",
+  "note": "Inferred from the derived rows by `wss schema`, not hand-written. Regenerate after any derive.",
+  "sources": {
+    "who.gho.air-35": {
+      "source_id": "who.gho.air-35",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 4
+    },
+    "who.gho.air-42": {
+      "source_id": "who.gho.air-42",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 4
+    },
+    "who.gho.air-90": {
+      "source_id": "who.gho.air-90",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 4
+    },
+    "who.gho.bp-03": {
+      "source_id": "who.gho.bp-03",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 19
+    },
+    "who.gho.childmort5to14": {
+      "source_id": "who.gho.childmort5to14",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 27
+    },
+    "who.gho.cm-02": {
+      "source_id": "who.gho.cm-02",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 44
+    },
+    "who.gho.cm-04": {
+      "source_id": "who.gho.cm-04",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 27
+    },
+    "who.gho.gasp-isolatestested-number": {
+      "source_id": "who.gho.gasp-isolatestested-number",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 3
+    },
+    "who.gho.ghed-extche-sha2011": {
+      "source_id": "who.gho.ghed-extche-sha2011",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 5
+    },
+    "who.gho.hepatitis-hbv-treatment-anc-percent": {
+      "source_id": "who.gho.hepatitis-hbv-treatment-anc-percent",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 1
+    },
+    "who.gho.hepatitis-hbv-treatment-perinfected-per100": {
+      "source_id": "who.gho.hepatitis-hbv-treatment-perinfected-per100",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 1
+    },
+    "who.gho.hepatitis-hcv-prevalence-per100": {
+      "source_id": "who.gho.hepatitis-hcv-prevalence-per100",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 1
+    },
+    "who.gho.hiv-0000000020": {
+      "source_id": "who.gho.hiv-0000000020",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 2
+    },
+    "who.gho.hiv-0000000023": {
+      "source_id": "who.gho.hiv-0000000023",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 3
+    },
+    "who.gho.hwf-0014": {
+      "source_id": "who.gho.hwf-0014",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 4
+    },
+    "who.gho.hwf-0017": {
+      "source_id": "who.gho.hwf-0017",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 1
+    },
+    "who.gho.malaria-est-cases": {
+      "source_id": "who.gho.malaria-est-cases",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 3
+    },
+    "who.gho.malaria-imported": {
+      "source_id": "who.gho.malaria-imported",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 1
+    },
+    "who.gho.malaria-total-cases": {
+      "source_id": "who.gho.malaria-total-cases",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 2
+    },
+    "who.gho.mdg-0000000003": {
+      "source_id": "who.gho.mdg-0000000003",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 8
+    },
+    "who.gho.mdg-0000000007": {
+      "source_id": "who.gho.mdg-0000000007",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 65
+    },
+    "who.gho.mdg-0000000017": {
+      "source_id": "who.gho.mdg-0000000017",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 5
+    },
+    "who.gho.mdg-0000000025": {
+      "source_id": "who.gho.mdg-0000000025",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 3
+    },
+    "who.gho.ncd-bmi-18a": {
+      "source_id": "who.gho.ncd-bmi-18a",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 29
+    },
+    "who.gho.ncd-hyp-diagnosis-a": {
+      "source_id": "who.gho.ncd-hyp-diagnosis-a",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 20
+    },
+    "who.gho.ncd-hyp-treatment-a": {
+      "source_id": "who.gho.ncd-hyp-treatment-a",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 20
+    },
+    "who.gho.ntd-7": {
+      "source_id": "who.gho.ntd-7",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 2
+    },
+    "who.gho.ntd-bu-conf": {
+      "source_id": "who.gho.ntd-bu-conf",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 1
+    },
+    "who.gho.ntd-lepr3": {
+      "source_id": "who.gho.ntd-lepr3",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 3
+    },
+    "who.gho.ntd-lepr8": {
+      "source_id": "who.gho.ntd-lepr8",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 3
+    },
+    "who.gho.rhr-npsv": {
+      "source_id": "who.gho.rhr-npsv",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 1
+    },
+    "who.gho.sa-0000001518": {
+      "source_id": "who.gho.sa-0000001518",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 2
+    },
+    "who.gho.sa-0000001531": {
+      "source_id": "who.gho.sa-0000001531",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 2
+    },
+    "who.gho.sa-0000001544": {
+      "source_id": "who.gho.sa-0000001544",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 2
+    },
+    "who.gho.sa-0000001728": {
+      "source_id": "who.gho.sa-0000001728",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 1
+    },
+    "who.gho.sa-0000001730": {
+      "source_id": "who.gho.sa-0000001730",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 3
+    },
+    "who.gho.taxbev-importduties": {
+      "source_id": "who.gho.taxbev-importduties",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 1
+    },
+    "who.gho.taxbev-price": {
+      "source_id": "who.gho.taxbev-price",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 3
+    },
+    "who.gho.taxbev-vatspecial-lohi": {
+      "source_id": "who.gho.taxbev-vatspecial-lohi",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 1
+    },
+    "who.gho.tb-1": {
+      "source_id": "who.gho.tb-1",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 6
+    },
+    "who.gho.tb-c-xdr-tsr": {
+      "source_id": "who.gho.tb-c-xdr-tsr",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 2
+    },
+    "who.gho.tb-rr-mdr": {
+      "source_id": "who.gho.tb-rr-mdr",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 4
+    },
+    "who.gho.tobacco-mpower-m4-prevalence": {
+      "source_id": "who.gho.tobacco-mpower-m4-prevalence",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 3
+    },
+    "who.gho.tobacco-mpower-p2-smokefreeplacedetails": {
+      "source_id": "who.gho.tobacco-mpower-p2-smokefreeplacedetails",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 14
+    },
+    "who.gho.vaccinecoverage-mena-c": {
+      "source_id": "who.gho.vaccinecoverage-mena-c",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 1
+    },
+    "who.gho.whs4-154": {
+      "source_id": "who.gho.whs4-154",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 2
+    },
+    "who.gho.wsh-hygiene-basic": {
+      "source_id": "who.gho.wsh-hygiene-basic",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 6
+    },
+    "who.gho.wsh-water-basic": {
+      "source_id": "who.gho.wsh-water-basic",
+      "schema_id": "gho.v1",
+      "cadence": "monthly",
+      "licence": "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright",
+      "personal_data": "none",
+      "storage": "git",
+      "publisher": "World Health Organization",
+      "publisher_tier": "first_party",
+      "endpoints": 15
+    }
+  },
+  "observations": {
+    "rows": 1255928,
+    "columns": [
+      "series_id",
+      "entity_id",
+      "observed_at",
+      "captured_at",
+      "metric",
+      "value",
+      "unit",
+      "source_id",
+      "raw_ref",
+      "parser_version"
+    ],
+    "partitions": [
+      "1931-01.csv.gz",
+      "1932-01.csv.gz",
+      "1933-01.csv.gz",
+      "1934-01.csv.gz",
+      "1935-01.csv.gz",
+      "1936-01.csv.gz",
+      "1937-01.csv.gz",
+      "1938-01.csv.gz",
+      "1939-01.csv.gz",
+      "1940-01.csv.gz",
+      "1941-01.csv.gz",
+      "1942-01.csv.gz",
+      "1943-01.csv.gz",
+      "1944-01.csv.gz",
+      "1945-01.csv.gz",
+      "1946-01.csv.gz",
+      "1947-01.csv.gz",
+      "1948-01.csv.gz",
+      "1949-01.csv.gz",
+      "1950-01.csv.gz",
+      "1951-01.csv.gz",
+      "1952-01.csv.gz",
+      "1953-01.csv.gz",
+      "1954-01.csv.gz",
+      "1955-01.csv.gz",
+      "1956-01.csv.gz",
+      "1957-01.csv.gz",
+      "1958-01.csv.gz",
+      "1959-01.csv.gz",
+      "1960-01.csv.gz",
+      "1961-01.csv.gz",
+      "1962-01.csv.gz",
+      "1963-01.csv.gz",
+      "1964-01.csv.gz",
+      "1965-01.csv.gz",
+      "1966-01.csv.gz",
+      "1967-01.csv.gz",
+      "1968-01.csv.gz",
+      "1969-01.csv.gz",
+      "1970-01.csv.gz",
+      "1971-01.csv.gz",
+      "1972-01.csv.gz",
+      "1973-01.csv.gz",
+      "1974-01.csv.gz",
+      "1975-01.csv.gz",
+      "1976-01.csv.gz",
+      "1977-01.csv.gz",
+      "1978-01.csv.gz",
+      "1979-01.csv.gz",
+      "1980-01.csv.gz",
+      "1981-01.csv.gz",
+      "1982-01.csv.gz",
+      "1983-01.csv.gz",
+      "1984-01.csv.gz",
+      "1985-01.csv.gz",
+      "1986-01.csv.gz",
+      "1987-01.csv.gz",
+      "1988-01.csv.gz",
+      "1989-01.csv.gz",
+      "1990-01.csv.gz",
+      "1991-01.csv.gz",
+      "1992-01.csv.gz",
+      "1993-01.csv.gz",
+      "1994-01.csv.gz",
+      "1995-01.csv.gz",
+      "1996-01.csv.gz",
+      "1997-01.csv.gz",
+      "1998-01.csv.gz",
+      "1999-01.csv.gz",
+      "2000-01.csv.gz",
+      "2001-01.csv.gz",
+      "2002-01.csv.gz",
+      "2003-01.csv.gz",
+      "2004-01.csv.gz",
+      "2005-01.csv.gz",
+      "2006-01.csv.gz",
+      "2007-01.csv.gz",
+      "2008-01.csv.gz",
+      "2009-01.csv.gz",
+      "2010-01.csv.gz",
+      "2011-01.csv.gz",
+      "2012-01.csv.gz",
+      "2013-01.csv.gz",
+      "2014-01.csv.gz",
+      "2015-01.csv.gz",
+      "2016-01.csv.gz",
+      "2017-01.csv.gz",
+      "2018-01.csv.gz",
+      "2019-01.csv.gz",
+      "2020-01.csv.gz",
+      "2021-01.csv.gz",
+      "2022-01.csv.gz",
+      "2023-01.csv.gz",
+      "2024-01.csv.gz",
+      "2025-01.csv.gz"
+    ],
+    "series": {
+      "who.gho.air-35": {
+        "rows": 13536,
+        "entities": 3384,
+        "entity_id_samples": [
+          "AIR_35:AFG:SEX_BTSX:GHECAUSE_GHE000000",
+          "AIR_35:AFG:SEX_BTSX:GHECAUSE_GHE000390",
+          "AIR_35:AFG:SEX_BTSX:GHECAUSE_GHE000680"
+        ],
+        "metrics": [
+          "high",
+          "low",
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.air-42": {
+        "rows": 13824,
+        "entities": 3456,
+        "entity_id_samples": [
+          "AIR_42:AFG:SEX_BTSX:GHECAUSE_GHE000000",
+          "AIR_42:AFG:SEX_BTSX:GHECAUSE_GHE000390",
+          "AIR_42:AFG:SEX_BTSX:GHECAUSE_GHE000680"
+        ],
+        "metrics": [
+          "high",
+          "low",
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.air-90": {
+        "rows": 13824,
+        "entities": 3456,
+        "entity_id_samples": [
+          "AIR_90:AFG:SEX_BTSX:GHECAUSE_GHE000000",
+          "AIR_90:AFG:SEX_BTSX:GHECAUSE_GHE000390",
+          "AIR_90:AFG:SEX_BTSX:GHECAUSE_GHE000680"
+        ],
+        "metrics": [
+          "high",
+          "low",
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.bp-03": {
+        "rows": 74160,
+        "entities": 618,
+        "entity_id_samples": [
+          "BP_03:AFG:SEX_BTSX:AGEGROUP_YEARS30-79",
+          "BP_03:AFG:SEX_FMLE:AGEGROUP_YEARS30-79",
+          "BP_03:AFG:SEX_MLE:AGEGROUP_YEARS30-79"
+        ],
+        "metrics": [
+          "high",
+          "low",
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.childmort5to14": {
+        "rows": 104580,
+        "entities": 747,
+        "entity_id_samples": [
+          "CHILDMORT5TO14:AFG:SEX_BTSX:AGEGROUP_YEARS05-14",
+          "CHILDMORT5TO14:AFG:SEX_FMLE:AGEGROUP_YEARS05-14",
+          "CHILDMORT5TO14:AFG:SEX_MLE:AGEGROUP_YEARS05-14"
+        ],
+        "metrics": [
+          "high",
+          "low",
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.cm-02": {
+        "rows": 174488,
+        "entities": 747,
+        "entity_id_samples": [
+          "CM_02:AFG:SEX_BTSX:AGEGROUP_MONTHS0-11",
+          "CM_02:AFG:SEX_FMLE:AGEGROUP_MONTHS0-11",
+          "CM_02:AFG:SEX_MLE:AGEGROUP_MONTHS0-11"
+        ],
+        "metrics": [
+          "high",
+          "low",
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.cm-04": {
+        "rows": 104580,
+        "entities": 747,
+        "entity_id_samples": [
+          "CM_04:AFG:SEX_BTSX:AGEGROUP_YEARS05-09",
+          "CM_04:AFG:SEX_FMLE:AGEGROUP_YEARS05-09",
+          "CM_04:AFG:SEX_MLE:AGEGROUP_YEARS05-09"
+        ],
+        "metrics": [
+          "high",
+          "low",
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.gasp-isolatestested-number": {
+        "rows": 5423,
+        "entities": 444,
+        "entity_id_samples": [
+          "GASP_ISOLATESTESTED_NUMBER:ARE:ANTIBIOTIC_AZM",
+          "GASP_ISOLATESTESTED_NUMBER:ARE:ANTIBIOTIC_CFM",
+          "GASP_ISOLATESTESTED_NUMBER:ARE:ANTIBIOTIC_CIP"
+        ],
+        "metrics": [
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.ghed-extche-sha2011": {
+        "rows": 9702,
+        "entities": 206,
+        "entity_id_samples": [
+          "GHED_EXTCHE_SHA2011:AFG",
+          "GHED_EXTCHE_SHA2011:AFR",
+          "GHED_EXTCHE_SHA2011:AGO"
+        ],
+        "metrics": [
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.hepatitis-hbv-treatment-anc-percent": {
+        "rows": 214,
+        "entities": 69,
+        "entity_id_samples": [
+          "HEPATITIS_HBV_TREATMENT_ANC_PERCENT:AGO",
+          "HEPATITIS_HBV_TREATMENT_ANC_PERCENT:ARE",
+          "HEPATITIS_HBV_TREATMENT_ANC_PERCENT:ATG"
+        ],
+        "metrics": [
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.hepatitis-hbv-treatment-perinfected-per100": {
+        "rows": 818,
+        "entities": 108,
+        "entity_id_samples": [
+          "HEPATITIS_HBV_TREATMENT_PERINFECTED_PER100:AFR",
+          "HEPATITIS_HBV_TREATMENT_PERINFECTED_PER100:AGO",
+          "HEPATITIS_HBV_TREATMENT_PERINFECTED_PER100:AMR"
+        ],
+        "metrics": [
+          "high",
+          "low",
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.hepatitis-hcv-prevalence-per100": {
+        "rows": 924,
+        "entities": 113,
+        "entity_id_samples": [
+          "HEPATITIS_HCV_PREVALENCE_PER100:AFR",
+          "HEPATITIS_HCV_PREVALENCE_PER100:AGO",
+          "HEPATITIS_HCV_PREVALENCE_PER100:AMR"
+        ],
+        "metrics": [
+          "high",
+          "low",
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.hiv-0000000020": {
+        "rows": 5992,
+        "entities": 96,
+        "entity_id_samples": [
+          "HIV_0000000020:AFG",
+          "HIV_0000000020:AFR",
+          "HIV_0000000020:AGO"
+        ],
+        "metrics": [
+          "high",
+          "low",
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.hiv-0000000023": {
+        "rows": 10396,
+        "entities": 100,
+        "entity_id_samples": [
+          "HIV_0000000023:AFG",
+          "HIV_0000000023:AFR",
+          "HIV_0000000023:AGO"
+        ],
+        "metrics": [
+          "high",
+          "low",
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.hwf-0014": {
+        "rows": 6170,
+        "entities": 202,
+        "entity_id_samples": [
+          "HWF_0014:AFG",
+          "HWF_0014:AFR",
+          "HWF_0014:AGO"
+        ],
+        "metrics": [
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.hwf-0017": {
+        "rows": 1034,
+        "entities": 125,
+        "entity_id_samples": [
+          "HWF_0017:AGO",
+          "HWF_0017:ARE",
+          "HWF_0017:ARG"
+        ],
+        "metrics": [
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.malaria-est-cases": {
+        "rows": 9510,
+        "entities": 117,
+        "entity_id_samples": [
+          "MALARIA_EST_CASES:AFG",
+          "MALARIA_EST_CASES:AFR",
+          "MALARIA_EST_CASES:AGO"
+        ],
+        "metrics": [
+          "high",
+          "low",
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.malaria-imported": {
+        "rows": 1182,
+        "entities": 74,
+        "entity_id_samples": [
+          "MALARIA_IMPORTED:AFR",
+          "MALARIA_IMPORTED:AGO",
+          "MALARIA_IMPORTED:AMR"
+        ],
+        "metrics": [
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.malaria-total-cases": {
+        "rows": 2094,
+        "entities": 110,
+        "entity_id_samples": [
+          "MALARIA_TOTAL_CASES:AFG",
+          "MALARIA_TOTAL_CASES:AFR",
+          "MALARIA_TOTAL_CASES:AGO"
+        ],
+        "metrics": [
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.mdg-0000000003": {
+        "rows": 15406,
+        "entities": 443,
+        "entity_id_samples": [
+          "MDG_0000000003:143:SEX_FMLE:AGEGROUP_YEARS10-14",
+          "MDG_0000000003:143:SEX_FMLE:AGEGROUP_YEARS15-19",
+          "MDG_0000000003:150:SEX_FMLE:AGEGROUP_YEARS10-14"
+        ],
+        "metrics": [
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.mdg-0000000007": {
+        "rows": 258040,
+        "entities": 1277,
+        "entity_id_samples": [
+          "MDG_0000000007:AFG:SEX_BTSX:AGEGROUP_YEARSUNDER5:WEALTHQUINTILE_TOTL",
+          "MDG_0000000007:AFG:SEX_BTSX:AGEGROUP_YEARSUNDER5:WEALTHQUINTILE_WQ1",
+          "MDG_0000000007:AFG:SEX_BTSX:AGEGROUP_YEARSUNDER5:WEALTHQUINTILE_WQ2"
+        ],
+        "metrics": [
+          "high",
+          "low",
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.mdg-0000000017": {
+        "rows": 18708,
+        "entities": 188,
+        "entity_id_samples": [
+          "MDG_0000000017:AFG",
+          "MDG_0000000017:AFR",
+          "MDG_0000000017:AGO"
+        ],
+        "metrics": [
+          "high",
+          "low",
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.mdg-0000000025": {
+        "rows": 5498,
+        "entities": 200,
+        "entity_id_samples": [
+          "MDG_0000000025:AFG",
+          "MDG_0000000025:AFR",
+          "MDG_0000000025:AGO"
+        ],
+        "metrics": [
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.ncd-bmi-18a": {
+        "rows": 113400,
+        "entities": 630,
+        "entity_id_samples": [
+          "NCD_BMI_18A:AFG:SEX_BTSX:AGEGROUP_YEARS18-PLUS",
+          "NCD_BMI_18A:AFG:SEX_FMLE:AGEGROUP_YEARS18-PLUS",
+          "NCD_BMI_18A:AFG:SEX_MLE:AGEGROUP_YEARS18-PLUS"
+        ],
+        "metrics": [
+          "high",
+          "low",
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.ncd-hyp-diagnosis-a": {
+        "rows": 76920,
+        "entities": 641,
+        "entity_id_samples": [
+          "NCD_HYP_DIAGNOSIS_A:AFG:SEX_BTSX",
+          "NCD_HYP_DIAGNOSIS_A:AFG:SEX_FMLE",
+          "NCD_HYP_DIAGNOSIS_A:AFG:SEX_MLE"
+        ],
+        "metrics": [
+          "high",
+          "low",
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.ncd-hyp-treatment-a": {
+        "rows": 76920,
+        "entities": 641,
+        "entity_id_samples": [
+          "NCD_HYP_TREATMENT_A:AFG:SEX_BTSX",
+          "NCD_HYP_TREATMENT_A:AFG:SEX_FMLE",
+          "NCD_HYP_TREATMENT_A:AFG:SEX_MLE"
+        ],
+        "metrics": [
+          "high",
+          "low",
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.ntd-7": {
+        "rows": 2002,
+        "entities": 77,
+        "entity_id_samples": [
+          "NTD_7:AFG",
+          "NTD_7:AGO",
+          "NTD_7:AUS"
+        ],
+        "metrics": [
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.ntd-bu-conf": {
+        "rows": 396,
+        "entities": 33,
+        "entity_id_samples": [
+          "NTD_BU_CONF:AGO",
+          "NTD_BU_CONF:AUS",
+          "NTD_BU_CONF:BEN"
+        ],
+        "metrics": [
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.ntd-lepr3": {
+        "rows": 5044,
+        "entities": 194,
+        "entity_id_samples": [
+          "NTD_LEPR3:AFG",
+          "NTD_LEPR3:AGO",
+          "NTD_LEPR3:ALB"
+        ],
+        "metrics": [
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.ntd-lepr8": {
+        "rows": 5044,
+        "entities": 194,
+        "entity_id_samples": [
+          "NTD_LEPR8:AFG",
+          "NTD_LEPR8:AGO",
+          "NTD_LEPR8:ALB"
+        ],
+        "metrics": [
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.rhr-npsv": {
+        "rows": 1176,
+        "entities": 294,
+        "entity_id_samples": [
+          "RHR_NPSV:AFR:SEX_FMLE:AGEGROUP_YEARS15-49",
+          "RHR_NPSV:AFR:SEX_FMLE:AGEGROUP_YEARS15PLUS",
+          "RHR_NPSV:AGO:SEX_FMLE:AGEGROUP_YEARS15-49"
+        ],
+        "metrics": [
+          "high",
+          "low",
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.sa-0000001518": {
+        "rows": 2844,
+        "entities": 582,
+        "entity_id_samples": [
+          "SA_0000001518:AFG:ALCOHOLTYPE_SA_BEER",
+          "SA_0000001518:AFG:ALCOHOLTYPE_SA_SPIRITS",
+          "SA_0000001518:AFG:ALCOHOLTYPE_SA_WINE"
+        ],
+        "metrics": [
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.sa-0000001531": {
+        "rows": 2808,
+        "entities": 582,
+        "entity_id_samples": [
+          "SA_0000001531:AFG:ALCOHOLTYPE_SA_BEER",
+          "SA_0000001531:AFG:ALCOHOLTYPE_SA_SPIRITS",
+          "SA_0000001531:AFG:ALCOHOLTYPE_SA_WINE"
+        ],
+        "metrics": [
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.sa-0000001544": {
+        "rows": 2788,
+        "entities": 582,
+        "entity_id_samples": [
+          "SA_0000001544:AFG:ALCOHOLTYPE_SA_BEER",
+          "SA_0000001544:AFG:ALCOHOLTYPE_SA_SPIRITS",
+          "SA_0000001544:AFG:ALCOHOLTYPE_SA_WINE"
+        ],
+        "metrics": [
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.sa-0000001728": {
+        "rows": 640,
+        "entities": 194,
+        "entity_id_samples": [
+          "SA_0000001728:AFG",
+          "SA_0000001728:AGO",
+          "SA_0000001728:ALB"
+        ],
+        "metrics": [
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.sa-0000001730": {
+        "rows": 4008,
+        "entities": 2004,
+        "entity_id_samples": [
+          "SA_0000001730:AFG:ALCOHOLTYPE_SA_BEER",
+          "SA_0000001730:AFG:ALCOHOLTYPE_SA_BEER:PRICEMEASURETYPE_SA_MINIMUM_PRICE_POLICY",
+          "SA_0000001730:AFG:ALCOHOLTYPE_SA_SPIRITS"
+        ],
+        "metrics": [
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.taxbev-importduties": {
+        "rows": 1676,
+        "entities": 475,
+        "entity_id_samples": [
+          "TAXBEV_IMPORTDUTIES:AGO:BEVERAGETYPE_ALCOHOLIC:BEVERAGE_BEV_BEER",
+          "TAXBEV_IMPORTDUTIES:AGO:BEVERAGETYPE_ALCOHOLIC:BEVERAGE_BEV_SPIRITS",
+          "TAXBEV_IMPORTDUTIES:AGO:BEVERAGETYPE_NONALCOHOLIC:BEVERAGE_BEV_SUGAR_CARBONATED"
+        ],
+        "metrics": [
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.taxbev-price": {
+        "rows": 4992,
+        "entities": 1414,
+        "entity_id_samples": [
+          "TAXBEV_PRICE:AGO:BEVERAGETYPE_ALCOHOLIC:BEVERAGE_BEV_BEER:PRICE_PRICE_IN_CURRENCY",
+          "TAXBEV_PRICE:AGO:BEVERAGETYPE_ALCOHOLIC:BEVERAGE_BEV_BEER:PRICE_PRICE_IN_PPP",
+          "TAXBEV_PRICE:AGO:BEVERAGETYPE_ALCOHOLIC:BEVERAGE_BEV_BEER:PRICE_PRICE_IN_USD"
+        ],
+        "metrics": [
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.taxbev-vatspecial-lohi": {
+        "rows": 300,
+        "entities": 150,
+        "entity_id_samples": [
+          "TAXBEV_VATSPECIAL_LOHI:AGO:BEVERAGETYPE_NONALCOHOLIC:BEVERAGE_BEV_TOTAL_NONALCOHOLIC",
+          "TAXBEV_VATSPECIAL_LOHI:ALB:BEVERAGETYPE_NONALCOHOLIC:BEVERAGE_BEV_TOTAL_NONALCOHOLIC",
+          "TAXBEV_VATSPECIAL_LOHI:AND:BEVERAGETYPE_NONALCOHOLIC:BEVERAGE_BEV_TOTAL_NONALCOHOLIC"
+        ],
+        "metrics": [
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.tb-1": {
+        "rows": 20036,
+        "entities": 208,
+        "entity_id_samples": [
+          "TB_1:AFG",
+          "TB_1:AFR",
+          "TB_1:AGO"
+        ],
+        "metrics": [
+          "high",
+          "low",
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.tb-c-xdr-tsr": {
+        "rows": 2030,
+        "entities": 143,
+        "entity_id_samples": [
+          "TB_c_xdr_tsr:AFG",
+          "TB_c_xdr_tsr:AFR",
+          "TB_c_xdr_tsr:AMR"
+        ],
+        "metrics": [
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.tb-rr-mdr": {
+        "rows": 7352,
+        "entities": 209,
+        "entity_id_samples": [
+          "TB_rr_mdr:AFG",
+          "TB_rr_mdr:AFR",
+          "TB_rr_mdr:AGO"
+        ],
+        "metrics": [
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.tobacco-mpower-m4-prevalence": {
+        "rows": 4680,
+        "entities": 2340,
+        "entity_id_samples": [
+          "TOBACCO_MPOWER_M4_PREVALENCE:AFG:TOBACCO_INDICATOR_Yth_curr_e-cig:SEX_BTSX",
+          "TOBACCO_MPOWER_M4_PREVALENCE:AFG:TOBACCO_INDICATOR_Yth_curr_e-cig:SEX_FMLE",
+          "TOBACCO_MPOWER_M4_PREVALENCE:AFG:TOBACCO_INDICATOR_Yth_curr_e-cig:SEX_MLE"
+        ],
+        "metrics": [
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.tobacco-mpower-p2-smokefreeplacedetails": {
+        "rows": 27300,
+        "entities": 1365,
+        "entity_id_samples": [
+          "TOBACCO_MPOWER_P2_SMOKEFREEPLACEDETAILS:AFG:TOBACCO_INDICATOR_P10_subnat_auth_exists",
+          "TOBACCO_MPOWER_P2_SMOKEFREEPLACEDETAILS:AFG:TOBACCO_INDICATOR_P11_fines_any",
+          "TOBACCO_MPOWER_P2_SMOKEFREEPLACEDETAILS:AFG:TOBACCO_INDICATOR_P12_fines_establishment"
+        ],
+        "metrics": [
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.vaccinecoverage-mena-c": {
+        "rows": 620,
+        "entities": 31,
+        "entity_id_samples": [
+          "VACCINECOVERAGE_MENA_C:AFR",
+          "VACCINECOVERAGE_MENA_C:BDI",
+          "VACCINECOVERAGE_MENA_C:BEN"
+        ],
+        "metrics": [
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.whs4-154": {
+        "rows": 2317,
+        "entities": 166,
+        "entity_id_samples": [
+          "WHS4_154:AFG",
+          "WHS4_154:AGO",
+          "WHS4_154:ALB"
+        ],
+        "metrics": [
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.wsh-hygiene-basic": {
+        "rows": 10782,
+        "entities": 361,
+        "entity_id_samples": [
+          "WSH_HYGIENE_BASIC:ABW:RESIDENCEAREATYPE_TOTL",
+          "WSH_HYGIENE_BASIC:AFG:RESIDENCEAREATYPE_RUR",
+          "WSH_HYGIENE_BASIC:AFG:RESIDENCEAREATYPE_TOTL"
+        ],
+        "metrics": [
+          "restated_at",
+          "value"
+        ]
+      },
+      "who.gho.wsh-water-basic": {
+        "rows": 29750,
+        "entities": 609,
+        "entity_id_samples": [
+          "WSH_WATER_BASIC:ABW:RESIDENCEAREATYPE_TOTL",
+          "WSH_WATER_BASIC:AFG:RESIDENCEAREATYPE_RUR",
+          "WSH_WATER_BASIC:AFG:RESIDENCEAREATYPE_TOTL"
+        ],
+        "metrics": [
+          "restated_at",
+          "value"
+        ]
+      }
+    },
+    "parser_versions": [
+      "2"
+    ]
+  },
+  "metrics": {
+    "high": {
+      "rows": 272398,
+      "unit": "",
+      "type": "number",
+      "series": [
+        "who.gho.air-35",
+        "who.gho.air-42",
+        "who.gho.air-90",
+        "who.gho.bp-03",
+        "who.gho.childmort5to14",
+        "who.gho.cm-02",
+        "who.gho.cm-04",
+        "who.gho.hepatitis-hbv-treatment-perinfected-per100",
+        "who.gho.hepatitis-hcv-prevalence-per100",
+        "who.gho.hiv-0000000020",
+        "who.gho.hiv-0000000023",
+        "who.gho.malaria-est-cases",
+        "who.gho.mdg-0000000007",
+        "who.gho.mdg-0000000017",
+        "who.gho.ncd-bmi-18a",
+        "who.gho.ncd-hyp-diagnosis-a",
+        "who.gho.ncd-hyp-treatment-a",
+        "who.gho.rhr-npsv",
+        "who.gho.tb-1"
+      ],
+      "entities": 17448,
+      "distinct_values": 176532,
+      "empty": 0,
+      "min": "0.0",
+      "max": "313000000.0",
+      "samples": [
+        "0.0",
+        "0.01",
+        "0.02"
+      ]
+    },
+    "low": {
+      "rows": 272398,
+      "unit": "",
+      "type": "number",
+      "series": [
+        "who.gho.air-35",
+        "who.gho.air-42",
+        "who.gho.air-90",
+        "who.gho.bp-03",
+        "who.gho.childmort5to14",
+        "who.gho.cm-02",
+        "who.gho.cm-04",
+        "who.gho.hepatitis-hbv-treatment-perinfected-per100",
+        "who.gho.hepatitis-hcv-prevalence-per100",
+        "who.gho.hiv-0000000020",
+        "who.gho.hiv-0000000023",
+        "who.gho.malaria-est-cases",
+        "who.gho.mdg-0000000007",
+        "who.gho.mdg-0000000017",
+        "who.gho.ncd-bmi-18a",
+        "who.gho.ncd-hyp-diagnosis-a",
+        "who.gho.ncd-hyp-treatment-a",
+        "who.gho.rhr-npsv",
+        "who.gho.tb-1"
+      ],
+      "entities": 17448,
+      "distinct_values": 173784,
+      "empty": 0,
+      "min": "0.0",
+      "max": "256000000.0",
+      "samples": [
+        "0.0",
+        "0.001",
+        "0.002"
+      ]
+    },
+    "restated_at": {
+      "rows": 355606,
+      "unit": "",
+      "type": "date",
+      "series": [
+        "who.gho.air-35",
+        "who.gho.air-42",
+        "who.gho.air-90",
+        "who.gho.bp-03",
+        "who.gho.childmort5to14",
+        "who.gho.cm-02",
+        "who.gho.cm-04",
+        "who.gho.gasp-isolatestested-number",
+        "who.gho.ghed-extche-sha2011",
+        "who.gho.hepatitis-hbv-treatment-anc-percent",
+        "who.gho.hepatitis-hbv-treatment-perinfected-per100",
+        "who.gho.hepatitis-hcv-prevalence-per100",
+        "who.gho.hiv-0000000020",
+        "who.gho.hiv-0000000023",
+        "who.gho.hwf-0014",
+        "who.gho.hwf-0017",
+        "who.gho.malaria-est-cases",
+        "who.gho.malaria-imported",
+        "who.gho.malaria-total-cases",
+        "who.gho.mdg-0000000003",
+        "who.gho.mdg-0000000007",
+        "who.gho.mdg-0000000017",
+        "who.gho.mdg-0000000025",
+        "who.gho.ncd-bmi-18a",
+        "who.gho.ncd-hyp-diagnosis-a",
+        "who.gho.ncd-hyp-treatment-a",
+        "who.gho.ntd-7",
+        "who.gho.ntd-bu-conf",
+        "who.gho.ntd-lepr3",
+        "who.gho.ntd-lepr8",
+        "who.gho.rhr-npsv",
+        "who.gho.sa-0000001518",
+        "who.gho.sa-0000001531",
+        "who.gho.sa-0000001544",
+        "who.gho.sa-0000001728",
+        "who.gho.sa-0000001730",
+        "who.gho.taxbev-importduties",
+        "who.gho.taxbev-price",
+        "who.gho.taxbev-vatspecial-lohi",
+        "who.gho.tb-1",
+        "who.gho.tb-c-xdr-tsr",
+        "who.gho.tb-rr-mdr",
+        "who.gho.tobacco-mpower-m4-prevalence",
+        "who.gho.tobacco-mpower-p2-smokefreeplacedetails",
+        "who.gho.vaccinecoverage-mena-c",
+        "who.gho.whs4-154",
+        "who.gho.wsh-hygiene-basic",
+        "who.gho.wsh-water-basic"
+      ],
+      "entities": 31146,
+      "distinct_values": 63,
+      "empty": 0,
+      "min": "2016-08-08",
+      "max": "2026-08-05",
+      "samples": [
+        "2016-08-08",
+        "2017-06-28",
+        "2018-06-18"
+      ]
+    },
+    "value": {
+      "rows": 355526,
+      "unit": "",
+      "type": "text",
+      "series": [
+        "who.gho.air-35",
+        "who.gho.air-42",
+        "who.gho.air-90",
+        "who.gho.bp-03",
+        "who.gho.childmort5to14",
+        "who.gho.cm-02",
+        "who.gho.cm-04",
+        "who.gho.gasp-isolatestested-number",
+        "who.gho.ghed-extche-sha2011",
+        "who.gho.hepatitis-hbv-treatment-anc-percent",
+        "who.gho.hepatitis-hbv-treatment-perinfected-per100",
+        "who.gho.hepatitis-hcv-prevalence-per100",
+        "who.gho.hiv-0000000020",
+        "who.gho.hiv-0000000023",
+        "who.gho.hwf-0014",
+        "who.gho.hwf-0017",
+        "who.gho.malaria-est-cases",
+        "who.gho.malaria-imported",
+        "who.gho.malaria-total-cases",
+        "who.gho.mdg-0000000003",
+        "who.gho.mdg-0000000007",
+        "who.gho.mdg-0000000017",
+        "who.gho.mdg-0000000025",
+        "who.gho.ncd-bmi-18a",
+        "who.gho.ncd-hyp-diagnosis-a",
+        "who.gho.ncd-hyp-treatment-a",
+        "who.gho.ntd-7",
+        "who.gho.ntd-bu-conf",
+        "who.gho.ntd-lepr3",
+        "who.gho.ntd-lepr8",
+        "who.gho.rhr-npsv",
+        "who.gho.sa-0000001518",
+        "who.gho.sa-0000001531",
+        "who.gho.sa-0000001544",
+        "who.gho.sa-0000001728",
+        "who.gho.sa-0000001730",
+        "who.gho.taxbev-importduties",
+        "who.gho.taxbev-price",
+        "who.gho.taxbev-vatspecial-lohi",
+        "who.gho.tb-1",
+        "who.gho.tb-c-xdr-tsr",
+        "who.gho.tb-rr-mdr",
+        "who.gho.tobacco-mpower-m4-prevalence",
+        "who.gho.tobacco-mpower-p2-smokefreeplacedetails",
+        "who.gho.vaccinecoverage-mena-c",
+        "who.gho.whs4-154",
+        "who.gho.wsh-hygiene-basic",
+        "who.gho.wsh-water-basic"
+      ],
+      "entities": 31146,
+      "distinct_values": 203765,
+      "empty": 0,
+      "samples": [
+        ". . .",
+        "0.0",
+        "0.00015186"
+      ]
+    }
+  },
+  "raw": {
+    "files": 384,
+    "bytes_on_disk": 14669468,
+    "capture_dates": 1,
+    "first_capture": "2026-09-07T15:17:15Z",
+    "last_capture": "2026-09-07T16:45:30Z"
+  }
+}
