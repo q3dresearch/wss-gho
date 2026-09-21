@@ -153,6 +153,18 @@ lacks returns **zero rows with no error**, and dimensions are not uniform:
 under-five mortality carries SEX, AGEGROUP and WEALTHQUINTILE, measles
 immunisation carries none and is not even country-keyed.
 
+## Licence — the data is NOT CC-BY-4.0
+
+**Code:** MIT, see [LICENSE](LICENSE).
+
+**Data:** CC BY-NC-SA 3.0 IGO, passed through from WHO — see
+[LICENSE-DATA](LICENSE-DATA). All 48 registry sources declare it, so
+`derived/observations/` carries WHO's terms, not this repository's.
+
+That means **no commercial use** and **derivatives must stay CC BY-NC-SA 3.0
+IGO**. Both are conditions CC-BY-4.0 drops, and this repo shipped the CC-BY-4.0
+text over 1,255,928 rows until 22 September 2026. Attribute WHO, not this repo.
+
 ## Running it
 
 ```bash
