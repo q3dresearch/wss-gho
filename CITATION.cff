@@ -22,7 +22,8 @@ authors:
     website: "https://github.com/neldivad"
   - name: "q3dresearch"
     website: "https://github.com/q3dresearch"
-license: CC-BY-4.0
+# All 48 sources are WHO CC BY-NC-SA 3.0 IGO. Not CC-BY-4.0: that would drop NonCommercial and ShareAlike.
+license: CC-BY-NC-SA-3.0-IGO
 keywords:
   - World Health Organization
   - Global Health Observatory
