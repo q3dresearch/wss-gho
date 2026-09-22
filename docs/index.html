@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>WHO Global Health Observatory Vintages (wss-gho)</title>
-<meta name="description" content="Monthly point-in-time captures of 48 actively maintained indicators from the World Health Organization&#x27;s Global Health Observatory. GHO serves one value per country and reference year, and a revision overwrites the previous value in place: under-five mortality for Brazil in 1931 carries a load stamp">
+<meta name="description" content="Monthly point-in-time captures of all 442 actively maintained indicators in the World Health Organization&#x27;s Global Health Observatory. GHO serves one value per country and reference year, and a revision overwrites the previous value in place: under-five mortality for Brazil in 1931 carries a load st">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
   "@type": "Dataset",
   "name": "WHO Global Health Observatory Vintages (wss-gho)",
-  "description": "Monthly point-in-time captures of 48 actively maintained indicators from the World Health Organization's Global Health Observatory. GHO serves one value per country and reference year, and a revision overwrites the previous value in place: under-five mortality for Brazil in 1931 carries a load stamp of 5 August 2026, and whatever it said before is gone. Every published estimate is therefore uncheckable against what it used to say, including the 2015 baselines against which Sustainable Development Goal progress is measured. This dataset preserves each month's state of the series as the bytes were served, with a manifest row recording the URL, fetch time and SHA-256 of every capture. Observations are stamped with the reference year the figure describes rather than the fetch time, and WHO's own load stamp is carried as a separate metric so a restatement can be dated. Indicators were selected mechanically -- every one in a random 400-indicator sample of the 3,098 in the catalogue that had been republished within a year -- rather than chosen.",
-  "url": "https://github.com/q3dresearch/wss-gho",
+  "description": "Monthly point-in-time captures of all 442 actively maintained indicators in the World Health Organization's Global Health Observatory. GHO serves one value per country and reference year, and a revision overwrites the previous value in place: under-five mortality for Brazil in 1931 carries a load stamp of 5 August 2026, and whatever it said before is gone. Every published estimate is therefore uncheckable against what it used to say, including the 2015 baselines against which Sustainable Development Goal progress is measured. This dataset preserves each month's state of the series as the bytes were served, with a manifest row recording the URL, fetch time and SHA-256 of every capture. Observations are stamped with the reference year the figure describes rather than the fetch time, and WHO's own load stamp is carried as a separate metric so a restatement can be dated. Indicators were selected mechanically rather than chosen: every one of the 3,099 in the catalogue was polled on 22 September 2026 and every one republished within the preceding year was taken, 3,084,631 rows across 3,321 pages.",
+  "url": "https://github.com/wss-gho",
   "isAccessibleForFree": true,
   "keywords": [
     "World Health Organization",
@@ -39,7 +39,7 @@
     {
       "@type": "DataDownload",
       "encodingFormat": "text/csv",
-      "contentUrl": "https://github.com/q3dresearch/wss-gho/tree/main/data"
+      "contentUrl": "https://github.com/wss-gho/tree/main/data"
     }
   ],
   "license": "CC-BY-NC-SA-3.0-IGO",
@@ -48,7 +48,27 @@
     {
       "@type": "Dataset",
       "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/AIR_11?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/AIR_15?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
       "url": "https://ghoapi.azureedge.net/api/AIR_35?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/AIR_39?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/AIR_41?$top=1000"
     },
     {
       "@type": "Dataset",
@@ -58,7 +78,32 @@
     {
       "@type": "Dataset",
       "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/AIR_52?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/AIR_62?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/AIR_7?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
       "url": "https://ghoapi.azureedge.net/api/AIR_90?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/AMR_INFECT_ECOLI?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/AMR_INFECT_MRSA?$top=1000"
     },
     {
       "@type": "Dataset",
@@ -68,7 +113,37 @@
     {
       "@type": "Dataset",
       "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/BP_04?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/CANCERSURVIVAL_BREASTCANCER?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/CANCERSURVIVAL_CHILDREN_LEUKAEMIA?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/CHILDDEATH5TO14?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
       "url": "https://ghoapi.azureedge.net/api/CHILDMORT5TO14?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/CHILDVIOL?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/CM_01?$top=1000"
     },
     {
       "@type": "Dataset",
@@ -78,7 +153,112 @@
     {
       "@type": "Dataset",
       "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/CM_03?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
       "url": "https://ghoapi.azureedge.net/api/CM_04?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/DEATHADO?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/FAMILYPLANNINGUNPDUHC?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/FINANCIALHARDSHIP_MILLIONOFPOP?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/FINANCIALHARDSHIP_PROPORTIONOFPOP?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/FOODBORNE_DALY?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/FOODBORNE_DALY_100k?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/FOODBORNE_DALY_CASE?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/FOODBORNE_DTH?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/FOODBORNE_DTH_100K?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/FOODBORNE_DTH_CASE?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/FOODBORNE_ILL?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/FOODBORNE_ILL_100K?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/FOODBORNE_YLD?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/FOODBORNE_YLD_100K?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/FOODBORNE_YLD_CASE?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/FOODBORNE_YLL?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/FOODBORNE_YLL_100K?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/FOODBORNE_YLL_CASE?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/FOODSAFETY_IHR_PERCENT?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/GASP_ISOLATESDSR_PROPORTION?$top=1000"
     },
     {
       "@type": "Dataset",
@@ -88,7 +268,142 @@
     {
       "@type": "Dataset",
       "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/GASPRP?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/GHED_CHE_pc_US_SHA2011?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/GHED_CHEGDP_SHA2011?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/GHED_EXT_pc_US_SHA2011?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
       "url": "https://ghoapi.azureedge.net/api/GHED_EXTCHE_SHA2011?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/GHED_GGHE-D_pc_US_SHA2011?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/GHED_GGHE-DCHE_SHA2011?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/GHED_GGHE-DGDP_SHA2011?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/GHED_GGHE-DGGE_SHA2011?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/GHED_OOP_pc_US_SHA2011?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/GHED_OOPSCHE_SHA2011?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/GHED_PHC_GGHE-D_PHC_SHA2011?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/GHED_PHC_pc_US_SHA2011?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/GHED_PVT-D_pc_US_SHA2011?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/GHED_PVT-DCHE_SHA2011?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/GLASSAMC_AWARE?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/GLASSAMC_GPW13_T4B?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/GLASSAMC_TC?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HEALTH_PROMOTING_CITIES?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HEPATITIS_DEATHS_NUM?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HEPATITIS_DEATHS_RATE?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HEPATITIS_HBV_DIAGNOSED_NUM?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HEPATITIS_HBV_DIAGNOSIS_PERINFECTED_PER100?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HEPATITIS_HBV_INFECTIONS_NEW_NUM?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HEPATITIS_HBV_LIVINGWITH_NUM?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HEPATITIS_HBV_PREVALENCE_PER100?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HEPATITIS_HBV_TESTING_ANC_PERCENT?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HEPATITIS_HBV_TESTPOSITIVE_ANC_PERCENT?$top=1000"
     },
     {
       "@type": "Dataset",
@@ -98,7 +413,47 @@
     {
       "@type": "Dataset",
       "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HEPATITIS_HBV_TREATMENT_NUM?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HEPATITIS_HBV_TREATMENT_PERDIAGNOSED_PER100?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
       "url": "https://ghoapi.azureedge.net/api/HEPATITIS_HBV_TREATMENT_PERINFECTED_PER100?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HEPATITIS_HCV_DIAGNOSED_CRD_NUM?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HEPATITIS_HCV_DIAGNOSED_NUM?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HEPATITIS_HCV_DIAGNOSIS_PERINFECTED_CRD_PER100?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HEPATITIS_HCV_INFECTIONS_NEW_NUM?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HEPATITIS_HCV_LIVINGWITH_CRD_NUM?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HEPATITIS_HCV_LIVINGWITH_NUM?$top=1000"
     },
     {
       "@type": "Dataset",
@@ -108,7 +463,57 @@
     {
       "@type": "Dataset",
       "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HEPATITIS_HCV_TREATMENT_CUM_NUM?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HEPATITIS_HCV_TREATMENT_CUM_PERINFECTED_CRD_PER100?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HEPATITIS_HCV_TREATMENT_INITIATED_NUM?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HEPATITIS_HCV_TREATMENT_PERDIAGNOSED_PER100?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HIV_0000000001?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HIV_0000000006?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HIV_0000000009?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HIV_0000000011?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HIV_0000000016?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
       "url": "https://ghoapi.azureedge.net/api/HIV_0000000020?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HIV_0000000021?$top=1000"
     },
     {
       "@type": "Dataset",
@@ -118,7 +523,117 @@
     {
       "@type": "Dataset",
       "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HIV_0000000024?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HIV_0000000026?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HIV_ARTCOVERAGE?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HIV_STATUSKNOWNART?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HIV_STATUSKNOWNHIV?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HIV_VIRALLOADSUPPRESSED?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HIV_VIRALLOADSUPPRESSEDART?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HWF_0001?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HWF_0002?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HWF_0003?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HWF_0004?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HWF_0005?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HWF_0006?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HWF_0007?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HWF_0008?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HWF_0009?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HWF_0010?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HWF_0011?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HWF_0012?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HWF_0013?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
       "url": "https://ghoapi.azureedge.net/api/HWF_0014?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HWF_0015?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HWF_0016?$top=1000"
     },
     {
       "@type": "Dataset",
@@ -128,7 +643,137 @@
     {
       "@type": "Dataset",
       "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HWF_0018?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HWF_0019?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HWF_0020?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HWF_0021?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HWF_0022?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HWF_0023?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HWF_0024?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HWF_0025?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/HWF_0026?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/LBW_NUMBER?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/LBW_PREVALENCE?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/M_Est_cig_curr?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/M_Est_cig_curr_std?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/M_Est_cig_curr_users?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/M_Est_smk_curr?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/M_Est_smk_curr_std?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/M_Est_smk_curr_users?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/M_Est_tob_curr?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/M_Est_tob_curr_std?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/M_Est_tob_curr_users?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/MALARIA_1STLINE_TREATED?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/MALARIA_ACT_TREATED?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/MALARIA_CONF_CASES?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
       "url": "https://ghoapi.azureedge.net/api/MALARIA_EST_CASES?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/MALARIA_EST_DEATHS?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/MALARIA_EST_INCIDENCE?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/MALARIA_EST_MORTALITY?$top=1000"
     },
     {
       "@type": "Dataset",
@@ -138,7 +783,92 @@
     {
       "@type": "Dataset",
       "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/MALARIA_INDIG?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/MALARIA_INDIG_STATUS?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/MALARIA_IPTP3_COVERAGE?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/MALARIA_IRS_COVERAGE?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/MALARIA_ITN_COVERAGE?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/MALARIA_ITN_USE?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/MALARIA_MICR_POS?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/MALARIA_MICR_TEST?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/MALARIA_NMCP_CALCULATIONS?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/MALARIA_PF_INDIG?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/MALARIA_PRES_CASES?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/MALARIA_PV_INDIG?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/MALARIA_RDT_POS?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/MALARIA_RDT_TEST?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/MALARIA_SUSPECTS?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
       "url": "https://ghoapi.azureedge.net/api/MALARIA_TOTAL_CASES?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/MCV2?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/MDG_0000000001?$top=1000"
     },
     {
       "@type": "Dataset",
@@ -158,7 +888,22 @@
     {
       "@type": "Dataset",
       "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/MDG_0000000020?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
       "url": "https://ghoapi.azureedge.net/api/MDG_0000000025?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/MDG_0000000029?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/MORTADO?$top=1000"
     },
     {
       "@type": "Dataset",
@@ -168,7 +913,82 @@
     {
       "@type": "Dataset",
       "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NCD_BMI_18C?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NCD_BMI_25A?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NCD_BMI_25C?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NCD_BMI_30A?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NCD_BMI_30C?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NCD_BMI_MINUS2C?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NCD_BMI_PLUS1C?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NCD_BMI_PLUS2C?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NCD_DIABETES_PREVALENCE_AGESTD?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NCD_DIABETES_PREVALENCE_CRUDE?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NCD_DIABETES_TREATMENT_AGESTD?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NCD_DIABETES_TREATMENT_CRUDE?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
       "url": "https://ghoapi.azureedge.net/api/NCD_HYP_DIAGNOSIS_A?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NCD_HYP_DIAGNOSIS_C?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NCD_HYP_PREVALENCE_A?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NCD_HYP_PREVALENCE_C?$top=1000"
     },
     {
       "@type": "Dataset",
@@ -178,7 +998,47 @@
     {
       "@type": "Dataset",
       "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NCD_HYP_TREATMENT_C?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NCD_PAA?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NCD_PAC?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NCDMORTPERCENT?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NTD_4?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NTD_5?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NTD_6?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
       "url": "https://ghoapi.azureedge.net/api/NTD_7?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NTD_8?$top=1000"
     },
     {
       "@type": "Dataset",
@@ -188,7 +1048,77 @@
     {
       "@type": "Dataset",
       "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NTD_BU_SUSP?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NTD_LEISHCEND?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NTD_LEISHCNUM?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NTD_LEISHCNUM_IM?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NTD_LEISHVEND?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NTD_LEISHVNUM?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NTD_LEISHVNUM_IM?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NTD_LEPR11?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NTD_LEPR13?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NTD_LEPR14?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NTD_LEPR2?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
       "url": "https://ghoapi.azureedge.net/api/NTD_LEPR3?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NTD_LEPR4?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NTD_LEPR5?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NTD_LEPR7?$top=1000"
     },
     {
       "@type": "Dataset",
@@ -198,7 +1128,292 @@
     {
       "@type": "Dataset",
       "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NTD_LEPR9?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NTD_ONCHEMO?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NTD_ONCHSTATUS?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NTD_ONCTREAT?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NTD_RAB2?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NTD_TRA5?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NUT_BF_CBF?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NUT_BF_EBF?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NUT_BF_EBF_NUMTH?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NUT_BF_EBF2D?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NUT_BF_EIBF?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NUT_BF_EVBF?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NUT_CF_EFF?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NUT_CF_ISSSF?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NUT_CF_MAD?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NUT_CF_MDD?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NUT_CF_MMF?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NUT_CF_ZVF?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NUTOVERWEIGHTNUM?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NUTOVERWEIGHTPREV?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NUTRITION_ANAEMIA_REPRODUCTIVEAGE_NUM?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NUTRITION_ANAEMIA_REPRODUCTIVEAGE_PREV?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NUTRITION_ANT_HAZ_NE2?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NUTRITION_ANT_WHZ_NE2?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NUTRITION_WA_2?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NUTRITION_WH_2?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NUTRITION_WH_3?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NUTSEVWASTINGNUM?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NUTSEVWASTINGPREV?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NUTSTUNTINGNUM?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NUTSTUNTINGPREV?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NUTUNDERWEIGHTNUM?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NUTUNDERWEIGHTPREV?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NUTWASTINGNUM?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/NUTWASTINGPREV?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/PCV3?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/PercposANC?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/PHE_HHAIR_PROP_POP_CLEAN_FUELS?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/PHYSICALACTIVITY_ACTIVEENVIRONMENTS?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/PHYSICALACTIVITY_ACTIVESOCIETIES?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/PHYSICALACTIVITY_ACTIVESYSTEMS?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/PHYSICALACTIVITY_REGION?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/R_excise_min_specific?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
       "url": "https://ghoapi.azureedge.net/api/RHR_NPSV?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/RHR_NPSV12M?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/ROTAC?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001398?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001400?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001502?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001503?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001506?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001507?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001508?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001509?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001510?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001511?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001512?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001513?$top=1000"
     },
     {
       "@type": "Dataset",
@@ -208,7 +1423,77 @@
     {
       "@type": "Dataset",
       "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001520?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001521?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001525?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001526?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001527?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001528?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
       "url": "https://ghoapi.azureedge.net/api/SA_0000001531?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001532?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001533?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001534?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001536?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001537?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001538?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001542?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001543?$top=1000"
     },
     {
       "@type": "Dataset",
@@ -218,7 +1503,77 @@
     {
       "@type": "Dataset",
       "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001545?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001549?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001550?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001551?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001554?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001555?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001688?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001691?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001694?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001698?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001699?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001726?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001727?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
       "url": "https://ghoapi.azureedge.net/api/SA_0000001728?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001729?$top=1000"
     },
     {
       "@type": "Dataset",
@@ -228,7 +1583,267 @@
     {
       "@type": "Dataset",
       "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001731?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001733?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001734?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001735?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001736?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001747?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001764?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001768?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001790?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001791?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001792?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001793?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001794?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001795?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001796?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001800?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001801?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001802?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001803?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001804?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001805?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001821?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001823?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SA_0000001849?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SDGAIRBODA?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SDGHEPHBSAGPRV?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SDGHIV?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SDGHPVRECEIVED?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SDGIHR2021?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SDGIPV12M?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SDGIPVLT?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SDGNTDTREATMENT?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SDGODAWS?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SDGPM25?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SDGSUICIDE?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/SE_DEV_ONTRK?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TAXBEV_ABV?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TAXBEV_ADVALOREMBASE?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TAXBEV_AFFORD_GDP?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TAXBEV_AFFORD_LESS?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TAXBEV_ALCOHOLBASEDTIERED?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TAXBEV_ALCOHOLSALESTATUS?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TAXBEV_EARMARKEDEXCISETAX?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TAXBEV_EXCISE?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TAXBEV_EXCISE_APPLIED_YN?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TAXBEV_EXCISE_AUTOADJUST?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TAXBEV_EXCISE_TYPE?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TAXBEV_EXCISE_UNIFORMTIERED_ALCOHOLIC?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TAXBEV_EXCISE_UNIFORMTIERED_NONALCOHOLIC?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
       "url": "https://ghoapi.azureedge.net/api/TAXBEV_IMPORTDUTIES?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TAXBEV_MINSPECEXCISETAX?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TAXBEV_MOSTSOLDSPIRIT?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TAXBEV_OTHERTAXES?$top=1000"
     },
     {
       "@type": "Dataset",
@@ -238,7 +1853,32 @@
     {
       "@type": "Dataset",
       "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TAXBEV_SUGARBASEDTIERED?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TAXBEV_SUGARCONTENT?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TAXBEV_TOTALTAXES?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TAXBEV_VATSALES?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
       "url": "https://ghoapi.azureedge.net/api/TAXBEV_VATSPECIAL_LOHI?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TAXBEV_VATSPECIAL_YN?$top=1000"
     },
     {
       "@type": "Dataset",
@@ -248,7 +1888,87 @@
     {
       "@type": "Dataset",
       "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TB_c_dst_rlt_new_pct?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TB_c_dst_rlt_ret_pct?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TB_c_mdr_tsr?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TB_c_mdr_tx?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TB_c_new_tsr?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TB_c_newinc?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TB_c_ret_tsr?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TB_c_tbhiv_tsr?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
       "url": "https://ghoapi.azureedge.net/api/TB_c_xdr_tsr?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TB_e_inc_num?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TB_e_inc_num_014?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TB_e_inc_rr_num?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TB_e_inc_tbhiv_num?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TB_e_mort_exc_tbhiv_num?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TB_hiv_art_pct?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TB_hivtest_pct?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TB_hivtest_pos_pct?$top=1000"
     },
     {
       "@type": "Dataset",
@@ -258,7 +1978,42 @@
     {
       "@type": "Dataset",
       "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TOBACCO_MPOWER_M1_PREVALENCE?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TOBACCO_MPOWER_M1_TOBACCOUSESMOKING?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TOBACCO_MPOWER_M2_PREVALENCE?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TOBACCO_MPOWER_M2_SMOKELESSECIGARETTES?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TOBACCO_MPOWER_M3_PREVALENCE?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TOBACCO_MPOWER_M3_TOBACCOUSESMOKINGSCHOOL?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
       "url": "https://ghoapi.azureedge.net/api/TOBACCO_MPOWER_M4_PREVALENCE?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TOBACCO_MPOWER_M4_SMOKELESSECIGARETTESSCHOOL?$top=1000"
     },
     {
       "@type": "Dataset",
@@ -268,7 +2023,182 @@
     {
       "@type": "Dataset",
       "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TOBACCO_MPOWER_R_PRICE?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TOBACCO_MPOWER_R_TAX?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TRAD_MED_CHE_PROVIDER?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TRAD_MED_CHE_SCHEME?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TRAD_MED_HWF_DENSITY?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TRAD_MED_HWF_DIST?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/TRAD_MED_SHARE_CHE?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/UHC_AVAILABILITY_SCORE?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/UHC_INDEX_REPORTED?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/UHC_SCI_CAPACITY?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/UHC_SCI_INFECT?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/UHC_SCI_NCD?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/UHC_SCI_RMNCH?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/UHCTRANSFATS?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/VACCINECOVERAGE_DTP1?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/VACCINECOVERAGE_IPV1?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
       "url": "https://ghoapi.azureedge.net/api/VACCINECOVERAGE_MENA_C?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/VACCINECOVERAGE_YFV?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/WHOSIS_000003?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/WHOSIS_000014?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/WHOSIS_000016?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/WHS3_41?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/WHS3_42?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/WHS3_43?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/WHS3_45?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/WHS3_46?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/WHS3_50?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/WHS3_53?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/WHS3_55?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/WHS3_56?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/WHS3_57?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/WHS3_62?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/WHS4_100?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/WHS4_106?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/WHS4_117?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/WHS4_129?$top=1000"
     },
     {
       "@type": "Dataset",
@@ -278,12 +2208,52 @@
     {
       "@type": "Dataset",
       "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/WHS4_543?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/WHS4_544?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/WHS6_102?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/WHS8_110?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
       "url": "https://ghoapi.azureedge.net/api/WSH_HYGIENE_BASIC?$top=1000"
     },
     {
       "@type": "Dataset",
       "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/WSH_SANITATION_BASIC?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/WSH_SANITATION_OD?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/WSH_SANITATION_SAFELY_MANAGED?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
       "url": "https://ghoapi.azureedge.net/api/WSH_WATER_BASIC?$top=1000"
+    },
+    {
+      "@type": "Dataset",
+      "name": "World Health Organization",
+      "url": "https://ghoapi.azureedge.net/api/WSH_WATER_SAFELY_MANAGED?$top=1000"
     }
   ]
 }
@@ -304,7 +2274,7 @@
 </head>
 <body>
 <h1>WHO Global Health Observatory Vintages (wss-gho)</h1>
-<p>Monthly point-in-time captures of 48 actively maintained indicators from the World Health Organization&#x27;s Global Health Observatory. GHO serves one value per country and reference year, and a revision overwrites the previous value in place: under-five mortality for Brazil in 1931 carries a load stamp of 5 August 2026, and whatever it said before is gone. Every published estimate is therefore uncheckable against what it used to say, including the 2015 baselines against which Sustainable Development Goal progress is measured. This dataset preserves each month&#x27;s state of the series as the bytes were served, with a manifest row recording the URL, fetch time and SHA-256 of every capture. Observations are stamped with the reference year the figure describes rather than the fetch time, and WHO&#x27;s own load stamp is carried as a separate metric so a restatement can be dated. Indicators were selected mechanically -- every one in a random 400-indicator sample of the 3,098 in the catalogue that had been republished within a year -- rather than chosen.</p>
+<p>Monthly point-in-time captures of all 442 actively maintained indicators in the World Health Organization&#x27;s Global Health Observatory. GHO serves one value per country and reference year, and a revision overwrites the previous value in place: under-five mortality for Brazil in 1931 carries a load stamp of 5 August 2026, and whatever it said before is gone. Every published estimate is therefore uncheckable against what it used to say, including the 2015 baselines against which Sustainable Development Goal progress is measured. This dataset preserves each month&#x27;s state of the series as the bytes were served, with a manifest row recording the URL, fetch time and SHA-256 of every capture. Observations are stamped with the reference year the figure describes rather than the fetch time, and WHO&#x27;s own load stamp is carried as a separate metric so a restatement can be dated. Indicators were selected mechanically rather than chosen: every one of the 3,099 in the catalogue was polled on 22 September 2026 and every one republished within the preceding year was taken, 3,084,631 rows across 3,321 pages.</p>
 <p class="cov">History held: <strong>2026-09-07</strong> to <strong>2026-09-07</strong>.</p>
 
 
@@ -339,66 +2309,460 @@
 <table>
   <thead><tr><th>source</th><th>publisher</th><th>cadence</th><th>terms</th></tr></thead>
   <tbody>
+      <tr><td><code>who.gho.air-11</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.air-15</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.air-35</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.air-39</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.air-41</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.air-42</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.air-52</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.air-62</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.air-7</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.air-90</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.amr-infect-ecoli</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.amr-infect-mrsa</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.bp-03</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.bp-04</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.cancersurvival-breastcancer</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.cancersurvival-children-leukaemia</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.childdeath5to14</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.childmort5to14</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.childviol</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.cm-01</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.cm-02</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.cm-03</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.cm-04</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.deathado</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.familyplanningunpduhc</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.financialhardship-millionofpop</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.financialhardship-proportionofpop</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.foodborne-daly</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.foodborne-daly-100k</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.foodborne-daly-case</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.foodborne-dth</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.foodborne-dth-100k</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.foodborne-dth-case</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.foodborne-ill</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.foodborne-ill-100k</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.foodborne-yld</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.foodborne-yld-100k</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.foodborne-yld-case</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.foodborne-yll</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.foodborne-yll-100k</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.foodborne-yll-case</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.foodsafety-ihr-percent</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.gasp-isolatesdsr-proportion</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.gasp-isolatestested-number</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.gasprp</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ghed-che-pc-us-sha2011</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ghed-chegdp-sha2011</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ghed-ext-pc-us-sha2011</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.ghed-extche-sha2011</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ghed-gghe-d-pc-us-sha2011</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ghed-gghe-dche-sha2011</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ghed-gghe-dgdp-sha2011</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ghed-gghe-dgge-sha2011</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ghed-oop-pc-us-sha2011</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ghed-oopsche-sha2011</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ghed-phc-gghe-d-phc-sha2011</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ghed-phc-pc-us-sha2011</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ghed-pvt-d-pc-us-sha2011</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ghed-pvt-dche-sha2011</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.glassamc-aware</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.glassamc-gpw13-t4b</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.glassamc-tc</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.health-promoting-cities</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hepatitis-deaths-num</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hepatitis-deaths-rate</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hepatitis-hbv-diagnosed-num</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hepatitis-hbv-diagnosis-perinfected-per100</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hepatitis-hbv-infections-new-num</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hepatitis-hbv-livingwith-num</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hepatitis-hbv-prevalence-per100</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hepatitis-hbv-testing-anc-percent</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hepatitis-hbv-testpositive-anc-percent</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.hepatitis-hbv-treatment-anc-percent</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hepatitis-hbv-treatment-num</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hepatitis-hbv-treatment-perdiagnosed-per100</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.hepatitis-hbv-treatment-perinfected-per100</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hepatitis-hcv-diagnosed-crd-num</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hepatitis-hcv-diagnosed-num</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hepatitis-hcv-diagnosis-perinfected-crd-per100</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hepatitis-hcv-infections-new-num</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hepatitis-hcv-livingwith-crd-num</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hepatitis-hcv-livingwith-num</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.hepatitis-hcv-prevalence-per100</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hepatitis-hcv-treatment-cum-num</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hepatitis-hcv-treatment-cum-perinfected-crd-per100</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hepatitis-hcv-treatment-initiated-num</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hepatitis-hcv-treatment-perdiagnosed-per100</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hiv-0000000001</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hiv-0000000006</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hiv-0000000009</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hiv-0000000011</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hiv-0000000016</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.hiv-0000000020</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hiv-0000000021</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.hiv-0000000023</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hiv-0000000024</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hiv-0000000026</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hiv-artcoverage</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hiv-statusknownart</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hiv-statusknownhiv</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hiv-viralloadsuppressed</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hiv-viralloadsuppressedart</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hwf-0001</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hwf-0002</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hwf-0003</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hwf-0004</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hwf-0005</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hwf-0006</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hwf-0007</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hwf-0008</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hwf-0009</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hwf-0010</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hwf-0011</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hwf-0012</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hwf-0013</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.hwf-0014</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hwf-0015</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hwf-0016</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.hwf-0017</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hwf-0018</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hwf-0019</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hwf-0020</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hwf-0021</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hwf-0022</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hwf-0023</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hwf-0024</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hwf-0025</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.hwf-0026</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.lbw-number</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.lbw-prevalence</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.m-est-cig-curr</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.m-est-cig-curr-std</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.m-est-cig-curr-users</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.m-est-smk-curr</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.m-est-smk-curr-std</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.m-est-smk-curr-users</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.m-est-tob-curr</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.m-est-tob-curr-std</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.m-est-tob-curr-users</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.malaria-1stline-treated</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.malaria-act-treated</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.malaria-conf-cases</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.malaria-est-cases</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.malaria-est-deaths</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.malaria-est-incidence</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.malaria-est-mortality</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.malaria-imported</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.malaria-indig</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.malaria-indig-status</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.malaria-iptp3-coverage</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.malaria-irs-coverage</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.malaria-itn-coverage</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.malaria-itn-use</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.malaria-micr-pos</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.malaria-micr-test</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.malaria-nmcp-calculations</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.malaria-pf-indig</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.malaria-pres-cases</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.malaria-pv-indig</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.malaria-rdt-pos</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.malaria-rdt-test</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.malaria-suspects</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.malaria-total-cases</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.mcv2</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.mdg-0000000001</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.mdg-0000000003</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.mdg-0000000007</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.mdg-0000000017</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.mdg-0000000020</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.mdg-0000000025</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.mdg-0000000029</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.mortado</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.ncd-bmi-18a</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ncd-bmi-18c</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ncd-bmi-25a</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ncd-bmi-25c</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ncd-bmi-30a</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ncd-bmi-30c</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ncd-bmi-minus2c</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ncd-bmi-plus1c</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ncd-bmi-plus2c</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ncd-diabetes-prevalence-agestd</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ncd-diabetes-prevalence-crude</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ncd-diabetes-treatment-agestd</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ncd-diabetes-treatment-crude</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.ncd-hyp-diagnosis-a</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ncd-hyp-diagnosis-c</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ncd-hyp-prevalence-a</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ncd-hyp-prevalence-c</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.ncd-hyp-treatment-a</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ncd-hyp-treatment-c</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ncd-paa</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ncd-pac</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ncdmortpercent</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ntd-4</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ntd-5</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ntd-6</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.ntd-7</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ntd-8</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.ntd-bu-conf</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ntd-bu-susp</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ntd-leishcend</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ntd-leishcnum</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ntd-leishcnum-im</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ntd-leishvend</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ntd-leishvnum</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ntd-leishvnum-im</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ntd-lepr11</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ntd-lepr13</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ntd-lepr14</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ntd-lepr2</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.ntd-lepr3</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ntd-lepr4</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ntd-lepr5</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ntd-lepr7</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.ntd-lepr8</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ntd-lepr9</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ntd-onchemo</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ntd-onchstatus</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ntd-onctreat</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ntd-rab2</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.ntd-tra5</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.nut-bf-cbf</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.nut-bf-ebf</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.nut-bf-ebf-numth</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.nut-bf-ebf2d</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.nut-bf-eibf</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.nut-bf-evbf</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.nut-cf-eff</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.nut-cf-isssf</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.nut-cf-mad</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.nut-cf-mdd</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.nut-cf-mmf</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.nut-cf-zvf</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.nutoverweightnum</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.nutoverweightprev</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.nutrition-anaemia-reproductiveage-num</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.nutrition-anaemia-reproductiveage-prev</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.nutrition-ant-haz-ne2</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.nutrition-ant-whz-ne2</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.nutrition-wa-2</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.nutrition-wh-2</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.nutrition-wh-3</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.nutsevwastingnum</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.nutsevwastingprev</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.nutstuntingnum</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.nutstuntingprev</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.nutunderweightnum</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.nutunderweightprev</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.nutwastingnum</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.nutwastingprev</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.pcv3</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.percposanc</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.phe-hhair-prop-pop-clean-fuels</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.physicalactivity-activeenvironments</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.physicalactivity-activesocieties</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.physicalactivity-activesystems</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.physicalactivity-region</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.r-excise-min-specific</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.rhr-npsv</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.rhr-npsv12m</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.rotac</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001398</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001400</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001502</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001503</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001506</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001507</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001508</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001509</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001510</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001511</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001512</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001513</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.sa-0000001518</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001520</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001521</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001525</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001526</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001527</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001528</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.sa-0000001531</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001532</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001533</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001534</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001536</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001537</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001538</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001542</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001543</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.sa-0000001544</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001545</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001549</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001550</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001551</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001554</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001555</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001688</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001691</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001694</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001698</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001699</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001726</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001727</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.sa-0000001728</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001729</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.sa-0000001730</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001731</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001733</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001734</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001735</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001736</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001747</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001764</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001768</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001790</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001791</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001792</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001793</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001794</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001795</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001796</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001800</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001801</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001802</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001803</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001804</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001805</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001821</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001823</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sa-0000001849</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sdgairboda</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sdghephbsagprv</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sdghiv</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sdghpvreceived</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sdgihr2021</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sdgipv12m</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sdgipvlt</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sdgntdtreatment</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sdgodaws</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sdgpm25</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.sdgsuicide</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.se-dev-ontrk</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.taxbev-abv</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.taxbev-advalorembase</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.taxbev-afford-gdp</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.taxbev-afford-less</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.taxbev-alcoholbasedtiered</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.taxbev-alcoholsalestatus</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.taxbev-earmarkedexcisetax</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.taxbev-excise</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.taxbev-excise-applied-yn</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.taxbev-excise-autoadjust</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.taxbev-excise-type</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.taxbev-excise-uniformtiered-alcoholic</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.taxbev-excise-uniformtiered-nonalcoholic</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.taxbev-importduties</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.taxbev-minspecexcisetax</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.taxbev-mostsoldspirit</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.taxbev-othertaxes</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.taxbev-price</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.taxbev-sugarbasedtiered</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.taxbev-sugarcontent</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.taxbev-totaltaxes</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.taxbev-vatsales</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.taxbev-vatspecial-lohi</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.taxbev-vatspecial-yn</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.tb-1</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.tb-c-dst-rlt-new-pct</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.tb-c-dst-rlt-ret-pct</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.tb-c-mdr-tsr</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.tb-c-mdr-tx</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.tb-c-new-tsr</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.tb-c-newinc</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.tb-c-ret-tsr</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.tb-c-tbhiv-tsr</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.tb-c-xdr-tsr</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.tb-e-inc-num</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.tb-e-inc-num-014</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.tb-e-inc-rr-num</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.tb-e-inc-tbhiv-num</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.tb-e-mort-exc-tbhiv-num</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.tb-hiv-art-pct</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.tb-hivtest-pct</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.tb-hivtest-pos-pct</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.tb-rr-mdr</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.tobacco-mpower-m1-prevalence</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.tobacco-mpower-m1-tobaccousesmoking</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.tobacco-mpower-m2-prevalence</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.tobacco-mpower-m2-smokelessecigarettes</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.tobacco-mpower-m3-prevalence</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.tobacco-mpower-m3-tobaccousesmokingschool</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.tobacco-mpower-m4-prevalence</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.tobacco-mpower-m4-smokelessecigarettesschool</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.tobacco-mpower-p2-smokefreeplacedetails</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.tobacco-mpower-r-price</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.tobacco-mpower-r-tax</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.trad-med-che-provider</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.trad-med-che-scheme</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.trad-med-hwf-density</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.trad-med-hwf-dist</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.trad-med-share-che</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.uhc-availability-score</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.uhc-index-reported</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.uhc-sci-capacity</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.uhc-sci-infect</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.uhc-sci-ncd</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.uhc-sci-rmnch</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.uhctransfats</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.vaccinecoverage-dtp1</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.vaccinecoverage-ipv1</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.vaccinecoverage-mena-c</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.vaccinecoverage-yfv</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.whosis-000003</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.whosis-000014</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.whosis-000016</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.whs3-41</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.whs3-42</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.whs3-43</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.whs3-45</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.whs3-46</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.whs3-50</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.whs3-53</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.whs3-55</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.whs3-56</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.whs3-57</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.whs3-62</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.whs4-100</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.whs4-106</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.whs4-117</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.whs4-129</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.whs4-154</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.whs4-543</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.whs4-544</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.whs6-102</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.whs8-110</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.wsh-hygiene-basic</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.wsh-sanitation-basic</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.wsh-sanitation-od</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.wsh-sanitation-safely-managed</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
       <tr><td><code>who.gho.wsh-water-basic</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
+      <tr><td><code>who.gho.wsh-water-safely-managed</code></td><td>World Health Organization</td><td>monthly</td><td>CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing/copyright</td></tr>
   </tbody>
 </table>
 
 <h2>Using it</h2>
 <p>Derived tables are CSV under <code>data/</code> in
-<a href="https://github.com/q3dresearch/wss-gho">the repository</a>; the bytes they came from are under
+<a href="https://github.com/wss-gho">the repository</a>; the bytes they came from are under
 <code>raw/</code>, and <code>SOURCES.md</code> lists every source URL.</p>
 <p>Every observation carries <code>source_id</code> and <code>raw_ref</code>. The
 matching manifest row holds that <code>raw_ref</code> with the URL, the fetch
 timestamp and a SHA-256 of exactly what came back, so any number here traces to
 the bytes it came from.</p>
-<p>Cite this dataset by its repository and the date you took it from: <a href="https://github.com/q3dresearch/wss-gho">https://github.com/q3dresearch/wss-gho</a>, accessed 2026-09-07.</p>
+<p>Cite this dataset by its repository and the date you took it from: <a href="https://github.com/wss-gho">https://github.com/wss-gho</a>, accessed 2026-09-07.</p>
 
 <footer>
 <p>Repository code and captured data are licensed separately.

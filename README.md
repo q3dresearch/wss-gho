@@ -24,7 +24,8 @@ Whatever it said before is gone. WHO's Global Health Observatory serves one
 value per country-year, and a revision overwrites the previous one in place.
 Every paper citing a WHO estimate cites a number that cannot now be checked.
 
-This repository takes 48 indicators once a month and keeps what each one said.
+This repository takes **every indicator WHO still maintains — 442 of the
+3,099 in the catalogue** — once a month and keeps what each one said.
 
 ## What one capture already shows
 
@@ -32,7 +33,7 @@ This repository takes 48 indicators once a month and keeps what each one said.
 
 ![Restatement rhythm](examples/charts/restatement-rhythm.svg)
 
-25 distinct release dates across the 48 captured indicators, and **71% share a
+25 distinct release dates across the first 48 captured indicators, and **71% share a
 date with another**. Revisions arrive in batches of three to five, roughly twice
 a month — which is why the cadence is monthly. A daily capture would re-fetch
 the same unchanged series about thirty times per release.
@@ -41,9 +42,17 @@ the same unchanged series about thirty times per release.
 
 ![Catalogue activity](examples/charts/catalogue-activity.svg)
 
-Of 400 indicators drawn at random from the 3,098 in the catalogue, **14.2% were
-republished within the last year** (95% CI 10.9–18.4%). The median indicator has
-not been touched in **4.7 years**; 59% not in over four.
+Every one of the 3,099 indicators in the catalogue was polled on 22 September:
+**442 (14.3%) had been republished within the last year**. The median dated
+indicator has not been touched in **4.4 years**, and **612 are catalogued but
+hold no rows at all**.
+
+That started as a 400-indicator random sample, which put the active share at
+14.2% (95% CI 10.9–18.4%) — so the draw was honest and only the coverage was
+short. The sample existed because a census was costed at 6.7 hours. That
+estimate was wrong by 136×: it was timing an IPv6 blackhole on the machine
+doing the measuring, not WHO. The census takes **4m11s**. See
+[`reference/`](reference/).
 
 The active ones are what anyone cites — under-five mortality, infant deaths, HIV
 in pregnancy, immunisation coverage. The dormant ones are policy inventories
@@ -138,15 +147,30 @@ be the wrong reading of the opening example.
 Full list with honest status in
 [`docs/research-questions.md`](docs/research-questions.md).
 
-**Nothing here has yet observed a revision.** The first capture is a baseline.
-If next month's numbers come back identical, that is a finding too — and the
-exit condition in the questions doc says to stop.
+**The first revisions are observed.** Refetching September's captures on the
+22nd found `NTD_LEPR3` and `NTD_LEPR8` restated — 6 pages of real movement
+against 371 pages that changed only in how they were serialised. The 394
+indicators added on 22 September are still at baseline.
 
 ## Sources
 
-48 indicators, one registry entry each, selected mechanically: every indicator
-in a random 400-sample that had been republished within a year. Scope evidence
-is in [`reference/`](reference/).
+442 indicators, one registry entry each, selected mechanically: **every
+indicator in the catalogue that WHO has republished within a year** — no
+sampling and nothing chosen by hand. 3,321 pages per capture, at GHO's hard
+`$top=1000` cap. Scope evidence is in [`reference/`](reference/).
+
+### The bytes move when the data does not
+
+Refetching all 384 pages captured on 7 September, fifteen days later: **377
+changed at the byte level and 6 changed as data.** GHO regenerates the
+surrogate `Id` on every row and its serialiser reorders keys between deploys
+(`TimeDim` moved two keys left in every row between those dates). Neither is
+data, and byte-level dedupe therefore never fires — at this width that is
+~97 MB a month to preserve ~1.5 MB of movement, 1.14 GB a year.
+
+Every registry entry sets `dedupe_canon: json` with `dedupe_ignore` on the
+surrogate, so *changed* is decided on the parsed body with sorted keys. **The
+stored bytes and `content_sha256` are always the untouched response.**
 
 Captured whole — no dimension filtering. Filtering on a dimension an indicator
 lacks returns **zero rows with no error**, and dimensions are not uniform:
@@ -158,7 +182,7 @@ immunisation carries none and is not even country-keyed.
 **Code:** MIT, see [LICENSE](LICENSE).
 
 **Data:** CC BY-NC-SA 3.0 IGO, passed through from WHO — see
-[LICENSE-DATA](LICENSE-DATA). All 48 registry sources declare it, so
+[LICENSE-DATA](LICENSE-DATA). All 442 registry sources declare it, so
 `derived/observations/` carries WHO's terms, not this repository's.
 
 That means **no commercial use** and **derivatives must stay CC BY-NC-SA 3.0

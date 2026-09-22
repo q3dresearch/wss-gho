@@ -23,7 +23,7 @@ archive to exist.
 
 | # | question | needs | status |
 | --- | --- | --- | --- |
-| 1 | Which indicators are maintained and which are abandoned? | one capture | **answered** — 14.2% republished within a year (CI 10.9–18.4%), median 4.7 years |
+| 1 | Which indicators are maintained and which are abandoned? | one capture | **answered** — census of all 3,099 on 2026-09-22: 442 (14.3%) republished within a year, 612 hold no rows at all, median 4.4 years. The earlier 400-sample said 14.2% (CI 10.9–18.4%) |
 | 2 | How uncertain are the estimates, and for whom? | one capture | **answered** — non-G20 intervals 2.3× wider on the rows we capture |
 | 3 | **Does WHO restate continuously, or in releases?** | one capture | **answered** — in batches. 25 distinct dates across 48 indicators; **71% share a date with another**. Roughly two release events a month |
 | 4 | How far back does WHO model? | one capture | **answered** — the flagship reaches 1931, but 71% of all values are post-2000 and only 8 of 48 indicators span 30+ years. Six are a single year |

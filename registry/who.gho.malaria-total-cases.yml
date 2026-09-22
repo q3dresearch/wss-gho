@@ -10,6 +10,14 @@ licence: "CC BY-NC-SA 3.0 IGO; see https://www.who.int/about/policies/publishing
 personal_data: none
 storage: git
 
+# GHO's bytes move when its data does not: the surrogate `Id` is regenerated on
+# every row and the serialiser reorders keys between deploys. Compare in
+# canonical form and ignore the surrogate, or every capture stores a full copy
+# of an unchanged series.
+dedupe_canon: json
+dedupe_ignore:
+  - '"Id":\s*\d+,'
+
 notes: >-
   Total number of  malaria cases (presumed + confirmed cases)
 

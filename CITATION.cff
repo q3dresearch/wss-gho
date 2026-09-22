@@ -3,26 +3,27 @@ message: "If you use this dataset, please cite it."
 type: dataset
 title: "WHO Global Health Observatory Vintages (wss-gho)"
 abstract: >-
-  Monthly point-in-time captures of 48 actively maintained indicators from the
-  World Health Organization's Global Health Observatory. GHO serves one value
-  per country and reference year, and a revision overwrites the previous value
-  in place: under-five mortality for Brazil in 1931 carries a load stamp of 5
-  August 2026, and whatever it said before is gone. Every published estimate is
-  therefore uncheckable against what it used to say, including the 2015
-  baselines against which Sustainable Development Goal progress is measured.
-  This dataset preserves each month's state of the series as the bytes were
-  served, with a manifest row recording the URL, fetch time and SHA-256 of
-  every capture. Observations are stamped with the reference year the figure
-  describes rather than the fetch time, and WHO's own load stamp is carried as
-  a separate metric so a restatement can be dated. Indicators were selected
-  mechanically -- every one in a random 400-indicator sample of the 3,098 in
-  the catalogue that had been republished within a year -- rather than chosen.
+  Monthly point-in-time captures of all 442 actively maintained indicators in
+  the World Health Organization's Global Health Observatory. GHO serves one
+  value per country and reference year, and a revision overwrites the previous
+  value in place: under-five mortality for Brazil in 1931 carries a load stamp
+  of 5 August 2026, and whatever it said before is gone. Every published
+  estimate is therefore uncheckable against what it used to say, including the
+  2015 baselines against which Sustainable Development Goal progress is
+  measured. This dataset preserves each month's state of the series as the
+  bytes were served, with a manifest row recording the URL, fetch time and
+  SHA-256 of every capture. Observations are stamped with the reference year
+  the figure describes rather than the fetch time, and WHO's own load stamp is
+  carried as a separate metric so a restatement can be dated. Indicators were
+  selected mechanically rather than chosen: every one of the 3,099 in the
+  catalogue was polled on 22 September 2026 and every one republished within
+  the preceding year was taken, 3,084,631 rows across 3,321 pages.
 authors:
   - name: "neldivad"
     website: "https://github.com/neldivad"
   - name: "q3dresearch"
     website: "https://github.com/q3dresearch"
-# All 48 sources are WHO CC BY-NC-SA 3.0 IGO. Not CC-BY-4.0: that would drop NonCommercial and ShareAlike.
+# All 442 sources are WHO CC BY-NC-SA 3.0 IGO. Not CC-BY-4.0: that would drop NonCommercial and ShareAlike.
 license: CC-BY-NC-SA-3.0-IGO
 keywords:
   - World Health Organization

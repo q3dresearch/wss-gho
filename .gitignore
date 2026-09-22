@@ -11,3 +11,7 @@ quarantine/
 __pycache__/
 *.pyc
 .venv/
+
+# Working copies of the screening probes. The versions the registry rests on
+# are kept in reference/; these are just where the scripts write.
+data/

@@ -1,0 +1,443 @@
+indicator_code,indicator_name,last_published,days_since,rows,size_status
+HIV_ARTCOVERAGE,Estimated antiretroviral therapy coverage among people living with HIV (%),2026-07-31,52,3848,ok
+HIV_0000000006,Number of people dying from HIV-related causes,2026-07-31,52,3788,ok
+HIV_0000000023,Estimated number of children needing antiretroviral therapy based on WHO methods,2026-07-31,52,2599,ok
+HIV_0000000021,Estimated number of pregnant women living with HIV needing antiretrovirals for preventing mother-to-child transmission,2026-07-31,52,1577,ok
+HIV_0000000020,Estimated number of pregnant women living with HIV,2026-07-31,52,1498,ok
+HIV_0000000024,Estimated antiretroviral therapy coverage among children,2026-07-31,52,2489,ok
+HIV_0000000011,Reported number of children receiving antiretroviral therapy,2026-07-31,52,3341,ok
+HIV_0000000016,Number of pregnant women living with HIV who received antiretrovirals for preventing mother-to-child transmission,2026-07-31,52,1936,ok
+HWF_0004,Specialist medical practitioners (number),2026-01-23,241,1791,ok
+HWF_0006,"Nursing and midwifery personnel (per 10,000)",2026-03-11,194,3593,ok
+HWF_0008,Nursing personnel (number),2026-01-23,241,3859,ok
+HIV_0000000001,Estimated number of people (all ages) living with HIV,2026-07-31,52,3892,ok
+HWF_0001,"Medical doctors (per 10,000)",2026-03-11,194,3693,ok
+HIV_0000000026,Number of new HIV infections,2026-07-31,52,3792,ok
+HWF_0007,Nursing and midwifery personnel  (number),2026-01-23,241,3859,ok
+HWF_0002,Medical doctors (number),2026-01-23,241,4293,ok
+HWF_0018,Environmental and Occupational Health Inspectors and Associates  (number),2026-01-23,241,268,ok
+HWF_0014,"Pharmacists  (per 10,000)",2026-03-11,194,3085,ok
+HWF_0010,"Dentists (per 10,000)",2026-03-11,194,3348,ok
+HWF_0023,Traditional and Complementary Medicine Professionals  (number),2026-01-23,241,239,ok
+AIR_11,Household air pollution attributable deaths,2026-06-15,98,3384,ok
+AIR_39,"Household air pollution attributable DALYs (per 100 000, age-standardized)",2026-06-15,98,3572,ok
+HWF_0005,Medical doctors not further defined (number),2026-01-23,241,3105,ok
+AIR_41,Ambient air pollution attributable deaths,2026-06-15,98,3456,ok
+HWF_0003,Generalist medical practitioners (number),2026-01-23,241,1943,ok
+HWF_0012,Dental Assistants and Therapists (number),2026-01-23,241,566,ok
+HWF_0011,Dentists (number),2026-01-23,241,3791,ok
+HWF_0009,Midwifery personnel (number),2026-01-23,241,2529,ok
+HWF_0017,Environmental and Occupational Health and Hygiene Professionals  (number),2026-01-23,241,517,ok
+AIR_35,Joint effects of air pollution attributable deaths,2026-06-15,98,3384,ok
+AIR_42,"Ambient air pollution attributable death rate (per 100 000 population, age-standardized)",2026-06-15,98,3456,ok
+AIR_52,"Household air pollution attributable death rate (per 100 000 population, age-standardized)",2026-06-15,98,3384,ok
+HIV_0000000009,Reported number of people receiving antiretroviral therapy,2026-07-31,52,3848,ok
+AIR_90,"Ambient air pollution attributable DALYs  (per 100 000 population, age-standardized)",2026-06-15,98,3456,ok
+HWF_0021,Physiotherapists (number),2026-01-23,241,2041,ok
+HWF_0016,Pharmaceutical Technicians and Assistants  (number),2026-01-23,241,610,ok
+HWF_0022,Physiotherapy Technicians and Assistants  (number),2026-01-23,241,322,ok
+AIR_62,"Household and ambient air pollution attributable DALYs (per 100 000 capita, age-standardized)",2026-06-15,98,3572,ok
+M_Est_cig_curr,Estimate of current cigarette smoking prevalence (%),2026-01-15,249,5511,ok
+HWF_0024,Community Health Workers (number),2026-01-23,241,495,ok
+HWF_0013,Dental Prosthetic Technicians (number),2026-01-23,241,460,ok
+HWF_0019,Medical and Pathology Laboratory scientists  (number),2026-01-23,241,481,ok
+HWF_0020,Medical and Pathology Laboratory Technicians  (number),2026-01-23,241,662,ok
+HWF_0015,Pharmacists  (number),2026-01-23,241,3458,ok
+AIR_15,Household air pollution attributable DALYs,2026-06-15,98,3572,ok
+AIR_7,Ambient air pollution attributable DALYs,2026-06-15,98,3456,ok
+BP_03,Raised blood pressure (SBP>=140 OR DBP>=90) (crude estimate),2025-10-29,327,18540,ok
+MDG_0000000001,Infant mortality rate (probability of dying between birth and age 1 per 1000 live births),2026-08-04,48,44424,ok
+CM_03,Number of neonatal deaths,2026-08-05,47,11914,ok
+MDG_0000000020,Incidence of tuberculosis (per 100 000 population per year),2025-11-11,314,5177,ok
+MCV2,Measles-containing-vaccine second-dose (MCV2) immunization coverage by the locally recommended age (%) (WUENIC),2026-07-14,69,5337,ok
+MDG_0000000007,Under-five mortality rate (probability of dying by age 5 per 1000 live births),2026-08-05,47,64510,ok
+MDG_0000000029,Prevalence of HIV among adults aged 15 to 49 (%),2026-07-31,52,3892,ok
+CHILDMORT5TO14,Mortality rate for 5-14 year-olds (probability of dying per 1000 children aged 5-14 years),2026-08-05,47,26145,ok
+CM_01,Number of under-five deaths,2026-08-05,47,61233,ok
+CM_02,Number of infant deaths,2026-08-04,48,43622,ok
+BP_04,Raised blood pressure (SBP>=140 OR DBP>=90) (age-standardized estimate),2025-10-29,327,18540,ok
+MDG_0000000003,Adolescent birth rate (per 1000 women),2026-04-02,172,7703,ok
+M_Est_tob_curr,Estimate of current tobacco use prevalence (%),2026-01-15,249,5511,ok
+NTD_LEPR5,Number of new G2D leprosy cases,2026-09-14,7,2716,ok
+NTD_ONCHEMO,Estimated number of individuals in the country requiring preventive chemotherapy for onchocerciasis,2025-10-07,349,456,ok
+MDG_0000000017,Deaths due to tuberculosis among HIV-negative people (per 100 000 population),2025-11-11,314,4677,ok
+MDG_0000000025,Births attended by skilled health personnel (%),2026-04-21,153,2749,ok
+NUTRITION_ANT_WHZ_NE2,"Overweight prevalence among children under 5 years of age (% weight-for-height >+2 SD), survey-based estimates",2026-08-14,38,73422,ok
+NTD_LEPR3,Leprosy - Number of cases registered for treatment,2026-09-14,7,2716,ok
+NUTRITION_ANT_HAZ_NE2,"Stunting prevalence among children under 5 years of age (% height-for-age <-2 SD), survey-based estimates",2026-08-12,40,72925,ok
+NTD_LEPR4,Leprosy registered prevalence rate per 1 000 000 population,2026-09-14,7,2716,ok
+NTD_LEPR7,Leprosy - New leprosy cases with G2D rate per 1 000 000 population,2026-09-14,7,2716,ok
+NTD_TRA5,Number of people operated for trachomatous trichiasis,2026-07-15,68,924,ok
+NUTOVERWEIGHTPREV,"Overweight prevalence among children under 5 years of age (% weight-for-height >+2 SD), model-based estimates",2026-08-14,38,17475,ok
+NTD_LEPR2,New leprosy case detection rate per 1 000 000 population,2026-09-14,7,2716,ok
+NTD_ONCTREAT,Reported number of individuals treated for onchocerciasis,2025-10-07,349,719,ok
+NTD_LEPR8,Leprosy - Number of new leprosy cases among children (less than 15 years of age),2026-09-14,7,2716,ok
+NTD_LEPR9,Number of new leprosy cases with G2D among children (less than 15 years of age),2026-09-14,7,2328,ok
+NTD_ONCHSTATUS,Status of endemicity of onchocerciasis,2025-10-07,349,38,ok
+NTD_RAB2,Reported number of human rabies deaths,2026-07-15,68,2919,ok
+NUTOVERWEIGHTNUM,"Overweight numbers among children under 5 years of age (thousands), model-based estimates",2026-08-14,38,17475,ok
+NUTRITION_WH_3,"Severe wasted prevalence among children under 5 years of age   (% weight-for-height <-3 SD), survey-based estimates",2026-08-14,38,70772,ok
+GHED_EXT_pc_US_SHA2011,External health expenditure (EXT) per capita in US$,2026-04-10,164,4289,ok
+GHED_GGHE-D_pc_US_SHA2011,Domestic general government health expenditure (GGHE-D) per capita in US$,2026-04-10,164,4849,ok
+GHED_GGHE-DGGE_SHA2011,Domestic general government health expenditure (GGHE-D) as percentage of general government expenditure (GGE) (%),2026-04-10,164,4852,ok
+NUTRITION_WA_2,"Underweight prevalence among children under 5 years of age   (% weight-for-age <-2 SD), survey-based estimates",2026-08-12,40,73078,ok
+NUTSEVWASTINGNUM,"Severe wasted numbers among children under 5 years of age (millions), model-based estimates",2026-08-14,38,1400,ok
+NUTSTUNTINGNUM,"Stunting numbers among children under 5 years of age (millions), model-based estimates",2026-08-12,40,17295,ok
+GHED_CHE_pc_US_SHA2011,Current health expenditure (CHE) per capita in US$,2026-04-10,164,4849,ok
+GHED_CHEGDP_SHA2011,Current health expenditure (CHE) as percentage of gross domestic product (GDP) (%),2026-04-10,164,4852,ok
+NUTRITION_WH_2,"Wasting prevalence among children under 5 years of age (% weight-for-height <-2 SD), survey-based estimates",2026-08-13,39,73942,ok
+NUTSEVWASTINGPREV,"Severe wasted prevalence among children under 5 years of age (%), model-based estimates",2026-08-14,38,1400,ok
+NUTSTUNTINGPREV,"Stunting prevalence among children under 5 years of age (% height-for-age <-2 SD), model-based estimates",2026-08-12,40,17295,ok
+NUTWASTINGNUM,"Wasted numbers among children under 5 years of age (millions), model-based estimates",2026-08-13,39,1400,ok
+NUTWASTINGPREV,"Wasted prevalence among children under 5 years of age (%), model-based estimates",2026-08-13,39,1400,ok
+NUTUNDERWEIGHTNUM,"Underweight numbers among children under 5 years of age (millions), model-based estimates",2026-08-12,40,1400,ok
+NUTUNDERWEIGHTPREV,"Underweight prevalence among children under 5 years of age (%), model-based estimates",2026-08-12,40,1400,ok
+GHED_PVT-DCHE_SHA2011,Domestic private health expenditure (PVT-D) as percentage of current health expenditure (CHE) (%),2026-04-10,164,4852,ok
+GHED_GGHE-DGDP_SHA2011,Domestic general government health expenditure (GGHE-D) as percentage of gross domestic product (GDP) (%),2026-04-10,164,4852,ok
+GHED_OOP_pc_US_SHA2011,Out-of-pocket expenditure (OOP) per capita in US$,2026-04-10,164,4849,ok
+GHED_PVT-D_pc_US_SHA2011,Domestic private health expenditure (PVT-D) per capita in US$,2026-04-10,164,4849,ok
+SA_0000001398,"Alcohol, consumption of pure alcohol by type of beverage (%)",2026-07-06,77,18920,ok
+GHED_GGHE-DCHE_SHA2011,Domestic general government health expenditure (GGHE-D) as percentage of current health expenditure (CHE) (%),2026-04-10,164,4852,ok
+GHED_EXTCHE_SHA2011,External health expenditure (EXT) as percentage of current health expenditure (CHE) (%),2026-04-10,164,4851,ok
+SA_0000001400,"Alcohol, recorded per capita (15+) consumption (in litres of pure alcohol), by beverage type",2026-07-06,77,52558,ok
+GHED_OOPSCHE_SHA2011,Out-of-pocket expenditure as percentage of current health expenditure (CHE) (%),2026-04-10,164,4852,ok
+PercposANC,"Antenatal care attendees who were positive for syphilis (%), reported",2026-01-06,258,1034,ok
+SA_0000001698,"Adopted written national policy on alcohol, year revised",2026-07-07,76,206,ok
+SA_0000001699,Age limits off-premise sales,2026-07-06,77,1422,ok
+SA_0000001691,Central coordinating entity for alcohol policy implementation,2026-07-07,76,1005,ok
+SA_0000001694,Sectors represented in national alcohol policy,2026-07-07,76,1002,ok
+SA_0000001729,Penalties for marketing infringements,2026-07-06,77,320,ok
+SA_0000001731,Level of taxation adjusted for inflation,2026-07-06,77,1422,ok
+SA_0000001502,Adopted written national policy on alcohol,2026-07-07,76,473,ok
+SA_0000001506,National legislation to prevent illegal alcohol,2026-07-07,76,960,ok
+SA_0000001507,Advertising restrictions on national television,2026-07-06,77,1422,ok
+SA_0000001512,Advertising restrictions at cinemas,2026-07-06,77,1422,ok
+SA_0000001735,Alcohol content displayed on containers,2026-07-06,77,1422,ok
+SA_0000001513,Advertising restrictions on billboards,2026-07-06,77,1422,ok
+SA_0000001509,Advertising restrictions on national radio,2026-07-06,77,1422,ok
+SA_0000001511,Advertising restrictions in print media,2026-07-06,77,1422,ok
+SA_0000001503,Alcoholic beverage legally defined,2026-07-07,76,320,ok
+SA_0000001733,"Consumer information about calories, additives, etc on containers",2026-07-06,77,1170,ok
+SA_0000001736,Action Plan for implementation of alcohol policy,2026-07-07,76,257,ok
+SA_0000001726,Penalties for drink driving,2026-07-06,77,2560,ok
+SA_0000001730,Price measures,2026-07-06,77,2004,ok
+SA_0000001734,Number of standard alcoholic drinks displayed on containers,2026-07-06,77,1422,ok
+PCV3,Pneumococcal conjugate second or third-dose vaccines (PCVc) immunization coverage by the locally recommended age (%) (WUENIC),2026-07-14,69,3705,ok
+R_excise_min_specific,Tax structure: Minimum specific tax applied in ad valorem or mixed excise regime,2025-12-19,276,195,ok
+RHR_NPSV,Proportion of women and girls aged 15 years and older who have been subjected to sexual violence by someone other than a partner in their lifetime since age 15 (%),2026-05-01,143,294,ok
+ROTAC,Rotavirus vaccines completed dose (RotaC) immunization coverage among 1-year-olds (%),2026-07-14,69,4115,ok
+SA_0000001747,"Alcohol, recorded per capita (15+) consumption (in litres of pure alcohol), three-year average",2026-07-06,77,4725,ok
+SA_0000001518,Age limits on-premise service,2026-07-06,77,1422,ok
+SA_0000001520,Legal blood alcohol concentration (BAC) limits,2026-07-06,77,1422,ok
+SA_0000001526,Off-premise sales restrictions on hours,2026-07-06,77,1422,ok
+SA_0000001521,Random breath testing (RBT) use,2026-07-06,77,320,ok
+SA_0000001727,Sobriety checkpoints,2026-07-06,77,320,ok
+SA_0000001728,Detection of marketing infringements,2026-07-06,77,320,ok
+SA_0000001533,On-premise sales restrictions on places,2026-07-06,77,1422,ok
+SA_0000001545,Licence required for retail sales,2026-07-06,77,1422,ok
+SA_0000001534,On-premise sales restrictions on outlet density,2026-07-06,77,1422,ok
+SA_0000001537,Restrictions on sponsorship of sporting events,2026-07-06,77,1616,ok
+SA_0000001538,Restrictions on sponsorship of youth events,2026-07-06,77,1154,ok
+SA_0000001764,Server training,2026-07-06,77,320,ok
+SA_0000001542,Government monopoly on production,2026-07-06,77,1422,ok
+SA_0000001544,Licence required for production,2026-07-06,77,1422,ok
+SA_0000001508,Advertising restrictions on cable television,2026-07-06,77,1422,ok
+SA_0000001510,Advertising restrictions on local radio,2026-07-06,77,1422,ok
+SA_0000001525,Off-premise sales restrictions on days,2026-07-06,77,1422,ok
+SA_0000001554,Health warning labels on alcohol advertising,2026-07-06,77,320,ok
+SA_0000001551,Value-added tax (VAT) on alcohol (%),2026-07-06,77,474,ok
+SA_0000001796,Licensing required for wholesale/distribution of alcoholic beverages,2026-07-06,77,1422,ok
+SA_0000001792,National legislation to prevent illegal alcohol sales,2026-07-07,76,960,ok
+SA_0000001555,Health warning labels on alcohol containers,2026-07-06,77,320,ok
+SA_0000001527,Off-premise sales restrictions on places,2026-07-06,77,1422,ok
+SA_0000001528,Off-premise sales restrictions on outlet density,2026-07-06,77,1422,ok
+SA_0000001531,On-premise sales restrictions on days,2026-07-06,77,1422,ok
+SA_0000001532,On-premise sales restrictions on hours,2026-07-06,77,1422,ok
+SA_0000001536,On-premise sales restrictions to intoxicated persons,2026-07-06,77,960,ok
+SA_0000001804,Health warning labels on under-age drinking,2026-07-06,77,474,ok
+TB_rr_mdr,Confirmed cases of RR-/MDR-TB,2025-11-11,314,3676,ok
+SA_0000001688,"Alcohol, total per capita (15+) consumption (in litres of pure alcohol) (SDG Indicator 3.5.2), three-year average",2026-06-15,98,6350,ok
+SA_0000001794,Licensing required for exports of alcoholic beverages,2026-07-06,77,1422,ok
+SA_0000001801,Monopoly on imports of alcoholic beverages,2026-07-06,77,1422,ok
+SA_0000001803,Health warning labels on pregnancy,2026-07-06,77,474,ok
+SA_0000001800,Monopoly on exports of alcoholic beverages,2026-07-06,77,1422,ok
+SA_0000001805,Health warning labels on drink-driving,2026-07-06,77,474,ok
+SA_0000001543,Government monopoly on retail sales,2026-07-06,77,1422,ok
+SA_0000001549,Duty paid or excise stamp on alcohol container,2026-07-06,77,960,ok
+SA_0000001550,Excise tax on alcoholic beverages,2026-07-06,77,1422,ok
+SA_0000001768,Standard drink defined,2026-07-07,76,320,ok
+SA_0000001795,Licensing required for imports of alcoholic beverages,2026-07-06,77,1422,ok
+WHS3_46,Total tetanus - number of reported cases,2026-07-14,69,10994,ok
+WHS3_43,Pertussis - number of reported cases,2026-07-14,69,11048,ok
+SA_0000001790,National drinking guidelines,2026-07-07,76,320,ok
+SA_0000001791,Graduated licensing,2026-07-06,77,320,ok
+SA_0000001793,"Penalties for drink driving, repeated offense",2026-07-06,77,2556,ok
+WHS4_100,Diphtheria tetanus toxoid and pertussis third-dose  (DTP3) immunization coverage among 1-year-olds (%) (WUENIC),2026-07-14,69,5337,ok
+WHS4_106,Care-seeking for children with symptoms of acute respiratory infection (%),2026-02-11,222,4701,ok
+SA_0000001802,Monopoly on wholesale /distribution of alcoholic beverages,2026-07-06,77,1422,ok
+WHS3_55,Congenital Rubella Syndrome - number of reported cases,2026-07-14,69,5696,ok
+WHS4_117,Hepatitis B (HepB3) immunization coverage among 1-year-olds (%) (WUENIC),2026-07-14,69,5337,ok
+WHS4_544,Polio vaccine: inactivated second or third-dose polio vaccine (IPVc) immunization coverage by the locally recommended age (%) (WUENIC),2026-07-14,69,1030,ok
+WHS6_102,Hospital beds (per 10 000 population),2025-09-30,356,2958,ok
+SA_0000001821,"Alcohol, unrecorded per capita (15+) consumption (in litres of pure alcohol), three-year average",2026-07-06,77,4725,ok
+WHS3_50,Yellow fever - number of reported cases,2026-07-14,69,10918,ok
+WHS3_41,Diphtheria - number of reported cases,2026-07-14,69,11048,ok
+WHS3_56,Neonatal tetanus - number of reported cases,2026-07-14,69,11049,ok
+WHS3_57,Rubella - number of reported cases,2026-07-14,69,5747,ok
+WHS3_62,Measles - number of reported cases,2026-07-14,69,11062,ok
+WHS4_543,BCG immunization coverage among 1-year-olds (%) (WUENIC),2026-07-14,69,4403,ok
+SA_0000001823,"Alcohol, tourist consumption (in litres of pure alcohol), three-year average",2026-07-06,77,5200,ok
+SDGNTDTREATMENT,Reported number of people requiring interventions against NTDs,2026-03-01,204,3144,ok
+WHS3_53,Mumps - number of reported cases,2026-07-14,69,5661,ok
+WHS3_42,Japanese encephalitis - number of reported cases,2026-07-14,69,3560,ok
+SDGHEPHBSAGPRV,Hepatitis B surface antigen (HBsAg) prevalence (%),2026-08-04,48,2020,ok
+WHS3_45,Number of new leprosy cases,2026-09-14,7,3963,ok
+SDGHPVRECEIVED,HPV immunization coverage estimates among primary target cohort (9-14 years old girls) (%),2026-07-14,69,2768,ok
+SDGSUICIDE,Crude suicide rates (per 100 000 population),2025-11-06,319,19041,ok
+UHC_AVAILABILITY_SCORE,Primary data availability for UHC Service Coverage Index (SDG 3.8.1) (%),2025-12-05,290,201,ok
+UHC_SCI_NCD,UHC Service Coverage sub-index on noncommunicable diseases,2025-12-05,290,5160,ok
+UHC_SCI_CAPACITY,UHC Service Coverage sub-index on service capacity and access,2025-12-05,290,5160,ok
+UHC_SCI_RMNCH,"UHC Service Coverage sub-index on reproductive, maternal, newborn and child health",2025-12-05,290,5160,ok
+WHS4_154,Antenatal care coverage - at least four visits (%),2025-09-26,360,1166,ok
+WHS4_129,Hib (Hib3) immunization coverage among 1-year-olds (%) (WUENIC),2026-07-14,69,5337,ok
+SDGPM25,Concentrations of fine particulate matter (PM2.5),2026-05-08,136,19992,ok
+SDGAIRBODA,"Ambient and household air pollution attributable death rate (per 100 000 population, age-standardized)",2026-06-15,98,3384,ok
+SDGHIV,New HIV infections (per 1000 uninfected population),2026-07-31,52,15654,ok
+TB_c_dst_rlt_new_pct,New cases tested for RR-/MDR-TB (%),2025-11-11,314,3376,ok
+SE_DEV_ONTRK,"Children aged 36-59 months who are developmentally on track in at least three of the following domains: literacy-numeracy, physical development, social-emotional development and le",2026-02-11,222,280,ok
+UHC_INDEX_REPORTED,UHC Service Coverage Index (SDG 3.8.1),2025-12-05,290,5160,ok
+WHS8_110,Measles-containing-vaccine first-dose (MCV1) immunization coverage among 1-year-olds (%) (WUENIC),2026-07-14,69,5337,ok
+WSH_HYGIENE_BASIC,Population with basic handwashing facilities at home (%),2026-01-23,241,5391,ok
+WSH_SANITATION_OD,Population practising open defecation (%),2026-01-23,241,14548,ok
+TB_1,Tuberculosis treatment coverage,2025-11-11,314,5009,ok
+TB_c_dst_rlt_ret_pct,Previously treated cases tested for RR-/MDR-TB (%),2025-11-11,314,3099,ok
+TB_c_mdr_tx,Cases started on MDR-TB treatment,2025-11-11,314,3221,ok
+TB_c_newinc,Tuberculosis - new and relapse cases,2025-11-11,314,5090,ok
+TB_e_inc_num,Number of incident tuberculosis cases,2025-11-11,314,5177,ok
+TB_e_mort_exc_tbhiv_num,"Number of deaths due to tuberculosis, excluding HIV",2025-11-11,314,4677,ok
+TB_c_mdr_tsr,Treatment success rate for patients treated for MDR-TB (%),2025-11-11,314,2522,ok
+TB_c_tbhiv_tsr,Treatment success rate: HIV-positive TB cases,2025-11-11,314,2358,ok
+TB_c_new_tsr,Treatment success rate: new TB cases,2025-11-11,314,5311,ok
+TB_e_inc_num_014,Number of incident tuberculosis cases in children aged 0 - 14,2025-11-11,314,184,ok
+UHC_SCI_INFECT,UHC Service Coverage sub-index on infectious diseases,2025-12-05,290,5160,ok
+WSH_SANITATION_SAFELY_MANAGED,Population using safely managed sanitation services (%),2026-01-23,241,9548,ok
+WSH_SANITATION_BASIC,Population using at least basic sanitation services (%),2026-01-23,241,14697,ok
+WSH_WATER_SAFELY_MANAGED,Population using safely managed drinking-water services (%),2026-01-23,241,9011,ok
+TB_hivtest_pct,TB patients with known HIV status (%),2025-11-11,314,3599,ok
+WSH_WATER_BASIC,Population using at least basic drinking-water services (%),2026-01-23,241,14875,ok
+WHOSIS_000003,Neonatal mortality rate (per 1000 live births),2026-08-05,47,12128,ok
+TB_c_ret_tsr,Treatment success rate: previously treated TB cases,2025-11-11,314,4153,ok
+TB_c_xdr_tsr,Treatment success rate: XDR-TB cases,2025-11-11,314,1015,ok
+TB_e_inc_tbhiv_num,"Number of incident tuberculosis cases,  (HIV-positive cases)",2025-11-11,314,4627,ok
+TB_hivtest_pos_pct,Tested TB patients HIV-positive (%),2025-11-11,314,3178,ok
+TB_hiv_art_pct,HIV-positive TB patients on ART (antiretroviral therapy) (%),2025-11-11,314,2596,ok
+NCD_BMI_18C,"Underweight among adults, BMI < 18.5 kg/m2 (crude estimate) (%)",2026-05-27,117,28350,ok
+NCD_BMI_25C,"Overweight among adults, BMI ≥ 25 kg/m2 (crude estimate) (%)",2026-05-27,117,28350,ok
+NCD_BMI_PLUS1C,"Overweight among children and adolescents, BMI-for-age > +1 standard deviations above the median (crude estimate) (%)",2026-05-27,117,85050,ok
+NCD_BMI_30A,"Obesity among adults, BMI ≥ 30 kg/m2 (age-standardized estimate) (%)",2026-05-27,117,28350,ok
+NCD_BMI_18A,"Underweight among adults, BMI < 18.5 kg/m2 (age-standardized estimate) (%)",2026-05-27,117,28350,ok
+NCD_BMI_30C,"Obesity among adults, BMI ≥ 30 kg/m2 (crude estimate) (%)",2026-05-27,117,28350,ok
+MORTADO,Adolescent mortality rate (per 1 000 age specific cohort),2026-08-04,48,78435,ok
+NCD_BMI_MINUS2C,"Thinness among children and adolescents, BMI-for-age < -2 standard deviations below the median (%)",2026-05-27,117,85050,ok
+WHOSIS_000014,Stillbirth rate (per 1000 total births),2026-08-05,47,5976,ok
+NCD_BMI_PLUS2C,"Obesity among children and adolescents, BMI-for-age > +2 standard deviations above the median (crude estimate) (%)",2026-05-27,117,85050,ok
+NCD_BMI_25A,"Overweight among adults, BMI ≥ 25 kg/m2 (age-standardized estimate) (%)",2026-05-27,117,28350,ok
+NCD_PAC,Prevalence of insufficient physical activity among adults aged 18+ years (crude estimate) (%),2025-10-30,326,14214,ok
+NCD_PAA,Prevalence of insufficient physical activity among adults aged 18+ years (age-standardized estimate) (%),2026-09-04,17,41262,ok
+HIV_STATUSKNOWNHIV,Percentage of people living with HIV who know their HIV status,2026-07-31,52,1457,ok
+NTD_LEISHCEND,Status of endemicity of cutaneous leishmaniasis,2025-11-05,320,194,ok
+NTD_6,Status of elimination of trachoma as a public health problem,2026-09-14,7,194,ok
+NTD_8,Number of people who received treatment with antibiotics for trachoma,2026-07-15,68,1612,ok
+NTD_LEISHCNUM_IM,Number of imported cases of cutaneous leishmaniasis reported,2026-06-24,89,1416,ok
+NTD_LEISHVNUM,Number of cases of visceral leishmaniasis reported,2026-08-28,24,1680,ok
+NTD_LEISHVNUM_IM,Number of imported cases of visceral leishmaniasis reported,2026-08-28,24,1416,ok
+NCD_DIABETES_TREATMENT_CRUDE,"Diabetes treatment coverage, crude",2025-10-30,326,20790,ok
+NUT_BF_EVBF,Ever breastfed,2026-06-09,104,12580,ok
+NTD_LEISHCNUM,Number of cases of cutaneous leishmaniasis reported,2026-06-22,91,1799,ok
+HEPATITIS_HCV_DIAGNOSIS_PERINFECTED_CRD_PER100,"Chronic hepatitis C (HCV) diagnosis coverage as percentage of total HCV infected, including cured (%)",2026-08-03,49,232,ok
+FOODBORNE_DALY_100k,Foodborne disability-adjusted life years per 100 000,2026-06-03,110,3498,ok
+MALARIA_PF_INDIG,Number of indigenous P. falciparum malaria cases,2025-12-19,276,1006,ok
+TRAD_MED_SHARE_CHE,"Traditional, Complementary, and Integrative Medicine Share of Current Health Expenditure",2026-09-07,14,12,ok
+HEPATITIS_HBV_TREATMENT_NUM,Persons on chronic hepatitis B (HBV) treatment (number),2026-08-03,49,246,ok
+MALARIA_IMPORTED,Number of imported malaria cases,2025-12-19,276,591,ok
+TOBACCO_MPOWER_P2_SMOKEFREEPLACEDETAILS,"Tobacco MPOWER Protect people: P2 smoke-free places, additional characteristics",2026-02-25,208,13650,ok
+NUT_CF_MMF,Minimum Meal Frequency 6-23 months,2026-06-09,104,7643,ok
+HEPATITIS_HCV_LIVINGWITH_CRD_NUM,People living with chronic hepatitis C (HCV) including cured (all ages) (adjusted number),2026-08-03,49,462,ok
+TAXBEV_EARMARKEDEXCISETAX,Use of earmarked excise tax on beverages,2025-12-16,279,39,ok
+M_Est_smk_curr_users,"Number of current tobacco smokers, estimate",2026-01-15,249,5709,ok
+MALARIA_EST_INCIDENCE,Estimated malaria incidence (per 1000 population at risk),2025-12-19,276,2855,ok
+GASPRP,Reporting countries,2026-01-05,259,640,ok
+TAXBEV_AFFORD_GDP,GDP per capita to purchase a volume of beverage (%),2025-12-16,279,811,ok
+MALARIA_ITN_COVERAGE,"Population with access to an insecticide-treated bed net (ITN) for malaria protection (%), modelled",2025-12-19,276,400,ok
+FOODBORNE_YLD_CASE,Foodborne years lived with disability per case,2026-06-03,110,3498,ok
+NCD_HYP_DIAGNOSIS_A,"Hypertension: diagnosis coverage among adults aged 30-79 with hypertension, age-standardized (%)",2025-10-30,326,19230,ok
+MALARIA_SUSPECTS,Number of suspected malaria cases,2025-12-19,276,1006,ok
+HEPATITIS_HBV_LIVINGWITH_NUM,People living with chronic hepatitis B (HBV) (number),2026-08-03,49,248,ok
+NCD_HYP_PREVALENCE_A,"Hypertension among adults aged 30-79 years, prevalence, age-standardized",2025-10-30,326,19230,ok
+NUT_CF_ISSSF,"Introduction of solid, semi-solid or soft foods 6-8 months",2026-06-09,104,9548,ok
+MALARIA_MICR_TEST,Number of malaria suspects examined by microscopy,2025-12-19,276,963,ok
+MALARIA_EST_CASES,Estimated number of malaria cases,2025-12-19,276,2898,ok
+SDGIPV12M,Proportion of ever-partnered women and girls aged 15 years or older subjected to physical and/or sexual violence by a current or former intimate partner in the previous 12 months,2026-05-01,143,342,ok
+MALARIA_INDIG_STATUS,Status of indigenous malaria cases,2025-12-19,276,197,ok
+TB_e_inc_rr_num,Estimated number of MDR/RR-TB incident cases,2025-11-11,314,1840,ok
+NCD_HYP_PREVALENCE_C,"Hypertension among adults aged 30-79 years, prevalence, crude",2025-10-30,326,19170,ok
+GHED_PHC_pc_US_SHA2011,Primary health care expenditure (PHCE) per сapita in US$,2026-04-10,164,641,ok
+GLASSAMC_GPW13_T4B,≥70% of total antibiotic use being from WHO AWaRe Access group antibiotics (70% Access target),2025-09-24,362,416,ok
+MALARIA_RDT_TEST,Number of malaria suspects examined by rapid diagnostic test (RDT),2025-12-19,276,846,ok
+FOODBORNE_DALY,Foodborne disability-adjusted life years,2026-06-03,110,3498,ok
+MALARIA_PV_INDIG,Number of indigenous P. vivax malaria cases,2025-12-19,276,628,ok
+M_Est_smk_curr,Estimate of current tobacco smoking prevalence (%),2026-01-15,249,5511,ok
+FOODBORNE_ILL_100K,Foodborne illnesses per 100 000,2026-06-03,110,3498,ok
+TAXBEV_ABV,"Alcohol content in beverage in percent of volume, (alcohol by volume) (ABV %)",2025-12-17,278,589,ok
+MALARIA_INDIG,Number of indigenous malaria cases,2025-12-19,276,1049,ok
+TAXBEV_VATSPECIAL_YN,Special VAT (or sales tax) rate on non-alcoholic beverages (different from the standard VAT rate),2025-12-16,279,149,ok
+TAXBEV_OTHERTAXES,Other taxes on beverages (%),2025-12-16,279,838,ok
+MALARIA_CONF_CASES,Number of confirmed malaria cases,2025-12-19,276,1047,ok
+RHR_NPSV12M,Proportion of women and girls aged 15 years or older who have been subjected to sexual violence by someone other than a partner in the past 12 months (%) – related to SDG 5.2.2,2026-05-01,143,264,ok
+HEPATITIS_HBV_TREATMENT_ANC_PERCENT,Eligible women attending antenatal care who were treated for HBV,2026-08-03,49,107,ok
+HEPATITIS_DEATHS_NUM,Hepatitis - Deaths caused by chronic hepatitis B and C,2026-08-03,49,252,ok
+MALARIA_NMCP_CALCULATIONS,Domestic Expenditure on Malaria,2025-12-19,276,917,ok
+FAMILYPLANNINGUNPDUHC,Women who have their need for family planning satisfied with modern methods (%) - modelled estimates,2026-02-16,217,14187,ok
+AMR_INFECT_ECOLI,Proportion of bloodstream infection due to Escherichia coli resistant to third-generation cephalosporins (%),2025-10-22,334,506,ok
+NUTRITION_ANAEMIA_REPRODUCTIVEAGE_PREV,Prevalence of anaemia in women of reproductive age (aged 15-49) (%),2026-08-05,47,17856,ok
+TAXBEV_EXCISE_AUTOADJUST,Automatic adjustment of specific excise on beverage,2025-12-16,279,336,ok
+FOODBORNE_DTH_100K,Foodborne deaths per 100 000,2026-06-03,110,3498,ok
+LBW_NUMBER,Low birth weight number (in thousands),2026-06-09,104,4368,ok
+HEPATITIS_HCV_DIAGNOSED_CRD_NUM,"Chronic hepatitis C (HCV) infected persons diagnosed, including cured (number)",2026-08-03,49,232,ok
+SDGIPVLT,Proportion of ever-partnered women and girls aged 15–49 years subjected to physical and/or sexual violence by a current or former intimate partner in their lifetime,2026-05-01,143,340,ok
+FOODBORNE_YLD,Foodborne years lived with disability,2026-06-03,110,3498,ok
+HEPATITIS_HBV_DIAGNOSED_NUM,Chronic hepatitis B (HBV) infected persons diagnosed (number),2026-08-03,49,242,ok
+FOODBORNE_DALY_CASE,Foodborne disability-adjusted life years per case,2026-06-03,110,3498,ok
+HEPATITIS_DEATHS_RATE,Hepatitis - Deaths caused by chronic hepatitis B and C (per 100 000 population),2026-08-03,49,251,ok
+SA_0000001849,Remote ordering of alcohol regulated,2026-07-06,77,126,ok
+HEPATITIS_HBV_TESTING_ANC_PERCENT,"Pregnant women attending antenatal care, tested for HBsAg (percent)",2026-08-03,49,205,ok
+TAXBEV_MOSTSOLDSPIRIT,Most sold type of spirit,2025-12-17,278,266,ok
+MALARIA_ACT_TREATED,Number of malaria cases treated with artemisinin-based combination therapies (ACTs),2025-12-19,276,505,ok
+TAXBEV_ALCOHOLSALESTATUS,Status of alcohol sale,2025-12-17,278,780,ok
+TOBACCO_MPOWER_M3_TOBACCOUSESMOKINGSCHOOL,"Tobacco Monitor: school-based national surveys, tobacco use, tobacco smoking, and cigarette smoking",2026-01-27,237,780,ok
+NUT_BF_EBF2D,Exclusively breastfed for the first two days after birth,2026-06-09,104,8145,ok
+AMR_INFECT_MRSA,Proportion of bloodstream infection due to methicillin-resistant Staphylococcus aureus (MRSA) (%),2025-10-22,334,499,ok
+FOODBORNE_DTH,Foodborne deaths,2026-06-03,110,3498,ok
+MALARIA_ITN_USE,Malaria ITN use: Population in malaria-endemic areas who slept under an insecticide-treated bed net (ITN) the previous night (%),2026-01-23,241,1000,ok
+MALARIA_1STLINE_TREATED,Number of malaria cases treated with any first  line tx courses (including artemisinin-based combination therapies (ACTs)),2025-12-19,276,555,ok
+TAXBEV_ADVALOREMBASE,Base for ad valorem excise tax on beverage,2025-12-16,279,510,ok
+TAXBEV_AFFORD_LESS,Beverage has become less affordable since last survey year,2025-12-16,279,351,ok
+TAXBEV_EXCISE_UNIFORMTIERED_ALCOHOLIC,Uniform or tiered excise tax system applied on alcoholic beverage,2025-12-17,278,335,ok
+PHYSICALACTIVITY_ACTIVEENVIRONMENTS,Physical activity active environments,2026-09-01,20,2568,ok
+NUTRITION_ANAEMIA_REPRODUCTIVEAGE_NUM,Number of women of reproductive age (aged 15-49 years) with anaemia (thousands),2026-08-05,47,17568,ok
+M_Est_cig_curr_std,Estimate of current cigarette smoking prevalence (%) (age-standardized),2026-01-19,245,5511,ok
+CM_04,Number of deaths among children ages 5 to 9 years,2026-08-05,47,26145,ok
+TAXBEV_EXCISE_UNIFORMTIERED_NONALCOHOLIC,Uniform or tiered excise tax system applied on non-alcoholic beverage,2025-12-16,279,179,ok
+TOBACCO_MPOWER_M4_PREVALENCE,"Tobacco Monitor: school-based national surveys, smokeless tobacco or e-cigarettes, prevalence",2026-02-04,229,2340,ok
+MALARIA_EST_MORTALITY,Estimated malaria mortality rate (per 100 000 population),2025-12-19,276,2834,ok
+TAXBEV_SUGARCONTENT,Sugar-content of beverage (g/100ml),2025-12-16,279,350,ok
+TOBACCO_MPOWER_M1_PREVALENCE,"Tobacco Monitor: population-based national surveys, tobacco use and smoking, prevalence",2026-01-30,234,3510,ok
+CANCERSURVIVAL_CHILDREN_LEUKAEMIA,"Childhood cancer survival for lymphoid leukaemia, age-standardized 5-year net survival (%)",2026-07-29,54,615,ok
+LBW_PREVALENCE,Low birth weight prevalence (%),2026-06-09,104,4368,ok
+PHYSICALACTIVITY_ACTIVESYSTEMS,Physical activity policies focused on active systems,2026-09-01,20,4850,ok
+TOBACCO_MPOWER_M1_TOBACCOUSESMOKING,"Tobacco Monitor: population-based national surveys, tobacco use and smoking",2026-01-27,237,780,ok
+TRAD_MED_HWF_DENSITY,"Traditional, Complementary, and Integrative Medicine Healthworkforce Density (per 10,000 population)",2026-09-07,14,14,ok
+CANCERSURVIVAL_BREASTCANCER,"Cancer survival for those diagnosed with breast cancer, 5-year net survival (%)",2026-06-25,88,205,ok
+M_Est_cig_curr_users,"Number of current cigarette smokers, estimate",2026-01-15,249,5709,ok
+HEPATITIS_HCV_DIAGNOSED_NUM,Chronic hepatitis C (HCV) infected persons diagnosed (number),2026-08-03,49,462,ok
+NCDMORTPERCENT,Percentage of total deaths due to NCDs overall and percentage of total deaths due to 7 main categories (5 different NCD categories plus 2 non-NCD categories which together total al,2026-06-26,87,96876,ok
+MALARIA_TOTAL_CASES,Total number of  malaria cases (presumed + confirmed cases),2025-12-19,276,1047,ok
+TRAD_MED_CHE_PROVIDER,"Traditional, Complementary, and Integrative Medicine Current Health Expenditure by health care providers",2026-09-07,14,53,ok
+HEALTH_PROMOTING_CITIES,"Proportion of cities, municipalities and localities in regional Healthy City networks that are health-promoting",2026-08-19,33,79,ok
+HEPATITIS_HCV_TREATMENT_CUM_PERINFECTED_CRD_PER100,"Chronic hepatitis C (HCV) cumulative treatment rate as percentage of total infected, including cured  (%)",2026-08-03,49,233,ok
+NUT_BF_EBF_NUMTH,Exclusive breastfeeding under six months (in thousands),2026-06-09,104,786,ok
+HEPATITIS_HBV_DIAGNOSIS_PERINFECTED_PER100,Chronic hepatitis B (HBV) diagnosis coverage as a percentage of infected (%),2026-08-03,49,226,ok
+VACCINECOVERAGE_DTP1,Diphtheria tetanus toxoid and pertussis first-dose (DTP1) immunization coverage among 1-year-olds (%) (WUENIC),2026-07-14,69,5337,ok
+TOBACCO_MPOWER_R_PRICE,Tobacco Raise taxes: Retail price for tobacco and nicotine products,2025-12-09,286,15990,ok
+MALARIA_RDT_POS,Number of malaria positive cases by rapid diagnostic test (RDT),2025-12-19,276,866,ok
+CHILDVIOL,Indicator 16.2.1: Proportion of children aged 1-17 years who experienced any physical punishment and/or psychological aggression by caregivers in the past month,2026-02-11,222,300,ok
+GASP_ISOLATESTESTED_NUMBER,Antimicrobial resistance or decreased susceptibiity (DS/R) to antimicrobials testing  in Neisseria gonorrhoea isolates (WHO-GASP) (number),2026-01-05,259,2713,ok
+NUT_CF_MAD,Minimum Acceptable Diet 6-23 months,2026-06-09,104,6328,ok
+TOBACCO_MPOWER_R_TAX,Tobacco Raise taxes: National taxes for tobacco and nicotine products,2026-07-07,76,20865,ok
+NCD_HYP_TREATMENT_C,"Hypertension treatment coverage among adults aged 30-79 with hypertension, crude (%)",2025-10-30,326,19170,ok
+PHE_HHAIR_PROP_POP_CLEAN_FUELS,Proportion of population with primary reliance on clean fuels and technologies for cooking (%),2026-05-08,136,16800,ok
+DEATHADO,Number of deaths among adolescents (10 to 19 years of age),2026-08-04,48,78435,ok
+CHILDDEATH5TO14,Number of deaths among children 5 to 14 years of age,2026-08-05,47,26145,ok
+MALARIA_IPTP3_COVERAGE,Pregnant women attending antenatal care  at least once and receiving at least 3 doses of Intermittent Preventive Treatment of Malaria for Pregnant Women (IPTp3) (%),2025-12-19,276,330,ok
+M_Est_tob_curr_users,"Number of current of tobacco users, estimate",2026-01-15,249,5709,ok
+HIV_STATUSKNOWNART,Percentage of people living with HIV who know their status receiving antiretroviral therapy,2026-07-31,52,1454,ok
+GLASSAMC_AWARE,Pattern of antibiotic consumption at national level (relative use by AWaRe classification),2025-09-24,362,1664,ok
+NTD_BU_CONF,Number of confirmed cases of Buruli ulcer reported,2025-10-30,326,198,ok
+HWF_0025,Medical doctors (%),2026-01-23,241,3406,ok
+GLASSAMC_TC,Total use of antibacterials expressed as DDD per 1000 inhabitants per day,2025-09-24,362,416,ok
+PHYSICALACTIVITY_ACTIVESOCIETIES,Physical activity policies for activie societies,2026-09-01,20,1358,ok
+FOODBORNE_ILL,Foodborne illnesses,2026-06-03,110,3498,ok
+NUT_CF_EFF,Egg and/or Flesh Food Consumption 6-23 months,2026-06-09,104,8525,ok
+NTD_LEPR13,New leprosy child case detection rate (less than 15 years of age) per 1 000 000 child population,2026-09-14,7,2716,ok
+HEPATITIS_HCV_TREATMENT_CUM_NUM,"Persons on chronic hepatitis C (HCV) treatment, cumulative (number)",2026-08-03,49,233,ok
+TAXBEV_EXCISE_TYPE,Type of excise tax applied on beverage,2025-12-16,279,2238,ok
+TAXBEV_SUGARBASEDTIERED,"If tiered on the beverage, the tiers are sugar-content-based",2025-12-16,279,179,ok
+TRAD_MED_HWF_DIST,"Traditional, Complementary, and Integrative Medicine Healthworkforce Distribution",2026-09-07,14,12,ok
+NCD_DIABETES_PREVALENCE_CRUDE,"Prevalence of diabetes, crude",2025-10-30,326,41580,ok
+NCD_DIABETES_PREVALENCE_AGESTD,"Prevalence of diabetes, age-standardized",2025-10-30,326,41580,ok
+NUT_BF_EBF,Exclusive breastfeeding under six months,2026-06-09,104,14405,ok
+HEPATITIS_HBV_TESTPOSITIVE_ANC_PERCENT,"Pregnant women attending antenatal care, tested positive for HBsAg (percent)",2026-08-03,49,200,ok
+M_Est_smk_curr_std,Estimate of current tobacco smoking prevalence (%) (age-standardized),2026-01-15,249,5511,ok
+PHYSICALACTIVITY_REGION,Physical activity regional summary,2026-08-07,45,121,ok
+M_Est_tob_curr_std,Estimate of current tobacco use prevalence (%) (age-standardized),2026-01-15,249,5742,ok
+TRAD_MED_CHE_SCHEME,"Traditional, Complementary, and Integrative Medicine Current Health Expenditure by financing schemes",2026-09-07,14,36,ok
+GHED_PHC_GGHE-D_PHC_SHA2011,Domestic general government expenditure on PHC as % of primary health care expenditure (PHCE) (%),2026-01-12,252,363,ok
+MALARIA_IRS_COVERAGE,Number of people protected from malaria by indoor residual spraying (IRS),2025-12-19,276,579,ok
+FOODBORNE_YLL_CASE,Foodborne years of life lost per case,2026-06-03,110,3498,ok
+VACCINECOVERAGE_MENA_C,Meningococcal A conjugate (MENGA) vaccine immunization coverage (%) (WUENIC),2026-07-14,69,310,ok
+FOODBORNE_DTH_CASE,Foodborne deaths per case,2026-06-03,110,3498,ok
+UHCTRANSFATS,Best-practice policy implemented for industrially produced trans-fatty acids (TFA) (Y/N),2026-01-28,236,4246,ok
+HEPATITIS_HBV_INFECTIONS_NEW_NUM,New chronic hepatitis B (HBV) infections (number),2026-08-03,49,227,ok
+NTD_4,Number of new reported cases of human African trypanosomiasis (T.b. gambiense),2026-06-22,91,864,ok
+NUT_BF_EIBF,"Early Initiation of Breastfeeding, Children born in the last 24 months",2026-06-09,104,11842,ok
+NTD_5,Number of new reported cases of human African trypanosomiasis (T.b. rhodesiense),2026-06-23,90,467,ok
+NTD_7,"Population in areas that warrant treatment with antibiotics, facial cleanliness and environmental improvement for elimination of trachoma as a public health problem",2026-07-15,68,1001,ok
+NTD_LEISHVEND,Status of endemicity of visceral leishmaniasis,2025-11-05,320,194,ok
+NTD_LEPR11,Number of female leprosy new cases,2026-09-14,7,2716,ok
+GASP_ISOLATESDSR_PROPORTION,Antimicrobial resistance or decreased susceptibiity (DS/R) to antimicrobials in Neisseria gonorrhoea isolates (WHO-GASP) (proportion),2026-01-05,259,2713,ok
+NUT_CF_ZVF,"Zero vegetable or fruit consumption, 6-23 months",2026-06-09,104,2439,ok
+MALARIA_EST_DEATHS,Estimated number of malaria deaths,2025-12-19,276,2898,ok
+HEPATITIS_HCV_TREATMENT_PERDIAGNOSED_PER100,Chronic hepatitis C (HCV) treatment rate as percentage of diagnosed (%),2026-08-03,49,217,ok
+HEPATITIS_HCV_INFECTIONS_NEW_NUM,New chronic hepatitis C (HCV) infections (number),2026-08-03,49,228,ok
+HIV_VIRALLOADSUPPRESSED,Percentage of people living with HIV who have suppressed viral loads,2026-07-31,52,900,ok
+WHOSIS_000016,Mortality rate among children ages 5 to 9 years (per 1000 children aged 5),2026-08-05,47,26145,ok
+TAXBEV_TOTALTAXES,Total taxes on beverages (%),2025-12-16,279,838,ok
+TOBACCO_MPOWER_M4_SMOKELESSECIGARETTESSCHOOL,"Tobacco Monitor: school-based national surveys, smokeless tobacco or e-cigarettes",2026-01-27,237,780,ok
+TAXBEV_VATSALES,Value-added/sales tax on beverages (%),2025-12-16,279,838,ok
+TAXBEV_PRICE,Beverage price,2025-12-16,279,2496,ok
+SDGIHR2021,"International Health Regulations core capacity scores, SPAR version, 2nd edition",2026-07-20,63,51681,ok
+FOODSAFETY_IHR_PERCENT,Food safety IHR (%),2025-10-22,334,784,ok
+TOBACCO_MPOWER_M2_SMOKELESSECIGARETTES,"Tobacco Monitor: population-based national surveys, smokeless tobacco or e-cigarettes",2026-01-30,234,780,ok
+FINANCIALHARDSHIP_PROPORTIONOFPOP,"Financial hardship in health and components (SDG 3.8.2, 2025 definition): population (%)",2026-03-16,189,18656,ok
+TAXBEV_EXCISE,Excise taxes on beverages (%),2025-12-16,279,3352,ok
+NUT_BF_CBF,Continued breastfeeding 12-23 months,2026-06-09,104,11826,ok
+FOODBORNE_YLD_100K,Foodborne years lived with disability per 100 000,2026-06-03,110,3498,ok
+HEPATITIS_HCV_LIVINGWITH_NUM,People living with chronic hepatitis C (HCV) (number),2026-08-03,49,250,ok
+VACCINECOVERAGE_YFV,Yellow fever vaccine (YFV) immunization coverage among 1-year olds (%),2026-07-14,69,1303,ok
+HEPATITIS_HBV_PREVALENCE_PER100,Prevalence of chronic hepatitis B (HBV) in the general population (%),2026-08-03,49,247,ok
+HIV_VIRALLOADSUPPRESSEDART,Percentage of people living with HIV receiving treatment who have suppressed viral loads,2026-07-31,52,900,ok
+NUT_CF_MDD,Minimum dietary diversity 6-23 months,2026-06-09,104,8686,ok
+NCD_HYP_TREATMENT_A,"Hypertension treatment coverage among adults aged 30-79 with hypertension, age-standardized (%)",2025-10-30,326,19230,ok
+TAXBEV_ALCOHOLBASEDTIERED,"If tiered on the beverage, the tiers are alcohol-based",2025-12-17,278,335,ok
+FINANCIALHARDSHIP_MILLIONOFPOP,"Financial hardship in health and components (SDG 3.8.2, 2025 definition): population (millions)",2025-11-19,306,2415,ok
+VACCINECOVERAGE_IPV1,Inactivated first-dose polio vaccine (IPV1) immunization coverage among 1-year-olds (%) (WUENIC),2026-07-14,69,2266,ok
+SDGODAWS,Amount of water- and sanitation-related official development assistance that is part of a government-coordinated spending plan (constant 2024 US$ millions),2026-06-09,104,2190,ok
+TAXBEV_VATSPECIAL_LOHI,Special VAT is lower or higher than standard VAT,2025-12-16,279,150,ok
+TAXBEV_EXCISE_APPLIED_YN,Excise taxes are applied on beverages,2025-12-16,279,360,ok
+HEPATITIS_HCV_TREATMENT_INITIATED_NUM,Persons initiated chronic hepatitis C(HCV) treatment (number),2026-08-03,49,237,ok
+HEPATITIS_HCV_PREVALENCE_PER100,Prevalence of chronic hepatitis C (HCV) ) in the general population (%),2026-08-03,49,248,ok
+MALARIA_MICR_POS,Number of malaria positive cases by microscopy,2025-12-19,276,988,ok
+NTD_BU_SUSP,Number of suspected cases of Buruli ulcer reported,2025-10-30,326,759,ok
+NCD_HYP_DIAGNOSIS_C,"Hypertension: diagnosis coverage among adults aged 30-79 with hypertension, crude (%)",2025-10-30,326,19170,ok
+FOODBORNE_YLL_100K,Foodborne years of life lost per 100 000,2026-06-03,110,3498,ok
+HWF_0026,Nursing personnel (%),2026-01-23,241,1906,ok
+TOBACCO_MPOWER_M3_PREVALENCE,"Tobacco Monitor: school-based national surveys, tobacco use, tobacco smoking, and cigarette smoking, prevalence",2026-02-04,229,3510,ok
+TAXBEV_IMPORTDUTIES,Import duties on beverages (%),2025-12-16,279,838,ok
+MALARIA_PRES_CASES,Number of presumed malaria cases,2025-12-19,276,1078,ok
+TAXBEV_MINSPECEXCISETAX,Minimum specific excise tax applied on the beverage,2025-12-17,278,455,ok
+TOBACCO_MPOWER_M2_PREVALENCE,"Tobacco Monitor: population-based national surveys, smokeless tobacco or e-cigarettes, prevalence",2026-01-30,234,2340,ok
+FOODBORNE_YLL,Foodborne years of life lost,2026-06-03,110,3498,ok
+HEPATITIS_HBV_TREATMENT_PERINFECTED_PER100,Chronic hepatitis B (HBV) treatment rate as percentage of total infected (%),2026-08-03,49,227,ok
+NCD_DIABETES_TREATMENT_AGESTD,"Diabetes treatment coverage, age-standardized",2025-10-30,326,20790,ok
+NTD_LEPR14,Number of non-autochthonous leprosy cases,2026-09-14,7,1940,ok
+HEPATITIS_HBV_TREATMENT_PERDIAGNOSED_PER100,Chronic hepatitis B (HBV) treatment rate as percentage of diagnosed (%),2026-08-03,49,233,ok

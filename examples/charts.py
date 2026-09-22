@@ -32,8 +32,13 @@ OUT = os.path.join(HERE, "charts")
 UA = "wss-probe (+https://github.com/q3dresearch)"
 
 # ---------------------------------------------------------------- chart 1
-src = os.path.join(REPO, "reference", "indicator-activity-2026-09-07.csv")
-rows = [r for r in csv.DictReader(_open_partition(src)) if r.get("status") == "ac" or r.get("status") == "ok"]
+# The census, not the old 400-sample: polling all 3,099 became affordable once
+# the cost model was corrected (it had been timing an IPv6 blackhole, not WHO).
+src = os.path.join(REPO, "reference", "indicator-activity-census-2026-09-22.csv")
+allrows = list(csv.DictReader(_open_partition(src)))
+CATALOGUE = len(allrows)
+rows = [r for r in allrows if r.get("status") == "ac" or r.get("status") == "ok"]
+EMPTY = sum(1 for r in allrows if r.get("status") == "empty")
 ages = sorted(int(r["days_since"]) for r in rows if r.get("days_since"))
 BUCKETS = [("<1y", 0, 365), ("1–2y", 365, 730), ("2–4y", 730, 1460), (">4y", 1460, 10**9)]
 counts = [(lab, sum(1 for a in ages if lo <= a < hi)) for lab, lo, hi in BUCKETS]
@@ -45,8 +50,9 @@ T, PH = 150, 250
 H = T + PH + 110
 b = []
 b.append(txt(L, 46, "Most of WHO's indicator catalogue stopped being updated", 21, INK, weight="600"))
-b.append(txt(L, 73, f"When each of {n} randomly sampled indicators was last republished. "
-                    "Scoping by this alone picks the citable core.", 13.5, MUTE))
+b.append(txt(L, 73, f"When each of the {n:,} indicators carrying any data was last republished "
+                    f"— the whole catalogue, not a sample.", 13.5, MUTE))
+b.append(txt(L, 91, "Scoping by this alone picks the citable core.", 13.5, MUTE))
 bw = PW / len(counts)
 mx = max(c for _, c in counts)
 for i, (lab, c) in enumerate(counts):
@@ -61,21 +67,24 @@ for i, (lab, c) in enumerate(counts):
                  anchor="middle", weight="600" if live else "normal"))
 b.append(line(L, T + PH, L + PW, T + PH, MUTE))
 nx = L + PW + 26; y0 = T + 4
-for ln in wrap("The 14% republished within a year are the indicators anyone cites: "
-               "under-five mortality, infant deaths, HIV in pregnancy, immunisation "
-               "coverage, air pollution mortality.", 250):
+for ln in wrap(f"The {counts[0][1]} republished within a year — {counts[0][1]/n:.0%} of these, "
+               f"{counts[0][1]/CATALOGUE:.0%} of the whole catalogue — are the indicators "
+               "anyone cites: under-five mortality, infant deaths, HIV in pregnancy, "
+               "immunisation coverage, air pollution mortality.", 250):
     b.append(txt(nx, y0, ln, 12, ORANGE, weight="600")); y0 += 17
 y0 += 14
-for ln in wrap("The dormant 59% are policy inventories last touched over four years ago — "
-               "\"social costs of alcohol use\", \"supervision requirements for buprenorphine\" "
-               "— several stamped 13 years old.", 250):
+for ln in wrap(f"The dormant {counts[3][1]/n:.0%} are policy inventories last touched over four "
+               "years ago — \"social costs of alcohol use\", \"supervision requirements for "
+               "buprenorphine\" — several stamped 13 years old.", 250):
     b.append(txt(nx, y0, ln, 12, MUTE)); y0 += 17
 y0 += 14
-for ln in wrap("Capturing only the active set is therefore a mechanical rule, not a "
-               "judgement about which indicators deserve to exist.", 250):
+for ln in wrap(f"A further {EMPTY} of the {CATALOGUE:,} catalogued indicators carry no rows "
+               "at all and cannot appear on this axis. Capturing only the active set is a "
+               "mechanical rule, not a judgement about which deserve to exist.", 250):
     b.append(txt(nx, y0, ln, 12, INK)); y0 += 17
-b.append(txt(L, H - 32, f"Source: ghoapi.azureedge.net, {n} of 3,098 indicators drawn at random, "
-                        "2026-09-07. Median last republication 4.7 years.", 10.5, MUTE))
+b.append(txt(L, H - 32, f"Source: ghoapi.azureedge.net, all {CATALOGUE:,} catalogued indicators polled "
+                        f"2026-09-22; {n:,} carry a load stamp and are shown, {EMPTY} hold no rows. "
+                        f"Median last republication {ages[len(ages)//2]/365.25:.1f} years.", 10.5, MUTE))
 open(os.path.join(OUT, "catalogue-activity.svg"), "w").write(doc(W, H, b))
 
 # ---------------------------------------------------------------- chart 2
