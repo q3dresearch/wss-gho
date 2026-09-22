@@ -24,7 +24,13 @@ env:
   # a fork sends its own. Set a WSS_CONTACT secret only to override.
   WSS_CONTACT: ${{ secrets.WSS_CONTACT || format('{0} +https://github.com/{1}', github.repository_owner, github.repository) }}
   CADENCE: monthly
-  SHARDS: "20" # matrix cap is 256 jobs/run — aim for ~20 jobs of ~50 sources
+  # MEASURED, not guessed. A trial of shard 1/20 against the widened registry
+  # took ~9 min for 72 pages -- 7.5s a page, not the ~3s that delay_seconds
+  # alone suggests. At 20 shards the worst shard holds 320 of the 3,321 pages
+  # and would run ~40 min against a 60-min job timeout: fine on a good day and
+  # gone on a slow one. 40 shards puts the worst at ~23 min. The cap is 256
+  # jobs and the timeout is per job, so extra shards cost only queueing.
+  SHARDS: "40"
   ENGINE_SPEC: "wss[object] @ git+https://github.com/${{ github.repository_owner }}/wss-engine.git@v0.6.55"
 
 jobs:
