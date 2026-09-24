@@ -177,6 +177,25 @@ lacks returns **zero rows with no error**, and dimensions are not uniform:
 under-five mortality carries SEX, AGEGROUP and WEALTHQUINTILE, measles
 immunisation carries none and is not even country-keyed.
 
+## Questions this exists to answer
+
+![All 8 questions here are answered or on a clock.](examples/charts/maturity.svg)
+
+**6 of these 8 are answered from captures already held.** 2 become answerable only as the series lengthens — the plate shows when. Every other one is on the clock, so the plate is a schedule rather than a wish list.
+
+
+| # | question | status |
+| --- | --- | --- |
+| Q1 | How much of WHO's indicator catalogue is still updated? | **answered** — most of it stopped → [catalogue activity](examples/charts/catalogue-activity.svg) |
+| Q2 | How deep does the history actually go? | **answered** — back to 1931, and almost none of it is old → [history is shallow](examples/charts/history-is-shallow.svg) |
+| Q3 | Does WHO restate continuously, or in releases? | **answered** — in releases → [restatement rhythm](examples/charts/restatement-rhythm.svg) |
+| Q4 | How much of the record is estimate rather than measurement? | **answered** — half the world's child-mortality figures, with very wide bands → [uncertainty and prediction](examples/charts/uncertainty-and-prediction.svg) |
+| Q5 | Which figures carry uncertainty wider than the figure itself? | **answered** → [which numbers hold](examples/charts/which-numbers-hold.svg) |
+| Q6 | Who is missing from the global health record? | **answered** — it is drawn along sovereignty lines → [who is missing](examples/charts/who-is-missing.svg) |
+| Q7 | When a figure is restated, what was the previous value? | needs 2+ captures. **The reason for capturing** — GHO overwrites in place and keeps no prior value |
+| Q8 | Which indicators are retired without announcement? | needs 2+ captures — a retired indicator simply stops appearing |
+
+
 ## Licence — the data is NOT CC-BY-4.0
 
 **Code:** MIT, see [LICENSE](LICENSE).
