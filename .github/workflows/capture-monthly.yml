@@ -31,7 +31,7 @@ env:
   # gone on a slow one. 40 shards puts the worst at ~23 min. The cap is 256
   # jobs and the timeout is per job, so extra shards cost only queueing.
   SHARDS: "40"
-  ENGINE_SPEC: "wss[object] @ git+https://github.com/${{ github.repository_owner }}/wss-engine.git@v0.6.55"
+  ENGINE_SPEC: "wss[object] @ git+https://github.com/${{ github.repository_owner }}/wss-engine.git@v0.6.58"
 
 jobs:
   plan:
