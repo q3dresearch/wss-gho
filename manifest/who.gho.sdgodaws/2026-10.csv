@@ -1,0 +1,4 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.sdgodaws,https://ghoapi.azureedge.net/api/SDGODAWS?$top=1000,2026-10-05T09:32:47Z,200,application/json,554499,d6bd2bc3f6b9e2c94d582bb8c699a46330a1d6b0556ccf0d725801a225e0dc38,,,first_capture,raw/who.gho.sdgodaws/2026/10/20261005T093247Z-d6bd2bc3f6b9.json.gz,,
+who.gho.sdgodaws,https://ghoapi.azureedge.net/api/SDGODAWS?$top=1000&$skip=1000,2026-10-05T09:32:51Z,200,application/json,555482,0508ed9fc6a6938e92acb76e75c37ef741ba62e60da25c9861313bc891549225,,,first_capture,raw/who.gho.sdgodaws/2026/10/20261005T093251Z-0508ed9fc6a6.json.gz,,
+who.gho.sdgodaws,https://ghoapi.azureedge.net/api/SDGODAWS?$top=1000&$skip=2000,2026-10-05T09:33:06Z,200,application/json,104955,1dce1807115ac1ab1a562bc86d63c850a4f22a21dabd565e4d7fc6789aeeba0d,,,first_capture,raw/who.gho.sdgodaws/2026/10/20261005T093306Z-1dce1807115a.json.gz,,

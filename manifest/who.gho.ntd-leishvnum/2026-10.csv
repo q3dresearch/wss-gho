@@ -1,0 +1,3 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.ntd-leishvnum,https://ghoapi.azureedge.net/api/NTD_LEISHVNUM?$top=1000,2026-10-05T09:34:31Z,200,application/json,554727,982c2c7e8fe4d34ed2f8c8b15485995e65aed8d1d816e934390a8b7b0e6fbb90,,,first_capture,raw/who.gho.ntd-leishvnum/2026/10/20261005T093431Z-982c2c7e8fe4.json.gz,,
+who.gho.ntd-leishvnum,https://ghoapi.azureedge.net/api/NTD_LEISHVNUM?$top=1000&$skip=1000,2026-10-05T09:34:34Z,200,application/json,377057,def6df3d878e9963dc3e847c2497354f54af16711b4f6d342e75eaa67a52d874,,,first_capture,raw/who.gho.ntd-leishvnum/2026/10/20261005T093434Z-def6df3d878e.json.gz,,

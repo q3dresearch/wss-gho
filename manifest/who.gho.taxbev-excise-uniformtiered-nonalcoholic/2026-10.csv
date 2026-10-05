@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.taxbev-excise-uniformtiered-nonalcoholic,https://ghoapi.azureedge.net/api/TAXBEV_EXCISE_UNIFORMTIERED_NONALCOHOLIC?$top=1000,2026-10-05T09:40:44Z,200,application/json,119513,44460350434410a84b85d67db117f9273020d2b703aaa23f668286126a549063,,,first_capture,raw/who.gho.taxbev-excise-uniformtiered-nonalcoholic/2026/10/20261005T094044Z-444603504344.json.gz,,

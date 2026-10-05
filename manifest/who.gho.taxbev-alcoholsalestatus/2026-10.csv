@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.taxbev-alcoholsalestatus,https://ghoapi.azureedge.net/api/TAXBEV_ALCOHOLSALESTATUS?$top=1000,2026-10-05T09:34:15Z,200,application/json,484585,447860c4cc8d5fa509506b5045425afdf3a3be16f6490e7f798fc9128976a594,,,first_capture,raw/who.gho.taxbev-alcoholsalestatus/2026/10/20261005T093415Z-447860c4cc8d.json.gz,,

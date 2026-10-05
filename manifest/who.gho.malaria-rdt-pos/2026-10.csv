@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.malaria-rdt-pos,https://ghoapi.azureedge.net/api/MALARIA_RDT_POS?$top=1000,2026-10-05T09:34:22Z,200,application/json,491070,a783ea32daa5c8c55670f880a0710f91357b34b4614843729a64425da56a41d7,,,first_capture,raw/who.gho.malaria-rdt-pos/2026/10/20261005T093422Z-a783ea32daa5.json.gz,,

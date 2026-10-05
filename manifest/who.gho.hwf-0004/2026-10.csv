@@ -1,0 +1,3 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.hwf-0004,https://ghoapi.azureedge.net/api/HWF_0004?$top=1000,2026-10-05T09:35:13Z,200,application/json,624864,88d5a93db614e6bf7dfa45893e79feeb4396a5dde5da43bf8c67261b01740c5b,,,first_capture,raw/who.gho.hwf-0004/2026/10/20261005T093513Z-88d5a93db614.json.gz,,
+who.gho.hwf-0004,https://ghoapi.azureedge.net/api/HWF_0004?$top=1000&$skip=1000,2026-10-05T09:35:29Z,200,application/json,494273,b4ecfea10f7266927ff988b4fb928524a20f867c93e90f558927983a2610e37f,,,first_capture,raw/who.gho.hwf-0004/2026/10/20261005T093529Z-b4ecfea10f72.json.gz,,

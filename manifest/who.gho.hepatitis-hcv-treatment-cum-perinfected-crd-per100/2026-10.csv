@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.hepatitis-hcv-treatment-cum-perinfected-crd-per100,https://ghoapi.azureedge.net/api/HEPATITIS_HCV_TREATMENT_CUM_PERINFECTED_CRD_PER100?$top=1000,2026-10-05T09:35:54Z,200,application/json,160431,5910ea8b38c934bbd1938a5dd0e2511ca4c5788158e6340c7f9a5b9d878c4bf1,,,first_capture,raw/who.gho.hepatitis-hcv-treatment-cum-perinfected-crd-per100/2026/10/20261005T093554Z-5910ea8b38c9.json.gz,,

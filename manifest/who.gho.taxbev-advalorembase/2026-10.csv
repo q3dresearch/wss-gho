@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.taxbev-advalorembase,https://ghoapi.azureedge.net/api/TAXBEV_ADVALOREMBASE?$top=1000,2026-10-05T09:34:07Z,200,application/json,330849,1ba7d963291e8b77604cc17f0d011b22fca69e6b1c9d56fd24b3290cf3b55150,,,first_capture,raw/who.gho.taxbev-advalorembase/2026/10/20261005T093407Z-1ba7d963291e.json.gz,,

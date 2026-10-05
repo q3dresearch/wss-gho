@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.hepatitis-hbv-livingwith-num,https://ghoapi.azureedge.net/api/HEPATITIS_HBV_LIVINGWITH_NUM?$top=1000,2026-10-05T09:34:25Z,200,application/json,170245,e2749115dfc090bd46d0f9100ace1a5ca17d8fa5041f8a3f5ac2c319eb36656b,,,first_capture,raw/who.gho.hepatitis-hbv-livingwith-num/2026/10/20261005T093425Z-e2749115dfc0.json.gz,,

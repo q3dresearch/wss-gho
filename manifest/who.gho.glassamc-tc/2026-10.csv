@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.glassamc-tc,https://ghoapi.azureedge.net/api/GLASSAMC_TC?$top=1000,2026-10-05T09:38:17Z,200,application/json,236110,7738ce813d3686cb531e3ec6c87afa760939a11ccf3a88f5c8ed842cb05b6629,,,first_capture,raw/who.gho.glassamc-tc/2026/10/20261005T093817Z-7738ce813d36.json.gz,,

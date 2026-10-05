@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.gasprp,https://ghoapi.azureedge.net/api/GASPRP?$top=1000,2026-10-05T09:29:07Z,200,application/json,349074,a04ad4697d3a5949727e9251b72e7b5dff0dca92219296a70fee2515e28822a2,,,first_capture,raw/who.gho.gasprp/2026/10/20261005T092907Z-a04ad4697d3a.json.gz,,

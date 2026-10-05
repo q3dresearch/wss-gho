@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.taxbev-alcoholbasedtiered,https://ghoapi.azureedge.net/api/TAXBEV_ALCOHOLBASEDTIERED?$top=1000,2026-10-05T09:33:24Z,200,application/json,213964,f37a6dc3baaa1762ef3e8bd4c19c345c8cc1fabe4069954e56cfa001ea272ff9,,,first_capture,raw/who.gho.taxbev-alcoholbasedtiered/2026/10/20261005T093324Z-f37a6dc3baaa.json.gz,,

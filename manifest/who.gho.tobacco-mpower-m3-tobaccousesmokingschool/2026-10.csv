@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.tobacco-mpower-m3-tobaccousesmokingschool,https://ghoapi.azureedge.net/api/TOBACCO_MPOWER_M3_TOBACCOUSESMOKINGSCHOOL?$top=1000,2026-10-05T09:41:49Z,200,application/json,498816,505d3c343941e4ae92e2e0281da4e5c3c2ef8aa21b41dff993e478cf525bd9b4,,,first_capture,raw/who.gho.tobacco-mpower-m3-tobaccousesmokingschool/2026/10/20261005T094149Z-505d3c343941.json.gz,,

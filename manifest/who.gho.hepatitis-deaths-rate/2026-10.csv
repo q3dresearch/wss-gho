@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.hepatitis-deaths-rate,https://ghoapi.azureedge.net/api/HEPATITIS_DEATHS_RATE?$top=1000,2026-10-05T09:29:16Z,200,application/json,165328,862c0b6c7271513bdce79ea6a9ed78e3c9f4b8b219304d6ea81cf9bc72931176,,,first_capture,raw/who.gho.hepatitis-deaths-rate/2026/10/20261005T092916Z-862c0b6c7271.json.gz,,

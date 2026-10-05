@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.ntd-4,https://ghoapi.azureedge.net/api/NTD_4?$top=1000,2026-10-05T09:37:27Z,200,application/json,468811,4023c89c23cb906cea7e83b8e4e56446345e07def5c09ca084b01c8a6218add0,,,first_capture,raw/who.gho.ntd-4/2026/10/20261005T093727Z-4023c89c23cb.json.gz,,

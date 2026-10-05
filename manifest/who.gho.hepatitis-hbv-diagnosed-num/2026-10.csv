@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.hepatitis-hbv-diagnosed-num,https://ghoapi.azureedge.net/api/HEPATITIS_HBV_DIAGNOSED_NUM?$top=1000,2026-10-05T09:29:14Z,200,application/json,163878,a0c71c552631fe3e9290ff88f9064064b305c3a91648321e80e74e06ffbe11c5,,,first_capture,raw/who.gho.hepatitis-hbv-diagnosed-num/2026/10/20261005T092914Z-a0c71c552631.json.gz,,

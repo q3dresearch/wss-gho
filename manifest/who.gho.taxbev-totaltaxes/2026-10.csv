@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.taxbev-totaltaxes,https://ghoapi.azureedge.net/api/TAXBEV_TOTALTAXES?$top=1000,2026-10-05T09:37:42Z,200,application/json,524078,1d064f7f6fc31572b8fd9b3582ae07ed647865f355c0afe79432143df5114234,,,first_capture,raw/who.gho.taxbev-totaltaxes/2026/10/20261005T093742Z-1d064f7f6fc3.json.gz,,

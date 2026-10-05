@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.glassamc-gpw13-t4b,https://ghoapi.azureedge.net/api/GLASSAMC_GPW13_T4B?$top=1000,2026-10-05T09:31:01Z,200,application/json,236148,5a62310abf44ac86ba9932342ecdb19152cc116c8a2f94f1c25b6f3180a1dbfe,,,first_capture,raw/who.gho.glassamc-gpw13-t4b/2026/10/20261005T093101Z-5a62310abf44.json.gz,,

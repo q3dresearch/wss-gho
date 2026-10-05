@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.taxbev-excise-uniformtiered-alcoholic,https://ghoapi.azureedge.net/api/TAXBEV_EXCISE_UNIFORMTIERED_ALCOHOLIC?$top=1000,2026-10-05T09:37:08Z,200,application/json,217256,d6c4bebc5aa99234482b2f48e6280b333122a0300d011f8042bd0282cdc4efad,,,first_capture,raw/who.gho.taxbev-excise-uniformtiered-alcoholic/2026/10/20261005T093708Z-d6c4bebc5aa9.json.gz,,

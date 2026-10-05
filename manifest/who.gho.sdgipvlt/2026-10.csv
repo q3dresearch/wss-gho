@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.sdgipvlt,https://ghoapi.azureedge.net/api/SDGIPVLT?$top=1000,2026-10-05T09:30:01Z,200,application/json,208388,72d7449eacda68e341343cfe3919f1c61fe6c1efd3a48b7e4897b7afcdbcfeba,,,first_capture,raw/who.gho.sdgipvlt/2026/10/20261005T093001Z-72d7449eacda.json.gz,,

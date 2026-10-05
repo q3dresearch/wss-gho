@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.taxbev-excise-applied-yn,https://ghoapi.azureedge.net/api/TAXBEV_EXCISE_APPLIED_YN?$top=1000,2026-10-05T09:37:27Z,200,application/json,232160,c5644e87d1b2ea2a43ef4ecb4f309e09dde355aa0c127ec14cb7b9d757601e7d,,,first_capture,raw/who.gho.taxbev-excise-applied-yn/2026/10/20261005T093727Z-c5644e87d1b2.json.gz,,

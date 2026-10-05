@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.hepatitis-hbv-diagnosis-perinfected-per100,https://ghoapi.azureedge.net/api/HEPATITIS_HBV_DIAGNOSIS_PERINFECTED_PER100?$top=1000,2026-10-05T09:30:25Z,200,application/json,153143,5d8143b57b5e04fa99fe56e02129d25460aea67ac4be51199aa6a243544e7615,,,first_capture,raw/who.gho.hepatitis-hbv-diagnosis-perinfected-per100/2026/10/20261005T093025Z-5d8143b57b5e.json.gz,,

@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.cancersurvival-breastcancer,https://ghoapi.azureedge.net/api/CANCERSURVIVAL_BREASTCANCER?$top=1000,2026-10-05T09:28:58Z,200,application/json,124252,11adbbe954fb610ad161b1cfb9b376d1548126133c4df761250d10ce95d57439,,,first_capture,raw/who.gho.cancersurvival-breastcancer/2026/10/20261005T092858Z-11adbbe954fb.json.gz,,

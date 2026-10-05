@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.taxbev-earmarkedexcisetax,https://ghoapi.azureedge.net/api/TAXBEV_EARMARKEDEXCISETAX?$top=1000,2026-10-05T09:37:46Z,200,application/json,32459,4aec59be6139e03a72fe0210cb711ac15474c378715feb5789e380f0a362e861,,,first_capture,raw/who.gho.taxbev-earmarkedexcisetax/2026/10/20261005T093746Z-4aec59be6139.json.gz,,

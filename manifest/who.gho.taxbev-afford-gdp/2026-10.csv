@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.taxbev-afford-gdp,https://ghoapi.azureedge.net/api/TAXBEV_AFFORD_GDP?$top=1000,2026-10-05T09:37:01Z,200,application/json,505360,18bfac5375a1e5e65402ba5e9b7d65a44f90f97ae023b2ff634b92fb46aebd89,,,first_capture,raw/who.gho.taxbev-afford-gdp/2026/10/20261005T093701Z-18bfac5375a1.json.gz,,

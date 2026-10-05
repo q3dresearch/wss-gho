@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.malaria-imported,https://ghoapi.azureedge.net/api/MALARIA_IMPORTED?$top=1000,2026-10-05T09:29:25Z,200,application/json,331488,9868ef2152ed788faec90b35eae55f8418b405f9fb8e1c5b41c405927c836769,,,unchanged,raw/who.gho.malaria-imported/2026/09/20260907T160405Z-e1ccf292b5e3.json.gz,,

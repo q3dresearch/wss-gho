@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.taxbev-othertaxes,https://ghoapi.azureedge.net/api/TAXBEV_OTHERTAXES?$top=1000,2026-10-05T09:39:52Z,200,application/json,520444,9af8e4fd93f2cc8510f10e215fe189f508beaf6a118a9d1318836b35e04d11f9,,,first_capture,raw/who.gho.taxbev-othertaxes/2026/10/20261005T093952Z-9af8e4fd93f2.json.gz,,

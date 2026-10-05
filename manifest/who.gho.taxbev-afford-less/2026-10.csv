@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.taxbev-afford-less,https://ghoapi.azureedge.net/api/TAXBEV_AFFORD_LESS?$top=1000,2026-10-05T09:33:09Z,200,application/json,216442,057099681285b28d59912c1571fa1670fecde92f264fe78bc95c3b361bc9378f,,,first_capture,raw/who.gho.taxbev-afford-less/2026/10/20261005T093309Z-057099681285.json.gz,,

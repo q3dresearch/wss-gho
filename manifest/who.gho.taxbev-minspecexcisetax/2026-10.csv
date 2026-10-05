@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.taxbev-minspecexcisetax,https://ghoapi.azureedge.net/api/TAXBEV_MINSPECEXCISETAX?$top=1000,2026-10-05T09:33:05Z,200,application/json,285809,4a3fea4e4d1ba3414e746612cb33c3672bbe5368017fc9f1de14606027d65996,,,first_capture,raw/who.gho.taxbev-minspecexcisetax/2026/10/20261005T093305Z-4a3fea4e4d1b.json.gz,,

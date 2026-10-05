@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.ntd-tra5,https://ghoapi.azureedge.net/api/NTD_TRA5?$top=1000,2026-10-05T09:39:58Z,200,application/json,509959,66670db3958d05094fca9d94f9946c8d20ebd82ef0de9df1f83c35288bb8dc21,,,first_capture,raw/who.gho.ntd-tra5/2026/10/20261005T093958Z-66670db3958d.json.gz,,

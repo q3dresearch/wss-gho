@@ -1,0 +1,3 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.vaccinecoverage-yfv,https://ghoapi.azureedge.net/api/VACCINECOVERAGE_YFV?$top=1000,2026-10-05T09:41:52Z,200,application/json,560817,de46cf5b7f46e7d68a4a033f0d44266708dfdb57353af4c0c1a153b75c1f30ec,,,first_capture,raw/who.gho.vaccinecoverage-yfv/2026/10/20261005T094152Z-de46cf5b7f46.json.gz,,
+who.gho.vaccinecoverage-yfv,https://ghoapi.azureedge.net/api/VACCINECOVERAGE_YFV?$top=1000&$skip=1000,2026-10-05T09:41:55Z,200,application/json,170035,b125c0ab6032c2b42acdbdddb1685c71f9d51e79352a953baeac65d8e2e07290,,,first_capture,raw/who.gho.vaccinecoverage-yfv/2026/10/20261005T094155Z-b125c0ab6032.json.gz,,

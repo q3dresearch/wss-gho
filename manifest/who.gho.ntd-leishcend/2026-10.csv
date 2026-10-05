@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.ntd-leishcend,https://ghoapi.azureedge.net/api/NTD_LEISHCEND?$top=1000,2026-10-05T09:37:15Z,200,application/json,110248,82b9c0af079781790eb2bf3f7f00b1eac398a2a8d30ccdd5f429d065a067128c,,,first_capture,raw/who.gho.ntd-leishcend/2026/10/20261005T093715Z-82b9c0af0797.json.gz,,

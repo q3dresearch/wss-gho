@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.nut-bf-ebf-numth,https://ghoapi.azureedge.net/api/NUT_BF_EBF_NUMTH?$top=1000,2026-10-05T09:32:17Z,200,application/json,544030,a043aa235d7f54e5517ed2d14243450fee46361c40ba4ef069c019e8bd1344af,,,first_capture,raw/who.gho.nut-bf-ebf-numth/2026/10/20261005T093217Z-a043aa235d7f.json.gz,,

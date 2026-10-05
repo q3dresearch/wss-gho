@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.ntd-bu-susp,https://ghoapi.azureedge.net/api/NTD_BU_SUSP?$top=1000,2026-10-05T09:39:56Z,200,application/json,417669,ab329eb9821a918ea05ae3c5e0b97534001fcdc661bdb1bc42180fa6d8785cc1,,,first_capture,raw/who.gho.ntd-bu-susp/2026/10/20261005T093956Z-ab329eb9821a.json.gz,,

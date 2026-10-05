@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.trad-med-hwf-dist,https://ghoapi.azureedge.net/api/TRAD_MED_HWF_DIST?$top=1000,2026-10-05T09:43:42Z,200,application/json,7384,70f55b860c9e1a1076d69acc98cc4f4868524fff25df2bfe9c844b089cad7e2a,,,first_capture,raw/who.gho.trad-med-hwf-dist/2026/10/20261005T094342Z-70f55b860c9e.json.gz,,

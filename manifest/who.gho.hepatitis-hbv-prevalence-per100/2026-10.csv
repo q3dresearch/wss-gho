@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.hepatitis-hbv-prevalence-per100,https://ghoapi.azureedge.net/api/HEPATITIS_HBV_PREVALENCE_PER100?$top=1000,2026-10-05T09:35:47Z,200,application/json,163936,31884b744924efb29cc8a512b646a5125b0054c1d42e158bbba13589db1f2c3a,,,first_capture,raw/who.gho.hepatitis-hbv-prevalence-per100/2026/10/20261005T093547Z-31884b744924.json.gz,,

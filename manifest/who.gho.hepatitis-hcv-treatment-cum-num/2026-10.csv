@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.hepatitis-hcv-treatment-cum-num,https://ghoapi.azureedge.net/api/HEPATITIS_HCV_TREATMENT_CUM_NUM?$top=1000,2026-10-05T09:29:18Z,200,application/json,157079,b6cfdb20aad8323d9b087c6c1a726b659775f59821d4da6ded6d4750e30c3b68,,,first_capture,raw/who.gho.hepatitis-hcv-treatment-cum-num/2026/10/20261005T092918Z-b6cfdb20aad8.json.gz,,

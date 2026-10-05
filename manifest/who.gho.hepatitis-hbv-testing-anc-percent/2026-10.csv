@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.hepatitis-hbv-testing-anc-percent,https://ghoapi.azureedge.net/api/HEPATITIS_HBV_TESTING_ANC_PERCENT?$top=1000,2026-10-05T09:34:11Z,200,application/json,127661,d0a6f6d53236616c02bf4b759d03124cfd274a387fa83a7d869f1c4d77489dd4,,,first_capture,raw/who.gho.hepatitis-hbv-testing-anc-percent/2026/10/20261005T093411Z-d0a6f6d53236.json.gz,,

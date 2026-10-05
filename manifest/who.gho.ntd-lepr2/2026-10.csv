@@ -1,0 +1,4 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.ntd-lepr2,https://ghoapi.azureedge.net/api/NTD_LEPR2?$top=1000,2026-10-05T09:33:25Z,200,application/json,552622,7ee4e0bc626cc47ac0f38cdc6315fb9118caff2dc723b638240864c8ffe4e2d5,,,first_capture,raw/who.gho.ntd-lepr2/2026/10/20261005T093325Z-7ee4e0bc626c.json.gz,,
+who.gho.ntd-lepr2,https://ghoapi.azureedge.net/api/NTD_LEPR2?$top=1000&$skip=1000,2026-10-05T09:33:43Z,200,application/json,552204,8da0bda43ded328c8f94e7230fd16dee2f714110692c1f49fe3e7c498a53c117,,,first_capture,raw/who.gho.ntd-lepr2/2026/10/20261005T093343Z-8da0bda43ded.json.gz,,
+who.gho.ntd-lepr2,https://ghoapi.azureedge.net/api/NTD_LEPR2?$top=1000&$skip=2000,2026-10-05T09:33:46Z,200,application/json,395216,933ea7314a9d011a7645375974a3962e191c07a9e9d935843e9f62f684ad263a,,,first_capture,raw/who.gho.ntd-lepr2/2026/10/20261005T093346Z-933ea7314a9d.json.gz,,

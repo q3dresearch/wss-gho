@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.malaria-indig-status,https://ghoapi.azureedge.net/api/MALARIA_INDIG_STATUS?$top=1000,2026-10-05T09:32:17Z,200,application/json,113599,4d0248bf34d6564b4117b43dc1823cb5bc8e5af9d3c01707f8c7489271471b24,,,first_capture,raw/who.gho.malaria-indig-status/2026/10/20261005T093217Z-4d0248bf34d6.json.gz,,

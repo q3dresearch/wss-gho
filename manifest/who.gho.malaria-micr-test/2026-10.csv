@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.malaria-micr-test,https://ghoapi.azureedge.net/api/MALARIA_MICR_TEST?$top=1000,2026-10-05T09:31:26Z,200,application/json,549808,8738831902a87af57a6c46b84d657b61662acaf208a7db2a4760660bfc416f45,,,first_capture,raw/who.gho.malaria-micr-test/2026/10/20261005T093126Z-8738831902a8.json.gz,,

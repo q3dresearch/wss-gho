@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.malaria-irs-coverage,https://ghoapi.azureedge.net/api/MALARIA_IRS_COVERAGE?$top=1000,2026-10-05T09:29:36Z,200,application/json,332800,71b4fcb5b0a8e32781f5ea6028950c40e05651d7dfdda77c62c24699ae246f37,,,first_capture,raw/who.gho.malaria-irs-coverage/2026/10/20261005T092936Z-71b4fcb5b0a8.json.gz,,

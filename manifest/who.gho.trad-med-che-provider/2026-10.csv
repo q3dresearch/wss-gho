@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.trad-med-che-provider,https://ghoapi.azureedge.net/api/TRAD_MED_CHE_PROVIDER?$top=1000,2026-10-05T09:40:10Z,200,application/json,32688,c686dc32cf782f5bb8bf4020f98487670034d7065af0791e1634664b33ed4441,,,first_capture,raw/who.gho.trad-med-che-provider/2026/10/20261005T094010Z-c686dc32cf78.json.gz,,

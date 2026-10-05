@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.malaria-nmcp-calculations,https://ghoapi.azureedge.net/api/MALARIA_NMCP_CALCULATIONS?$top=1000,2026-10-05T09:38:19Z,200,application/json,532988,0fb144905485c9e27017ae5c66cd409d21bcc206cb73df46d1fb4df06d71ef5d,,,first_capture,raw/who.gho.malaria-nmcp-calculations/2026/10/20261005T093819Z-0fb144905485.json.gz,,

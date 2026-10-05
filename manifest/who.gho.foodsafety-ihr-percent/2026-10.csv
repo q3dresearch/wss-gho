@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.foodsafety-ihr-percent,https://ghoapi.azureedge.net/api/FOODSAFETY_IHR_PERCENT?$top=1000,2026-10-05T09:30:53Z,200,application/json,494678,b592c0a334294807c4b87f6bad90fb28cd6763fd47c3e0738f7e6252845dc35f,,,first_capture,raw/who.gho.foodsafety-ihr-percent/2026/10/20261005T093053Z-b592c0a33429.json.gz,,
