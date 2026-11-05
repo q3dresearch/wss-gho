@@ -1,0 +1,3 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.malaria-conf-cases,https://ghoapi.azureedge.net/api/MALARIA_CONF_CASES?$top=1000,2026-11-05T09:51:29Z,200,application/json,568697,57e2bcfc0c0c99390b71d135797785f6e7101a7ec7488a82c46c39137659b84b,,,unchanged,raw/who.gho.malaria-conf-cases/2026/10/20261005T093005Z-a93b06861f29.json.gz,,
+who.gho.malaria-conf-cases,https://ghoapi.azureedge.net/api/MALARIA_CONF_CASES?$top=1000&$skip=1000,2026-11-05T09:51:33Z,200,application/json,26800,2902234f4d74c95b72dc131bf51ada811875b01f575c7c4bdbba688ccca4991b,,,unchanged,raw/who.gho.malaria-conf-cases/2026/10/20261005T093009Z-945b134161c4.json.gz,,

@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.malaria-iptp3-coverage,https://ghoapi.azureedge.net/api/MALARIA_IPTP3_COVERAGE?$top=1000,2026-11-05T09:46:41Z,200,application/json,186110,45c11e23f4ef837a099a061b96fb435794e991c2fabe7fa4fe8ac9d1205d0b6e,,,unchanged,raw/who.gho.malaria-iptp3-coverage/2026/10/20261005T093851Z-79953777df06.json.gz,,

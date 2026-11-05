@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.taxbev-vatspecial-yn,https://ghoapi.azureedge.net/api/TAXBEV_VATSPECIAL_YN?$top=1000,2026-11-05T09:55:16Z,200,application/json,95756,63376b2817f6a0696b084b3c209176a4dda7b44916e5322bc0d75d75eb0d2b46,,,unchanged,raw/who.gho.taxbev-vatspecial-yn/2026/10/20261005T093712Z-55df57742e27.json.gz,,

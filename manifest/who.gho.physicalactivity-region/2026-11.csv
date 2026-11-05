@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.physicalactivity-region,https://ghoapi.azureedge.net/api/PHYSICALACTIVITY_REGION?$top=1000,2026-11-05T09:48:39Z,200,application/json,73581,02f713563f41294275a77bb415e84a14528cfb059a88dcbc2f84d2a3a8be5d28,,,unchanged,raw/who.gho.physicalactivity-region/2026/10/20261005T093319Z-f19face0630b.json.gz,,

@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.amr-infect-ecoli,https://ghoapi.azureedge.net/api/AMR_INFECT_ECOLI?$top=1000,2026-11-05T09:44:39Z,200,application/json,407008,859a99c53c47b629fb89f12a9ba30cd728e2ff466a06fd818c57995a1b195ef4,,,unchanged,raw/who.gho.amr-infect-ecoli/2026/10/20261005T092856Z-2187230bc11b.json.gz,,

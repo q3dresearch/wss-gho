@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.taxbev-excise-autoadjust,https://ghoapi.azureedge.net/api/TAXBEV_EXCISE_AUTOADJUST?$top=1000,2026-11-05T09:50:50Z,200,application/json,217697,c374366404ebd32a76fc279891ff087ca584805dc3fc6e9425374f99fc7b42f1,,,unchanged,raw/who.gho.taxbev-excise-autoadjust/2026/10/20261005T094041Z-fe6842e1a54b.json.gz,,

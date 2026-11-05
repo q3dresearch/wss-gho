@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.ntd-bu-conf,https://ghoapi.azureedge.net/api/NTD_BU_CONF?$top=1000,2026-11-05T09:52:30Z,200,application/json,109573,22b333fc759c4a1e40a20f9e185d4731cf074d127637936883f79d1070d6291c,,,unchanged,raw/who.gho.ntd-bu-conf/2026/09/20260907T162934Z-9373a94650ea.json.gz,,

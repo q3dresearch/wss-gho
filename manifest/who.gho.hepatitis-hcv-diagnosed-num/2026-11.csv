@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.hepatitis-hcv-diagnosed-num,https://ghoapi.azureedge.net/api/HEPATITIS_HCV_DIAGNOSED_NUM?$top=1000,2026-11-05T09:45:38Z,200,application/json,326495,2212d21fccad78f384c69df6360dee8eb2d157d94b4327962442e36ac22a3412,,,changed,raw/who.gho.hepatitis-hcv-diagnosed-num/2026/11/20261105T094538Z-2212d21fccad.json.gz,,

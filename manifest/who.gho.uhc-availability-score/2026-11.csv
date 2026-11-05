@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.uhc-availability-score,https://ghoapi.azureedge.net/api/UHC_AVAILABILITY_SCORE?$top=1000,2026-11-05T09:45:49Z,200,application/json,115166,46fa0cf71ad3117e20eb43921002dca75ed34fe6b993478de7d2f35dac536e6c,,,unchanged,raw/who.gho.uhc-availability-score/2026/10/20261005T093342Z-0a95486c8d9e.json.gz,,

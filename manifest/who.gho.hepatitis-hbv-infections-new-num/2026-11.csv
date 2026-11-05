@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.hepatitis-hbv-infections-new-num,https://ghoapi.azureedge.net/api/HEPATITIS_HBV_INFECTIONS_NEW_NUM?$top=1000,2026-11-05T09:49:03Z,200,application/json,159119,d35ef380f5afc054e5a75a47ce85d46d883f7485f1164ecd0e43256abfc850af,,,changed,raw/who.gho.hepatitis-hbv-infections-new-num/2026/11/20261105T094903Z-d35ef380f5af.json.gz,,

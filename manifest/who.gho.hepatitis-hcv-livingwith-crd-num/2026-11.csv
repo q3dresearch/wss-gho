@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.hepatitis-hcv-livingwith-crd-num,https://ghoapi.azureedge.net/api/HEPATITIS_HCV_LIVINGWITH_CRD_NUM?$top=1000,2026-11-05T09:52:41Z,200,application/json,330989,4f244ea17d455a2611ffb3705397fab2e49479e480430a09b6dbf0413134bcb0,,,changed,raw/who.gho.hepatitis-hcv-livingwith-crd-num/2026/11/20261105T095241Z-4f244ea17d45.json.gz,,

@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.taxbev-mostsoldspirit,https://ghoapi.azureedge.net/api/TAXBEV_MOSTSOLDSPIRIT?$top=1000,2026-11-05T09:51:52Z,200,application/json,164040,f266e783dc6aa1cb6d5a91cbe352e9763350cf8b98c3037ed83e51c06654cbd7,,,unchanged,raw/who.gho.taxbev-mostsoldspirit/2026/10/20261005T094326Z-f8c0eff3850f.json.gz,,

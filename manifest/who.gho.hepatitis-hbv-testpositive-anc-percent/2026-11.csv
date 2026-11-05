@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.hepatitis-hbv-testpositive-anc-percent,https://ghoapi.azureedge.net/api/HEPATITIS_HBV_TESTPOSITIVE_ANC_PERCENT?$top=1000,2026-11-05T09:50:35Z,200,application/json,130814,4c6fc52c5a31cc46619f28c8730e9d8a15af40f7082efe643687b666d446d01f,,,changed,raw/who.gho.hepatitis-hbv-testpositive-anc-percent/2026/11/20261105T095035Z-4c6fc52c5a31.json.gz,,

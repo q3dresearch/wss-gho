@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.taxbev-vatsales,https://ghoapi.azureedge.net/api/TAXBEV_VATSALES?$top=1000,2026-11-05T09:53:32Z,200,application/json,522030,2554d56b4d38a92eb19b58db9dc547f7e901408893921b7872c46bc29932b3ab,,,unchanged,raw/who.gho.taxbev-vatsales/2026/10/20261005T094007Z-4a312dea7eb5.json.gz,,

@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.hepatitis-deaths-num,https://ghoapi.azureedge.net/api/HEPATITIS_DEATHS_NUM?$top=1000,2026-11-05T09:47:27Z,200,application/json,193658,43eafba79ce14fc6a39d403304e49f0472682572ff83c3e3fa75eb397de4c242,,,changed,raw/who.gho.hepatitis-deaths-num/2026/11/20261105T094727Z-43eafba79ce1.json.gz,,

@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.hepatitis-hcv-treatment-initiated-num,https://ghoapi.azureedge.net/api/HEPATITIS_HCV_TREATMENT_INITIATED_NUM?$top=1000,2026-11-05T09:45:26Z,200,application/json,168986,7bccbe32a3c1e929339350926cad1aa34aaa3e8e0330f39fef699ae3db7cf2f3,,,changed,raw/who.gho.hepatitis-hcv-treatment-initiated-num/2026/11/20261105T094526Z-7bccbe32a3c1.json.gz,,

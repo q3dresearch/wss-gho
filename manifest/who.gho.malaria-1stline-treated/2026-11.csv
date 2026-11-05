@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.malaria-1stline-treated,https://ghoapi.azureedge.net/api/MALARIA_1STLINE_TREATED?$top=1000,2026-11-05T09:50:44Z,200,application/json,319700,d37ecf40ab1796bdf755b40c15bfe37e66e005daffdaff5959683b4cd3ea049e,,,unchanged,raw/who.gho.malaria-1stline-treated/2026/10/20261005T093745Z-57a9739ab2b9.json.gz,,

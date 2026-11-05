@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.taxbev-sugarcontent,https://ghoapi.azureedge.net/api/TAXBEV_SUGARCONTENT?$top=1000,2026-11-05T09:45:56Z,200,application/json,221134,1bb5a2f62aeef655e8dfa8039f7b3fdf3a6386c65ee58c9ae888b807f9731ad2,,,unchanged,raw/who.gho.taxbev-sugarcontent/2026/10/20261005T093017Z-02d7ea03dd1b.json.gz,,

@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.malaria-act-treated,https://ghoapi.azureedge.net/api/MALARIA_ACT_TREATED?$top=1000,2026-11-05T09:45:51Z,200,application/json,288633,920d09d753178c190bc1c36a7b69859375c3e7ef386b9192feb662bc0319f239,,,unchanged,raw/who.gho.malaria-act-treated/2026/10/20261005T093002Z-ab99bdc44304.json.gz,,

@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.trad-med-hwf-density,https://ghoapi.azureedge.net/api/TRAD_MED_HWF_DENSITY?$top=1000,2026-11-05T09:51:45Z,200,application/json,8558,52bad5c6b7fc3194bc2fca6d44d624730d8ace95da297a77cc2d9c5e2acfe63c,,,unchanged,raw/who.gho.trad-med-hwf-density/2026/10/20261005T094126Z-6985d1f80b48.json.gz,,

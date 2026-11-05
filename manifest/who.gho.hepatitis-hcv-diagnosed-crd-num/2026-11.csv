@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.hepatitis-hcv-diagnosed-crd-num,https://ghoapi.azureedge.net/api/HEPATITIS_HCV_DIAGNOSED_CRD_NUM?$top=1000,2026-11-05T09:45:35Z,200,application/json,175563,4a4759d744827617640163714fa32be8a543ddf6dbd9641617b1d75b970cbc5f,,,changed,raw/who.gho.hepatitis-hcv-diagnosed-crd-num/2026/11/20261105T094535Z-4a4759d74482.json.gz,,

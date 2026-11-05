@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.taxbev-sugarbasedtiered,https://ghoapi.azureedge.net/api/TAXBEV_SUGARBASEDTIERED?$top=1000,2026-11-05T09:51:42Z,200,application/json,116841,199596463a2835f8c57f1c83e9a2d1fa205dbffff64fc43141576488afdbaef9,,,unchanged,raw/who.gho.taxbev-sugarbasedtiered/2026/10/20261005T093703Z-0e4437a93424.json.gz,,

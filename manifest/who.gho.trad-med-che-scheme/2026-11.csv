@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.trad-med-che-scheme,https://ghoapi.azureedge.net/api/TRAD_MED_CHE_SCHEME?$top=1000,2026-11-05T09:46:58Z,200,application/json,10881,07d33cb6f0d1c132b0168bc2c373344a282095d58bbbc946b31c37699b8a84ff,,,changed,raw/who.gho.trad-med-che-scheme/2026/11/20261105T094658Z-07d33cb6f0d1.json.gz,,

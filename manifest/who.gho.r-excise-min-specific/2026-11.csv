@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.r-excise-min-specific,https://ghoapi.azureedge.net/api/R_excise_min_specific?$top=1000,2026-11-05T09:51:12Z,200,application/json,108344,85663570ae65b6433135a9622251acd9b1d19529a75dc0e312a7e490f7895c39,,,unchanged,raw/who.gho.r-excise-min-specific/2026/10/20261005T093623Z-9a837b34b7a9.json.gz,,

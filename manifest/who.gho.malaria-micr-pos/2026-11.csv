@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.malaria-micr-pos,https://ghoapi.azureedge.net/api/MALARIA_MICR_POS?$top=1000,2026-11-05T09:50:47Z,200,application/json,558812,943bfa2a4eb95adbecdf39347e536a485862f112926abbcbdd0160b35db2e216,,,unchanged,raw/who.gho.malaria-micr-pos/2026/10/20261005T093748Z-1894e5e45042.json.gz,,

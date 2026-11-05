@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.sdgipv12m,https://ghoapi.azureedge.net/api/SDGIPV12M?$top=1000,2026-11-05T09:56:01Z,200,application/json,208964,8410ac4d2af4a39339553056c09d0e89822cdc80060db7701bf76db1740034a9,,,unchanged,raw/who.gho.sdgipv12m/2026/10/20261005T094137Z-ac6c0676c6d3.json.gz,,

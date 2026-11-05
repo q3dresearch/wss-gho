@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.hwf-0016,https://ghoapi.azureedge.net/api/HWF_0016?$top=1000,2026-11-05T09:49:23Z,200,application/json,382032,3d0db1779c3c8a50f634b9ebb06fc3f4440bc6c23d37d84821291353b45691eb,,,unchanged,raw/who.gho.hwf-0016/2026/10/20261005T093419Z-efa87556462d.json.gz,,

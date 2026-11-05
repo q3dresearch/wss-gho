@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.health-promoting-cities,https://ghoapi.azureedge.net/api/HEALTH_PROMOTING_CITIES?$top=1000,2026-11-05T09:44:53Z,200,application/json,68288,ed7fbf28ad2713555133f8bac3f6186d1c895bd5825b9559078b651f62e7aed9,,,unchanged,raw/who.gho.health-promoting-cities/2026/10/20261005T093423Z-fa9cbb352232.json.gz,,

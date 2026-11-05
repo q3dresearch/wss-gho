@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.malaria-itn-use,https://ghoapi.azureedge.net/api/MALARIA_ITN_USE?$top=1000,2026-11-05T09:45:06Z,200,application/json,559478,4d0084939b3b9cdfc7bdf8149037b9dd9517d4d65129abd9366c39d2008fa453,,,unchanged,raw/who.gho.malaria-itn-use/2026/10/20261005T092923Z-f68d46345a8f.json.gz,,

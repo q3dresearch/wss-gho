@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.tobacco-mpower-m1-tobaccousesmoking,https://ghoapi.azureedge.net/api/TOBACCO_MPOWER_M1_TOBACCOUSESMOKING?$top=1000,2026-11-05T09:54:24Z,200,application/json,493061,5ab751a0c2298bb6a8c7f385721e669c95408699671f729f6328ce7b9d24f1e8,,,unchanged,raw/who.gho.tobacco-mpower-m1-tobaccousesmoking/2026/10/20261005T093401Z-9f7297efb013.json.gz,,

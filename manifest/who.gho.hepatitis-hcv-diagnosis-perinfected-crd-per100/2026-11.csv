@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.hepatitis-hcv-diagnosis-perinfected-crd-per100,https://ghoapi.azureedge.net/api/HEPATITIS_HCV_DIAGNOSIS_PERINFECTED_CRD_PER100?$top=1000,2026-11-05T09:44:58Z,200,application/json,177329,3ba9acc4279d6cd4f7e0f135da1a519ddfd1b6caa3bce708ed7327cf3a3f98dc,,,changed,raw/who.gho.hepatitis-hcv-diagnosis-perinfected-crd-per100/2026/11/20261105T094458Z-3ba9acc4279d.json.gz,,

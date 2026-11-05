@@ -1,0 +1,2 @@
+source_id,url,fetched_at,http_status,content_type,content_length,content_sha256,etag,last_modified,outcome,raw_ref,reason,warnings
+who.gho.malaria-rdt-test,https://ghoapi.azureedge.net/api/MALARIA_RDT_TEST?$top=1000,2026-11-05T09:45:44Z,200,application/json,482019,6ec2c0da535df6a69222ace4a305685590442a4f73d40590a63c7c6fcec23bcb,,,unchanged,raw/who.gho.malaria-rdt-test/2026/10/20261005T092958Z-805655d2949b.json.gz,,
